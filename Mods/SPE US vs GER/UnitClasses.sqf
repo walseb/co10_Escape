@@ -65,7 +65,10 @@ a3e_arr_PrisonBackpackWeapons pushback ["SPE_M1911","SPE_7Rnd_45ACP_1911"];
 a3e_arr_PrisonBackpackWeapons pushback ["SPE_Fusil_Mle_208_12_Sawedoff","SPE_2Rnd_12x65_Pellets"];
 
 // Random array. Civilian vehicle classes for ambient traffic.
-a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [];
+a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
+      "SPE_ST_R200_Hood"
+      ,"SPE_ST_OpelBlitz"
+  ];
 
 // Random arrays. Enemy vehicle classes for ambient traffic.
 // Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
