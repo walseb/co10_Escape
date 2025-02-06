@@ -19,6 +19,7 @@
 		"./Configs/SOGPF.json",
 		"./Configs/SFP.json",
 		"./Configs/SPE.json",
+		"./Configs/WW2FFA.json",
 		"./Configs/EF.json"
 
 	],
