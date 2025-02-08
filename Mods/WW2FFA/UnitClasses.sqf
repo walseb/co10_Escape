@@ -2366,6 +2366,6 @@ a3e_arr_CrashSiteItems pushback ["LIB_US_M36_Rope", 50, 1, 3];
 a3e_arr_CrashSiteItems pushback ["LIB_US_M36", 50, 1, 10];
 a3e_arr_CrashSiteItems pushback ["LIB_US_Backpack", 50, 1, 10];
 
-//Mines and traps, fn_initTraps
-A3E_Trap_Classes = [["roadside","SPE_shumine_42_MINE"],["roadside","SPE_SMI_35_Pressure_MINE"],["roadcenter","SPE_SMI_35_MINE"],["roadcenter","SPE_TMI_42_MINE"],["roadside","SPE_US_M3_Pressure_MINE"],["roadcenter","SPE_US_M3_MINE"],["roadcenter","SPE_US_M1A1_ATMINE"]];//Classnames of traps and mines. String or array in form [classname, trigger range, scriptcode]
-A3E_Trap_Pathes = ["TRAIL","TRACK","ROAD","MAIN ROAD"]; //Classnames of roads and pathes for the traps to spawn
+// //Mines and traps, fn_initTraps
+// A3E_Trap_Classes = [["roadside","SPE_shumine_42_MINE"],["roadside","SPE_SMI_35_Pressure_MINE"],["roadcenter","SPE_SMI_35_MINE"],["roadcenter","SPE_TMI_42_MINE"],["roadside","SPE_US_M3_Pressure_MINE"],["roadcenter","SPE_US_M3_MINE"],["roadcenter","SPE_US_M1A1_ATMINE"]];//Classnames of traps and mines. String or array in form [classname, trigger range, scriptcode]
+// A3E_Trap_Pathes = ["TRAIL","TRACK","ROAD","MAIN ROAD"]; //Classnames of roads and pathes for the traps to spawn
