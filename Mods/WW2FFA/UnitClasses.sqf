@@ -556,18 +556,7 @@ a3e_arr_Escape_InfantryTypes = [
 	,"SG_sturmtrooper_stggunner"
 	];
 a3e_arr_Escape_InfantryTypes_Ind = [
-    "LIB_SOV_scout_smgunner"
-    ,"LIB_SOV_scout_mgunner"
-    ,"LIB_SOV_scout_rifleman_autumn"
-    ,"LIB_SOV_scout_rifleman"
-    ,"LIB_SOV_scout_p_officer"
-    ,"LIB_SOV_scout_sergeant"
-    ,"LIB_SOV_scout_lieutenant"
-    ,"LIB_SOV_scout_sniper_autumn"
-    ,"LIB_SOV_scout_sniper_spring"
-    ,"LIB_SOV_scout_sniper"
-    ,"LIB_SOV_operator"
-    ,"SPE_US_Rangers_Rifleman_AmmoBearer"
+    "SPE_US_Rangers_Rifleman_AmmoBearer"
     ,"SPE_US_Rangers_Assist_Autorifleman"
     ,"SPE_US_Rangers_AHMGunner"
     ,"SPE_US_Rangers_Assist_SquadLead"
@@ -585,23 +574,6 @@ a3e_arr_Escape_InfantryTypes_Ind = [
     ,"SPE_US_Rangers_rifleman"
     ,"SPE_US_Rangers_second_lieutenant"
     ,"SPE_US_Rangers_SquadLead"
-    ,"LIB_SOV_rifleman"
-    ,"LIB_SOV_p_officer"
-    ,"LIB_SOV_LC_rifleman"
-    ,"LIB_SOV_scout_smgunner"
-    ,"LIB_SOV_captain"
-    ,"LIB_SOV_lieutenant"
-    ,"LIB_SOV_mgunner"
-    ,"LIB_SOV_smgunner"
-    ,"LIB_SOV_sergeant"
-    ,"LIB_SOV_first_lieutenant"
-    ,"LIB_SOV_AT_soldier"
-    ,"LIB_SOV_AT_grenadier"
-    ,"LIB_SOV_sapper"
-    ,"LIB_SOV_medic"
-    ,"LIB_SOV_assault_smgunner"
-    ,"LIB_SOV_assault_mgunner"
-    ,"LIB_SOV_assault_sergeant"
     ,"SPE_US_Engineer"
     ,"SPE_US_Medic"
     ,"SPE_US_Rifleman_AmmoBearer"
@@ -1215,6 +1187,11 @@ a3e_arr_Escape_EnemyCivilianCarTypes = [
 	,"LIB_GazM1_dirty"
 	,"LIB_GazM1"
 	,"LIB_GazM1_dirty"
+	,"LIB_GazM1_SOV"
+	,"LIB_GazM1_SOV"
+	,"LIB_GazM1_SOV"
+	,"LIB_GazM1_SOV"
+	,"LIB_GazM1_SOV"
 	];
 
 // Vehicles, weapons and ammo at ammo depots
@@ -2208,13 +2185,9 @@ a3e_arr_searchChopperHard = [
 	];
 a3e_arr_searchChopper_pilot = [
 	"SPE_GER_pilot"
-	,"SPE_US_Pilot"
-	,"LIB_SOV_pilot"
 	];
 a3e_arr_searchChopper_crew = [
 	"SPE_GER_pilot"
-	,"SPE_US_Pilot_2"
-	,"LIB_SOV_pilot"
 	];
 
 if(A3E_Param_SearchChopper==0) then {
