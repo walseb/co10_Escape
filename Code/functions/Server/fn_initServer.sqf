@@ -502,6 +502,9 @@ call A3E_fnc_InitTraps;
         //(a3e_arr_Escape_StartPositionGuardTypes select floor (random count a3e_arr_Escape_StartPositionGuardTypes)) createUnit [_pos, _guardGroup, "", (0.5), "CAPTAIN"];
         _guardGroup createUnit [(a3e_arr_Escape_StartPositionGuardTypes select floor (random count a3e_arr_Escape_StartPositionGuardTypes)), _pos, [], 0, "FORM"];
 
+        _d7d166 = createVehicle [ "LIB_GazM1", _pos, [], 0, "CAN_COLLIDE"];
+	// [_pos, 180, "LIB_GazM1", civilian] call BIS_fnc_spawnVehicle;
+
         if (count units _guardGroup >= 2) then {
             _createNewGroup = true;
         };
