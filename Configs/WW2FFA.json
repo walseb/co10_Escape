@@ -542,6 +542,20 @@
 			"name" : "co10_Escape_WW2FFA_ALL_vs_ALL-ALL"
 		},
 		{
+			"island" : "Laghisola",
+			"sqm": "Laghisola",
+			"mod": "WW2FFA",
+			"replace": {},
+			"name" : "co10_Escape_WW2FFA_ALL_vs_ALL-ALL"
+		},
+		{
+			"island" : "Fjord",
+			"sqm": "Fjord",
+			"mod": "WW2FFA",
+			"replace": {},
+			"name" : "co10_Escape_WW2FFA_ALL_vs_ALL-ALL"
+		},
+		{
 			"island": "IslaPera",
 			"sqm": "IslaPera",
 			"mod": "WW2FFA",
