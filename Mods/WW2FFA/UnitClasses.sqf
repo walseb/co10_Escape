@@ -2209,9 +2209,10 @@ private _faks = [
 	,"SPE_GER_FirstAidKit"];
 missionNamespace setvariable ["a3e_arr_faks",_faks,true];
 _medkits = [
-	"Medikit"
-	,"SPE_GER_Medkit"
-	,"SPE_US_Medkit"];
+	// "Medikit"
+	// ,"SPE_GER_Medkit"
+	// ,"SPE_US_Medkit"
+	];
 missionNamespace setvariable ["a3e_arr_medkits",_medkits,true];
 
 //////////////////////////////////////////////////////////////////
