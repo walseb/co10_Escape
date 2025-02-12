@@ -18,7 +18,7 @@ A3E_VAR_Side_Opfor = west; //SPE GER Sturmtruppen
 A3E_VAR_Side_Ind = resistance; //SPE GER Wehrmacht
 
 A3E_VAR_Flag_Opfor = "\WW2\SPE_Core_t\Data_t\Flags\flag_GER_co.paa";
-A3E_VAR_Flag_Ind = "\A3\Data_F\Flags\Flag_AAF_CO.paa";
+A3E_VAR_Flag_Ind = "\WW2\SPE_Core_t\Data_t\Flags\flag_GER_co.paa";
 
 A3E_VAR_Side_Blufor_Str = format["%1",A3E_VAR_Side_Blufor];
 A3E_VAR_Side_Opfor_Str = format["%1",A3E_VAR_Side_Opfor];
@@ -47,12 +47,17 @@ A3E_PrisonTemplates = [
 
 // Random array. Start position guard types around the prison
 a3e_arr_Escape_StartPositionGuardTypes = [
-	"SPE_Milice_FG_Sentry"
-	,"SPE_Milice_FG_Sentry_Sten"
-	,"SPE_Milice_FG_SquadLead"
-	,"SPE_Milice_FG_Rifleman"
-	,"SPE_Milice_FG_Assist_Autorifleman"
-	,"SPE_Milice_FG_Autorifleman"
+	"LIB_US_rifleman",
+	"LIB_US_rifleman",
+	"LIB_US_second_lieutenant",
+	"LIB_US_first_lieutenant",
+	"LIB_US_rifleman"
+	// "SPE_Milice_FG_Sentry"
+	// ,"SPE_Milice_FG_Sentry_Sten"
+	// ,"SPE_Milice_FG_SquadLead"
+	// ,"SPE_Milice_FG_Rifleman"
+	// ,"SPE_Milice_FG_Assist_Autorifleman"
+	// ,"SPE_Milice_FG_Autorifleman"
 	// ,"LIB_GER_unequip"
 	// ,"LIB_GER_rifleman"
 	// ,"LIB_GER_gun_crew"
@@ -63,7 +68,6 @@ a3e_arr_Escape_StartPositionGuardTypes = [
 	// ,"LIB_US_second_lieutenant"
 	// ,"LIB_US_first_lieutenant"
 	// ,"LIB_US_rifleman"
-
       // "SPE_ST_R200_Hood"
       // ,"SPE_ST_OpelBlitz"
       // ,"LIB_GazM1"
@@ -1056,9 +1060,10 @@ a3e_arr_ComCenDefence_heavyArmorClasses = [
 a3e_arr_ComCenStaticWeapons = [
 	"SPE_ST_MG34_Bipod"
 	,"SPE_ST_MG42_Bipod"
-	,"SPE_M1919A6_Bipod"
+	// ,"SPE_M1919A6_Bipod"
 	,"LIB_MG42_Lafette_Deployed"
-	,"LIB_Maxim_M30_base"];
+	// ,"LIB_Maxim_M30_base"
+	];
 // A communication center have two parked and empty vehicles of the following possible types.
 a3e_arr_ComCenParkedVehicles = [
 	"SPE_ST_R200_Unarmed"
