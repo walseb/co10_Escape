@@ -998,11 +998,9 @@ a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_m30_base";
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_m30_trench";
 // mortar
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_BM37"; 
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_BM37"; 
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1_81";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1_81";
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_M2_60";
 
-  // ,"SPE_M1_81" // mortar
 // Random array. Motorized search groups are sometimes sent to look for you. This array contains possible class definitions for the vehicles.
 a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses = a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
@@ -1024,7 +1022,6 @@ A3E_MotorPoolTemplates = [
 A3E_ComCenterTemplates = [
 	"a3e_fnc_BuildComCenter_spe1"
 	,"a3e_fnc_BuildComCenter_spe_ger1"
-	,"a3e_fnc_BuildComCenter_spe1"
 	];
 
 // Random array. Light armored vehicles guarding the communication centers.
@@ -1108,9 +1105,6 @@ a3e_arr_I_pilots = [
 //////////////////////////////////////////////////////////////////
 A3E_AmmoDepotTemplates = [
 	"A3E_fnc_AmmoDepot_spe1"
-	,"A3E_fnc_AmmoDepot_spe2"
-	,"A3E_fnc_AmmoDepot_spe3"
-	,"A3E_fnc_AmmoDepot_spe1"
 	,"A3E_fnc_AmmoDepot_spe2"
 	,"A3E_fnc_AmmoDepot_spe3"
 	];
@@ -1816,9 +1810,6 @@ A3E_MortarSiteTemplates = [
 a3e_arr_MortarSite = [
 	"SPE_ST_GrW278_1"
 	,"LIB_GrWr34"
-	// ,"SPE_M1_81"
-	// ,"LIB_BM37"
-	// ,"LIB_M2_60"
 	];
 
 //////////////////////////////////////////////////////////////////
