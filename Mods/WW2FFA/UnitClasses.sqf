@@ -428,15 +428,12 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
   ,"LIB_US_Willys_MB_M1919"
   ,"LIB_UK_Willys_MB_M1919"
   ,"LIB_US_Scout_m3"
-  ,"LIB_BM37" // Mortar
   ,"SPE_US_G503_MB_M1919"
   ,"SPE_US_G503_MB_M2"
   ,"SPE_US_G503_MB_M1919_Armoured"
   ,"SPE_US_G503_MB_M2_Armoured"
   ,"SPE_US_G503_MB_M1919_PATROL"
   ,"SPE_US_G503_MB_M2_PATROL"
-  ,"SPE_M1_81"
-  ,"SPE_FR_57mm_M1"
   ,"SPE_FR_M45_Quadmount"
   ,"LIB_UniversalCarrier_base"
   ,"LIB_Churchill_Mk7_AVRE_desert"
@@ -448,18 +445,8 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
   ,"LIB_US_NAC_M3_Halftrack"
   ,"LIB_UK_M3_Halftrack"
   ,"LIB_UK_DR_M3_Halftrack"
-  ,"LIB_Churchill_Mk7_DLV"
-  ,"LIB_Churchill_Mk7_Crocodile_DLV"
-  ,"LIB_Churchill_Mk7_AVRE_DLV"
-  ,"LIB_Churchill_Mk7_Howitzer_DLV"
-  ,"LIB_Churchill_Mk7_desert_DLV"
-  ,"LIB_Churchill_Mk7_Crocodile_desert_DLV"
-  ,"LIB_Churchill_Mk7_AVRE_desert_DLV"
-  ,"LIB_Churchill_Mk7_Howitzer_desert_DLV"
-  ,"LIB_US_Willys_MB_M1919_w_DLV"
-  ,"LIB_UK_Willys_MB_M1919_w_DLV"
-  ,"LIB_Churchill_Mk7_w_DLV"
-  ,"LIB_Churchill_Mk7_Crocodile_w_DLV"
+  ,"LIB_Churchill_Mk7_Crocodile_desert"
+  ,"LIB_Churchill_Mk7_Howitzer_desert"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind;
 
 // Random array. General infantry types. E.g. village patrols, ambient infantry, etc. (for ammo depot guards and communication center guards see further down in this file at fn_InitGuardedLocations)
@@ -1009,10 +996,13 @@ a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_61k";
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_SU_SearchLight";
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_m30_base";
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_m30_trench";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_BM37"; // mortar
+// mortar
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_BM37"; 
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_BM37"; 
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1_81";
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1_81";
 
-
-
+  // ,"SPE_M1_81" // mortar
 // Random array. Motorized search groups are sometimes sent to look for you. This array contains possible class definitions for the vehicles.
 a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses = a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
