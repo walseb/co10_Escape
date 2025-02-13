@@ -169,18 +169,20 @@ a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
   ,"SPE_ST_R200_Hood"
 	];
 
-a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = [
+sov_transport_1be340 = [
   "LIB_SdKfz251_captured"
   ,"LIB_SdKfz251_captured_FFV"
-  ,"lib_zis5v"
-  ,"lib_us6_open"
-  ,"Lib_Willys_MB"
-  ,"SPE_US_M3_Halftrack_Unarmed"
-  ,"SPE_US_M3_Halftrack"
+  ,"LIB_Zis5v"
   ,"LIB_SOV_M3_Halftrack"
   ,"LIB_GazM1_SOV"
   ,"LIB_GazM1_SOV_camo_sand"
-  ,"LIB_Zis5v"
+  ];
+
+allies_transport_5a712a = [
+  "LIB_US6_open"
+  ,"Lib_Willys_MB"
+  ,"SPE_US_M3_Halftrack_Unarmed"
+  ,"SPE_US_M3_Halftrack"
   ,"SPE_FR_M3_Halftrack_Unarmed"
   ,"SPE_FR_M3_Halftrack"
   ,"LIB_US_M3_Halftrack"
@@ -190,7 +192,14 @@ a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = [
   ,"LIB_US_GMC_Tent"
   ,"LIB_US_GMC_Open"
   ,"SPE_FFI_R200_Hood"
-	];
+  ,"SPE_US_M3_Halftrack"	
+  ,"SPE_US_M3_Halftrack_Unarmed"	
+  ,"SPE_CCKW_353"	
+  ,"SPE_CCKW_353_Open"	
+  ,"SPE_M20_AUC"
+  ];
+
+a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = sov_transport_1be340 + allies_transport_5a712a;
 
 // Random arrays. Enemy vehicle classes for ambient traffic.
 // Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
@@ -215,16 +224,6 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"SPE_ST_PzKpfwIV_G"
   ,"SPE_ST_PzKpfwV_G"
   ,"SPE_ST_PzKpfwVI_H1"
-  ,"SPE_US_G503_MB_Open"
-  ,"SPE_US_G503_MB"
-  ,"SPE_US_G503_MB_Armoured"
-  ,"SPE_US_G503_MB_Ambulance"
-  ,"SPE_US_G503_MB_M1919"
-  ,"SPE_US_G503_MB_M1919_Armoured"
-  ,"SPE_US_G503_MB_M2"
-  ,"SPE_US_G503_MB_M2_Armoured"
-  ,"SPE_US_G503_MB_M1919_PATROL"
-  ,"SPE_US_G503_MB_M2_PATROL"
   ,"LIB_Kfz1_MG42"
   ,"LIB_opelblitz_parm"
   ,"LIB_opelblitz_ambulance"
@@ -297,22 +296,31 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"LIB_DAK_PzKpfwIV_H"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
-a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
-  "Lib_Willys_MB"
-  ,"lib_zis5v"
+sov_vehicles_125ff9 = [
+  "lib_zis5v"
   ,"lib_zis5v_med"
   ,"lib_zis6_parm"
   ,"lib_zis5v_fuel"
+  ,"LIB_SOV_M3_Halftrack"
+  ,"LIB_t34_76"
+  ,"LIB_t34_85"
+  ,"LIB_M4A2_SOV"
+  ,"LIB_GazM1_SOV"
+  ,"LIB_GazM1_SOV_camo_sand"
+  ,"LIB_Zis5v_61K"
+  ,"LIB_T34_76"
+  ,"LIB_T34_85"
+  ,"LIB_SU85"
+  ,"LIB_JS2_43"
+  ];
+
+allies_vehicles_0d7fd7 = [
+  "Lib_Willys_MB"
   ,"lib_us6_tent"
   ,"lib_us6_open"
   ,"lib_us6_ammo"
   ,"lib_us6_bm13"
   ,"LIB_Scout_m3"
-  ,"LIB_SOV_M3_Halftrack"
-  ,"Lib_SdKfz251_captured"
-  ,"LIB_t34_76"
-  ,"LIB_t34_85"
-  ,"LIB_M4A2_SOV"
   ,"SPE_CCKW_353"
   ,"SPE_CCKW_353_Open"
   ,"SPE_CCKW_353_Ambulance"
@@ -346,28 +354,14 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
   ,"SPE_M4A3_105"
   ,"SPE_M4A3_T34_Calliope_Direct"
   ,"SPE_M4A3_T34_Calliope"
-  ,"LIB_opelblitz_open_y_camo"
-  ,"LIB_SdKfz251_captured"
-  ,"LIB_SdKfz251_captured_FFV"
   ,"LIB_US6_BM13"
   ,"LIB_US6_BM13_SingleFire"
-  ,"LIB_GazM1_SOV"
-  ,"LIB_GazM1_SOV_camo_sand"
   ,"LIB_Scout_M3"
   ,"LIB_Scout_M3_FFV"
   ,"LIB_US6_Tent"
   ,"LIB_US6_Ammo"
   ,"LIB_US6_Open"
   ,"LIB_Willys_MB"
-  ,"LIB_Zis5v_61K"
-  ,"LIB_Zis5v"
-  ,"LIB_Zis5v_Med"
-  ,"LIB_Zis5v_Fuel"
-  ,"LIB_Zis6_Parm"
-  ,"LIB_T34_76"
-  ,"LIB_T34_85"
-  ,"LIB_SU85"
-  ,"LIB_JS2_43"
   ,"LIB_SdKfz251_FFV"
   ,"SPE_FFI_SdKfz250_1"
   ,"SPE_FFI_R200_Unarmed"
@@ -428,10 +422,6 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
   ,"LIB_Us6_open_cargo"
   ,"LIB_Us6_ammo"
   ,"LIB_Us6_bm13"
-  ,"LIB_Zis5v_med"
-  ,"LIB_Zis6_parm"
-  ,"LIB_Zis5v_fuel"
-  ,"LIB_UK_Willys_MB"
   ,"LIB_Willys_MB_Hood"
   ,"LIB_US_Willys_MB_Hood"
   ,"LIB_UK_Willys_MB_Hood"
@@ -441,9 +431,13 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
   ,"LIB_US_Willys_MB_M1919"
   ,"LIB_UK_Willys_MB_M1919"
   ,"LIB_US_Scout_m3"
+  ,"SPE_US_G503_MB_Open"
+  ,"SPE_US_G503_MB"
+  ,"SPE_US_G503_MB_Armoured"
+  ,"SPE_US_G503_MB_Ambulance"
   ,"SPE_US_G503_MB_M1919"
-  ,"SPE_US_G503_MB_M2"
   ,"SPE_US_G503_MB_M1919_Armoured"
+  ,"SPE_US_G503_MB_M2"
   ,"SPE_US_G503_MB_M2_Armoured"
   ,"SPE_US_G503_MB_M1919_PATROL"
   ,"SPE_US_G503_MB_M2_PATROL"
@@ -460,7 +454,19 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND = [
   ,"LIB_UK_DR_M3_Halftrack"
   ,"LIB_Churchill_Mk7_Crocodile_desert"
   ,"LIB_Churchill_Mk7_Howitzer_desert"
-  ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind;
+  ];
+
+static_sov_ba213a = [
+  "LIB_Zis3"
+  ,"LIB_Maxim_M30_base"
+  ,"LIB_Maxim_m30_base"
+  ,"LIB_Maxim_m30_trench"
+  ,"LIB_BM37"
+  ,"LIB_SU_SearchLight"
+  ];
+
+a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
+  static_sov_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
 
 // Random array. General infantry types. E.g. village patrols, ambient infantry, etc. (for ammo depot guards and communication center guards see further down in this file at fn_InitGuardedLocations)
 a3e_arr_Escape_InfantryTypes = [
@@ -946,7 +952,6 @@ a3e_units_civilian_InfantryTypes = [
   ,"SPE_CIV_Worker_4"
   ,"SPE_CIV_Worker_4_tie"
   ,"SPE_CIV_Worker_4_trop"
-
 	];
 
 //////////////////////////////////////////////////////////////////
@@ -961,7 +966,7 @@ A3E_RoadblockTemplates = [
 // Random array. Possible static weapon types for communication centers.
 //For SPE templates only the bipod variants
 a3e_arr_ComCenStaticWeapons = [
-  ,"LIB_FlaK_36"
+  "LIB_FlaK_36"
   ,"LIB_FlaK_36_AA"
   ,"LIB_FlaK_36_ARTY"
   ,"SPE_ST_MG34_Bipod"
@@ -994,25 +999,29 @@ a3e_arr_ComCenStaticWeapons = [
 // Random array. A roadblock has a manned vehicle. This array contains possible manned vehicles (can be of any kind, like cars, armored and statics).
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_ComCenStaticWeapons; 
 
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND; 
+allies_static_f39100 = 
+  [
+  // Static IND weapons:
+  "LIB_M1919_M2"
+  ,"LIB_Maxim_M30_base"
+  ,"LIB_Zis3"
+  ,"SPE_M1919A6_Bipod"
+  ,"SPE_M1919_M2"
+  ,"SPE_M2_M3"
+  ,"SPE_57mm_M1"
+  ,"SPE_M45_Quadmount"
+  ,"LIB_61k"
+  ,"LIB_SU_SearchLight"
+  ,"LIB_Maxim_m30_base"
+  ,"LIB_Maxim_m30_trench"
+  // mortar
+  ,"LIB_BM37"
+  ,"SPE_M1_81"
+  ,"LIB_M2_60"
+  ];
 
-// Static IND weapons:
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_M1919_M2";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_M30_base";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Zis3";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1919A6_Bipod";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1919_M2";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M2_M3";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_57mm_M1";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M45_Quadmount";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_61k";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_SU_SearchLight";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_m30_base";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_Maxim_m30_trench";
-// mortar
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_BM37"; 
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "SPE_M1_81";
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind pushback "LIB_M2_60";
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind =
+  allies_transport_5a712a + allies_static_f39100 + allies_vehicles_0d7fd7; 
 
 // Random array. Motorized search groups are sometimes sent to look for you. This array contains possible class definitions for the vehicles.
 a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses = a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
@@ -1038,12 +1047,12 @@ A3E_ComCenterTemplates = [
 	];
 
 // Random array. Light armored vehicles guarding the communication centers.
-a3e_arr_ComCenDefence_lightArmorClasses = a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind;
+a3e_arr_ComCenDefence_lightArmorClasses = a3e_arr_Escape_RoadBlock_MannedVehicleTypes;
 // Random array. Heavy armored vehicles guarding the communication centers.
-a3e_arr_ComCenDefence_heavyArmorClasses = a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind;
+a3e_arr_ComCenDefence_heavyArmorClasses = a3e_arr_Escape_RoadBlock_MannedVehicleTypes;
 
 // A communication center have two parked and empty vehicles of the following possible types.
-a3e_arr_ComCenParkedVehicles = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses;
+a3e_arr_ComCenParkedVehicles = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 //Should be civilian, as there are no civ vehicles its a normal enemy truck
@@ -1055,7 +1064,7 @@ a3e_arr_Escape_EnemyCivilianCarTypes = a3e_arr_Escape_MilitaryTraffic_CivilianVe
 a3e_arr_Escape_AmmoDepot_StaticWeaponClasses = a3e_arr_ComCenStaticWeapons;
 
 // An ammo depot have one parked and empty vehicle of the following possible types.
-a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses;
+a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
 
 //Random array. Types of helicopters to spawn
 a3e_arr_O_attack_heli = [
@@ -1101,8 +1110,7 @@ a3e_arr_O_pilots = [
 	,"SPE_GER_pilot"
 	];
 a3e_arr_I_transport_heli = [
-	"LIB_Ju52"
-	,"LIB_HORSA"
+	"LIB_HORSA"
 	,"LIB_C47_Skytrain"
 	];
 a3e_arr_I_pilots = [
@@ -1445,9 +1453,6 @@ a3e_arr_AmmoDepotVehicleBackpacks = ["B_LIB_SOV_RA_Rucksack2_Green","B_LIB_GER_B
 
 a3e_arr_AmmoDepotItems = [];
 //a3e_arr_AmmoDepotItems pushback ["Laserdesignator_02_ghex_F", 10, 1, 2];
-/*if(A3E_Param_NoNightvision==0) then {
-	a3e_arr_AmmoDepotItems pushback ["O_NVGoggles_ghex_F", 10, 1, 3];
-};*/
 a3e_arr_AmmoDepotItems pushback ["SPE_Binocular_GER", 50, 2, 3, [], 0];
 a3e_arr_AmmoDepotItems pushback ["SPE_GER_ItemCompass_deg", 50, 1, 3];
 a3e_arr_AmmoDepotItems pushback ["SPE_GER_ItemCompass", 50, 1, 3];
@@ -1625,12 +1630,12 @@ private _faks = [
 	,"SPE_US_FirstAidKit"
 	,"SPE_GER_FirstAidKit"];
 missionNamespace setvariable ["a3e_arr_faks",_faks,true];
-_medkits = [
-	// "Medikit"
-	// ,"SPE_GER_Medkit"
-	// ,"SPE_US_Medkit"
-	];
-missionNamespace setvariable ["a3e_arr_medkits",_medkits,true];
+// _medkits = [
+// 	// "Medikit"
+// 	// ,"SPE_GER_Medkit"
+// 	// ,"SPE_US_Medkit"
+// 	];
+// missionNamespace setvariable ["a3e_arr_medkits",_medkits,true];
 
 //////////////////////////////////////////////////////////////////
 // fn_addIntel.sqf
@@ -1673,68 +1678,32 @@ else {
 //////////////////////////////////////////////////////////////////
 a3e_arr_extraction_chopper = [
 	"O_Heli_Light_02_dynamicLoadout_F"
-	, "B_Heli_Transport_01_F"
+	,"B_Heli_Transport_01_F"
 	,"B_Heli_Transport_01_F"];
 a3e_arr_extraction_chopper_escort = [
 	"O_Heli_Attack_02_dynamicLoadout_F"
-	, "B_Heli_Attack_01_dynamicLoadout_F"
-	,"LIB_FW190F8_Italy"];
+	,"B_Heli_Attack_01_dynamicLoadout_F"];
+
+//////////////////////////////////////////////////////////////////
+// fn_PopulateAquaticPatrol
+// boats that are spawned
+//////////////////////////////////////////////////////////////////
+a3e_arr_AquaticPatrols = ["SPEX_LCVP","LIB_LCM3_Armed","LIB_LCVP"];
 
 //////////////////////////////////////////////////////////////////
 // RunExtractionBoat.sqf
 // Boats that come to pick you up
 //////////////////////////////////////////////////////////////////
-if (isClass(configFile >> "CfgPatches" >> "spex_tem_utah_beach")) 
-then {
-	a3e_arr_extraction_boat = [
-		"SPEX_LCVP","LIB_LCM3_Armed","LIB_LCVP"];
-	a3e_arr_extraction_boat_escort = [
-		"SPEX_LCVP","LIB_LCM3_Armed","LIB_LCVP"];
-		} 
-else {
-	a3e_arr_extraction_boat = [
-		"O_T_Boat_Armed_01_hmg_F","LIB_LCM3_Armed"];
-	a3e_arr_extraction_boat_escort = [
-		"O_T_Boat_Armed_01_hmg_F","LIB_LCM3_Armed"];
-	};
+a3e_arr_extraction_boat = a3e_arr_AquaticPatrols;
+a3e_arr_extraction_boat_escort = a3e_arr_AquaticPatrols;
 
 //////////////////////////////////////////////////////////////////
 // RunExtractionLand.sqf
 // Cars/APCs that come to pick you up
 //////////////////////////////////////////////////////////////////
-a3e_arr_extraction_car = [
-	"SPE_US_M3_Halftrack"	//9
-	,"SPE_US_M3_Halftrack_Unarmed"	//11
-	,"SPE_CCKW_353"	//11
-	,"SPE_CCKW_353_Open"	//11
-	,"SPE_M20_AUC"];	//8
-a3e_arr_extraction_car_escort = [
-	"SPE_M10"
-	,"SPE_M18_Hellcat"
-	,"SPE_M4A0_75_Early"
-	,"SPE_M4A0_75"
-	,"SPE_M4A1_75"
-	,"SPE_M4A1_76"
-	,"SPE_M4A1_T34_Calliope_Direct"
-	,"SPE_M4A3_105"
-	,"SPE_M4A3_75"
-	,"SPE_M4A3_76"
-	,"SPE_SdKfz250_1"
-	,"SPE_PzKpfwIII_J"
-	,"SPE_PzKpfwIII_L"
-	,"SPE_PzKpfwIII_M"
-	,"SPE_PzKpfwIII_N"
-	,"SPE_PzKpfwIV_G"
-	,"SPE_PzKpfwV_G"
-	,"SPE_PzKpfwVI_H1"
-	];
+a3e_arr_extraction_car = allies_transport_5a712a;	
 
-
-//////////////////////////////////////////////////////////////////
-// EscapeSurprises.sqf
-// Classnames of leaflet drones, disabled if array is created but empty 
-//////////////////////////////////////////////////////////////////
-a3e_arr_leafletdrone = [];
+a3e_arr_extraction_car_escort = allies_vehicles_0d7fd7;
 
 //////////////////////////////////////////////////////////////////
 // CreateSearchChopper.sqf
@@ -1750,15 +1719,24 @@ a3e_arr_searchChopper_crew = [
 	"SPE_GER_pilot"
 	];
 
+// Random
 if(A3E_Param_SearchChopper==0) then {
 	a3e_arr_searchChopper = a3e_arr_searchChopperHard;
 };
+// Easy
 if(A3E_Param_SearchChopper==1) then {
 	a3e_arr_searchChopper = a3e_arr_searchChopperEasy;
 };
+// Hard
 if(A3E_Param_SearchChopper==2) then {
 	a3e_arr_searchChopper = a3e_arr_searchChopperHard;
 };
+
+//////////////////////////////////////////////////////////////////
+// EscapeSurprises.sqf
+// Classnames of leaflet drones, disabled if array is created but empty 
+//////////////////////////////////////////////////////////////////
+a3e_arr_leafletdrone = ["LIB_HORSA"];
 
 //////////////////////////////////////////////////////////////////
 // EscapeSurprises.sqf and CreateSearchDrone.sqf
@@ -1794,11 +1772,6 @@ a3e_arr_roadblocks_Inf_GUE = a3e_arr_Escape_InfantryTypes_Ind;
 a3e_arr_roadblocks_Veh_INS = a3e_arr_Escape_RoadBlock_MannedVehicleTypes;
 a3e_arr_roadblocks_Veh_GUE = a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind;
 
-//////////////////////////////////////////////////////////////////
-// fn_PopulateAquaticPatrol
-// boats that are spawned
-//////////////////////////////////////////////////////////////////
-a3e_arr_AquaticPatrols = ["SPEX_LCVP","LIB_LCM3_Armed","LIB_LCVP"];
 
 //////////////////////////////////////////////////////////////////
 // fn_AmmoDepot
@@ -1867,6 +1840,7 @@ a3e_arr_CrashSiteCrew = [
 	,"LIB_US_rifleman"
 	,"LIB_GER_pilot"
 	];
+
 a3e_arr_CrashSiteWrecksCar = [
 	"LIB_M4A3_75_wreck"
 	,"LIB_us6_Wreck"
@@ -1880,6 +1854,7 @@ a3e_arr_CrashSiteWrecksCar = [
 	,"LIB_OpelBlitz_Wreck"
 	,"LIB_kfz1_Wreck"
 	];
+
 a3e_arr_CrashSiteCrewCar = [
 	"LIB_US_tank_crew"
 	,"LIB_US_tank_second_lieutenant"
@@ -1888,6 +1863,7 @@ a3e_arr_CrashSiteCrewCar = [
 	,"LIB_GER_tank_unterofficer"
 	,"LIB_GER_tank_lieutenant"
 	];
+
 // Weapons and ammo in crash site box
 a3e_arr_CrashSiteWeapons = [];
 a3e_arr_CrashSiteWeapons pushback ["SPE_M1A1_Bazooka", 50, 1, 2, ["SPE_1Rnd_60mm_M6"], 1];
