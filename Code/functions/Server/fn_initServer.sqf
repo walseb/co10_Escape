@@ -489,7 +489,7 @@ call A3E_fnc_InitTraps;
     while {_pos679d5fc2 distance _startPos < 10} do {
 	_pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
     };
-    _d7d166 = createVehicle [ "LIB_Willys_MB", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
+    _d7d166 = createVehicle [ "LIB_US_Willys_MB_M1919", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
 
     for [{_i = 0}, {_i < _guardCount}, {_i = _i + 1}] do {
         private ["_pos"];
