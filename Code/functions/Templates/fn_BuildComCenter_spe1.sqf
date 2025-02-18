@@ -80,9 +80,10 @@ _obj = ["Land_SPE_Netting_01",_center,[-12.2612,5.93604,0],_rotation,90] call _f
 _obj = ["Land_SPE_Netting_01",_center,[-8.00073,10.1143,0],_rotation,180] call _fnc_createObject;
 _obj = ["Land_SPE_Netting_02",_center,[14.3635,4.58008,0],_rotation,90] call _fnc_createObject;
 _obj = ["Land_SPE_Netting_02",_center,[1.22388,10.7354,0],_rotation,0] call _fnc_createObject;
-_obj = ["SPE_Radio_Us",_center,[8.73096,7.56055,0],_rotation,0] call _fnc_createObject;
+_obj = ["Land_DataTerminal_01_F",_center,[8.73096,7.56055,0],_rotation,0] call _fnc_createObject;
 _obj setvariable ["A3E_isTerminal",true,true];
 _obj allowDamage false;
+[_obj,"green","green","green"] call BIS_fnc_DataTerminalColor;
 
 //_obj = ["SPE_ST_MG34_Bipod",_center,[-14.4316,-9.92139,0],_rotation,225] call _fnc_createObject;
 //_obj = ["SPE_ST_MG34_Bipod",_center,[14.2874,-10.1504,0],_rotation,135] call _fnc_createObject;
