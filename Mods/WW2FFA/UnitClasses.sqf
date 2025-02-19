@@ -953,7 +953,6 @@ A3E_RoadblockTemplates = [
 a3e_arr_ComCenStaticWeapons = [
   "LIB_FlaK_36"
   ,"LIB_FlaK_36_AA"
-  ,"LIB_FlaK_36_ARTY"
   ,"SPE_ST_MG34_Bipod"
   ,"SPE_ST_MG42_Bipod"
   ,"LIB_MG42_Lafette_Deployed"
@@ -1781,6 +1780,7 @@ A3E_MortarSiteTemplates = [
 a3e_arr_MortarSite = [
 	"SPE_ST_GrW278_1"
 	,"LIB_GrWr34"
+	,"LIB_FlaK_36_ARTY"
 	];
 
 //////////////////////////////////////////////////////////////////
