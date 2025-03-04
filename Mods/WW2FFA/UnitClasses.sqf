@@ -147,6 +147,24 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"lib_opelblitz_ambulance"
       ,"lib_opelblitz_parm"
       ,"lib_opelblitz_ammo"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"lib_civ_ffi_citc4"
+      ,"lib_civ_ffi_citc4_4"
+      ,"lib_civ_ffi_citc4_2"
+      ,"lib_civ_ffi_citc4_2"
+      ,"lib_civ_ffi_citc4_3"
+      ,"lib_civ_ffi_citc4_5"
+      ,"lib_gazm1_ffi"
+      ,"lib_gazm1_ffi_camo_sand"
+      ,"lib_gazm1_ffi_camo"
+      ,"lib_gazm1_ffi_sand"
   ];
 
 // Random array. Vehicle classes (preferrably trucks) transporting enemy reinforcements.
@@ -167,6 +185,11 @@ a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
   ,"spe_ger_r200_hood"
   ,"spe_ger_r200_mg34"
   ,"spe_st_r200_hood"
+  ,"fow_v_truppenfahrrad_ger_heer"
+  ,"fow_v_truppenfahrrad_ger_ss"
+  ,"LIB_SdKfz_7_w"
+  ,"spe_opelblitz_open_g_camo_w"
+  ,"spe_opelblitz_open_y_camo_w"
 	];
 
 sov_transport_1be340 = [
@@ -197,6 +220,8 @@ allies_transport_5a712a = [
   ,"SPE_CCKW_353"	
   ,"SPE_CCKW_353_Open"	
   ,"SPE_M20_AUC"
+  ,"spe_fr_m3_halftrack_unarmed"
+  ,"spe_fr_m3_halftrack_unarmed_open"
   ];
 
 a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = sov_transport_1be340 + allies_transport_5a712a;
@@ -249,9 +274,11 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_flakpanzeriv"
   ,"lib_pzkpfwv"
   ,"lib_pzkpfwvi_b"
+  ,"lib_pzkpfwvi_b_w"
+  ,"lib_pzkpfwvi_b_camo_w"
   ,"lib_pzkpfwv_no_lods"
   ,"lib_sdkfz124"
-  ,"lib_dak_flakpanzeriv"
+  ,"lib_dak_flakpanzeriv_wirbelwind"
   ,"lib_dak_sdkfz251"
   ,"lib_sdkfz_7_aa_koth"
   ,"lib_dak_sdkfz_7_aa"
@@ -279,7 +306,8 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"spe_pzkpfwvi_h1"
   ,"spe_nashorn"
   ,"lib_sdkfz251_ffv"
-  ,"stug_iii_g_ws"
+  ,"lib_stug_iii_g_w"
+  ,"lib_stug_iii_g_ws_w"
   ,"lib_opelblitz_open_y_camo"
   ,"lib_opelblitz_open_g_camo"
   ,"lib_opelblitz_tent_y_camo"
@@ -290,6 +318,7 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_dak_pzkpfwiv_h"
   ,"lib_sdkfz_7_aa_w_dlv"
   ,"lib_pzkpfwvi_e"
+  ,"lib_pzkpfwvi_e_w"
   ,"fa_t26_captured"
   ,"fa_pz38t"
   ,"lib_pzkpfwv"
@@ -299,6 +328,17 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_flakpanzeriv_wirbelwind_w"
   ,"lib_stug_iii_g_w"
   ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_222_ger_heer"
+  ,"fow_v_sdkfz_222_foliage_ger_heer"
+  ,"fow_v_sdkfz_234_1"
+  ,"fow_v_truppenfahrrad_ger_heer"
+  ,"fow_v_truppenfahrrad_ger_ss"
+  ,"fow_v_truppenfahrrad_ger_heer"
+  ,"fow_v_truppenfahrrad_ger_ss"
+  ,"fow_v_truppenfahrrad_ger_heer"
+  ,"fow_v_truppenfahrrad_ger_ss"
+  ,"fow_v_truppenfahrrad_ger_heer"
+  ,"fow_v_truppenfahrrad_ger_ss"
   ,"fow_ija_type95_hago_2_ija"
   ,"fow_ija_type95_hago_1_ija"
   ,"fa_panzer2_dak"
@@ -325,6 +365,11 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"fow_ija_type95_hago_1_jja"
   ,"fow_ija_type95_hago_2_jja"
   ,"fow_ija_type95_hago_3_jja"
+  ,"lib_SdKfz_7_AA_w"
+  ,"lib_SdKfz251_FFV_w"
+  ,"lib_SdKfz251_w"
+  ,"LIB_Kfz1_w"
+  ,"LIB_Kfz1_hood_w"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
 sov_vehicles_125ff9 = [
@@ -347,14 +392,15 @@ sov_vehicles_125ff9 = [
   ,"fa_valentinemk3_sov"
   ,"FA_BA1OM"
   ,"FA_BA64"
-  ];
-
-allies_vehicles_0d7fd7 = [
-  "lib_willys_mb"
+  ,"LIB_SU85"
   ,"lib_us6_tent"
   ,"lib_us6_open"
   ,"lib_us6_ammo"
   ,"lib_us6_bm13"
+  ];
+
+allies_vehicles_0d7fd7 = [
+  "lib_willys_mb"
   ,"lib_scout_m3"
   ,"spe_cckw_353"
   ,"spe_cckw_353_open"
@@ -392,7 +438,6 @@ allies_vehicles_0d7fd7 = [
   ,"lib_us6_bm13_singlefire"
   ,"lib_scout_m3_ffv"
   ,"lib_willys_mb"
-  ,"lib_sdkfz251_ffv"
   ,"spe_ffi_sdkfz250_1"
   ,"spe_ffi_r200_unarmed"
   ,"spe_ffi_r200_hood"
@@ -400,11 +445,14 @@ allies_vehicles_0d7fd7 = [
   ,"spe_ffi_opelblitz"
   ,"spe_ffi_opelblitz_open"
   ,"spe_ffi_opelblitz_ambulance"
+  ,"spe_opelblitz_ambulance_w"
+  ,"spe_opelblitz_ammo_w"
+  ,"spe_opelblitz_fuel_w"
+  ,"spe_opelblitz_parm_w"
   ,"spe_ffi_opelblitz_ammo"
   ,"spe_ffi_opelblitz_fuel"
   ,"spe_ffi_opelblitz_repair"
   ,"spe_fr_m16_halftrack"
-  ,"spe_fr_m3_halftrack_unarmed"
   ,"spe_fr_m3_halftrack"
   ,"spe_fr_m3_halftrack_ambulance"
   ,"spe_fr_m3_halftrack_ammo"
@@ -488,6 +536,8 @@ allies_vehicles_0d7fd7 = [
   ,"FA_DaimlerMk2"
   ,"FA_T17E1"
   ,"FA_DaimlerMk2_DR"
+  // Boat:
+  ,"lib_lci"
   ];
 
 static_sov_ba213a = [
@@ -497,6 +547,10 @@ static_sov_ba213a = [
   ,"LIB_Maxim_m30_trench"
   ,"LIB_BM37"
   ,"LIB_SU_SearchLight"
+  ,"lib_61k"
+  ,"lib_zis3"
+  ,"lib_maxim_m30_base"
+  ,"lib_maxim_m30_trench"
   ];
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
@@ -999,8 +1053,9 @@ A3E_RoadblockTemplates = [
 // A communication center contains two static weapons (in two corners of the communication center).
 // Random array. Possible static weapon types for communication centers.
 //For SPE templates only the bipod variants
-a3e_arr_comcenstaticweapons = [
+a3e_arr_ComCenStaticWeapons = [
   "lib_flak_36"
+  ,"lib_flak_36_w"
   ,"lib_flak_36_aa"
   ,"spe_st_mg34_bipod"
   ,"spe_st_mg42_bipod"
@@ -1010,6 +1065,7 @@ a3e_arr_comcenstaticweapons = [
   ,"spe_st_mg34_lafette_deployed"
   ,"spe_ger_searchlight"
   ,"spe_flak_30"
+  ,"spe_flak_30_w"
   ,"spe_flak_38"
   ,"spe_pak40"
   ,"spe_lefh18_at"
@@ -1022,10 +1078,13 @@ a3e_arr_comcenstaticweapons = [
   ,"lib_mg42_lafette_trench"
   ,"lib_mg42_lafette_low"
   ,"lib_flak_38"
+  ,"lib_flak_38_w"
   ,"lib_flakvierling_38"
+  ,"lib_flakvierling_38_w"
   ,"lib_pak40_g"
   ,"spe_st_lefh18_at"
   ,"spe_st_pak40"
+  ,"spe_st_pak40_w"
   ,"lib_lefh18_at"
   ,"lib_nebelwerfer41"
   ,"lib_nebelwerfer41_camo"
@@ -1039,18 +1098,15 @@ allies_static_f39100 =
   [
   // Static IND weapons:
   "lib_m1919_m2"
-  ,"lib_maxim_m30_base"
-  ,"lib_zis3"
   ,"spe_m1919a6_bipod"
   ,"spe_m1919_m2"
   ,"spe_m2_m3"
   ,"spe_57mm_m1"
   ,"spe_m45_quadmount"
-  ,"lib_61k"
-  ,"lib_su_searchlight"
-  ,"lib_maxim_m30_trench"
   ,"i_g_hmg_02_high_f"
   ,"fow_w_vickers_uk"
+  ,"spe_105mm_m3"
+  ,"spe_105mm_m3_direct"
   // // mortar
   // ,"lib_bm37"
   // ,"spe_m1_81"
@@ -1108,40 +1164,23 @@ a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_Escape_MilitaryTraffic_E
 //Random array. Types of helicopters to spawn
 a3e_arr_O_attack_heli = [
 	"SPE_FW190F8"
+	,"LIB_DAK_FW190F8"
+	,"LIB_DAK_FW190F8_desert2"
 	,"LIB_FW190F8"
 	,"LIB_FW190F8_4"
 	,"LIB_FW190F8_5"
 	,"LIB_FW190F8_2"
 	,"LIB_FW190F8_3"
+	,"LIB_FW190F8_2_w"
+	,"LIB_FW190F8_3_w"
+	,"LIB_FW190F8_w"
+	,"LIB_dak_Ju87"
 	,"LIB_Ju87"
+	,"LIB_Ju87_w"
 	,"LIB_Ju87_Italy"
 	,"LIB_MKHL_Ju87"
 	,"fow_va_a6m_green"
 	,"fow_va_a6m_white"
-
-	// ,"SPE_P47"
-	// ,"LIB_Pe2"
-	// ,"LIB_P39"
-	// ,"LIB_RA_P39_2"
-	// ,"LIB_RA_P39_3"
-	// ,"SPE_P47"
-	// ,"LIB_Li2"
-	// ,"LIB_P39"
-	// ,"LIB_Pe2"
-	// ,"LIB_Li2"
-	// ,"LIB_P39"
-	// ,"LIB_Pe2"
-	// ,"LIB_P39"
-	// ,"SPE_P47"
-	// ,"LIB_Pe2"
-	// ,"LIB_Pe2_2"
-	// ,"LIB_SU85"
-	// ,"LIB_Li2"
-	// ,"LIB_P47"
-	// ,"LIB_P39"
-	// ,"LIB_Pe2"
-	// ,"LIB_P39"
-
 	];
 a3e_arr_O_transport_heli = [
 	"LIB_Ju52"
@@ -1151,7 +1190,38 @@ a3e_arr_O_pilots = [
 	"LIB_GER_pilot"
 	,"SPE_GER_pilot"
 	];
+
+sov_planes_a36948 = [
+  "LIB_Li2"
+  ,"LIB_P39"
+  ,"LIB_Pe2"
+  ,"LIB_Pe2_2"
+  ,"LIB_Li2"
+  ];
+
+allies_planes_0ae895 = [
+  "LIB_P47"
+  ,"SPE_P47"
+  ,"fow_va_f6f"
+  ,"fow_va_f6f_kick"
+  ,"fow_va_f6f_sweet"
+  ,"fow_va_f6f_c"
+  ,"fow_va_f6f_c_death"
+  ,"fow_va_f6f_c_kick"
+  ,"fow_va_f6f_c_sweet"
+  ,"LIB_US_NAC_P39_2"
+  ,"LIB_US_NAC_P39_3"
+  ,"LIB_US_NAC_P39"
+  ,"LIB_RAAF_P39"
+  ,"LIB_ACI_P39"
+
+  ,"lib_cg4_waco"
+  // ,"LIB_RA_P39_2"
+  // ,"LIB_RA_P39_3"
+  ];
+
 a3e_arr_I_transport_heli = [
+        // Only transport planes from allies
 	"LIB_HORSA"
 	,"LIB_C47_Skytrain"
 	];
@@ -1730,12 +1800,24 @@ a3e_arr_extraction_chopper_escort = [
 // fn_PopulateAquaticPatrol
 // boats that are spawned
 //////////////////////////////////////////////////////////////////
-a3e_arr_AquaticPatrols = ["SPEX_LCVP","LIB_LCM3_Armed","LIB_LCVP"];
+a3e_arr_AquaticPatrols = [
+  // "SPEX_LCVP"
+  "LIB_LCM3_Armed"
+  ,"LIB_LCVP"
+  ,"fow_usmc_lcvp"
+  ,"fow_usa_lcvp"
+  ,"lib_lca"
+  ,"lib_lci"
+  ,"lib_uk_lca"
+  ,"lib_uk_lci"
+  ,"c_rubberboat"
+  ];
 
 //////////////////////////////////////////////////////////////////
 // RunExtractionBoat.sqf
 // Boats that come to pick you up
 //////////////////////////////////////////////////////////////////
+// Only boats from allies exist. That's why they are used here.
 a3e_arr_extraction_boat = a3e_arr_AquaticPatrols;
 a3e_arr_extraction_boat_escort = a3e_arr_AquaticPatrols;
 
@@ -1778,7 +1860,7 @@ if(A3E_Param_SearchChopper==2) then {
 // EscapeSurprises.sqf
 // Classnames of leaflet drones, disabled if array is created but empty 
 //////////////////////////////////////////////////////////////////
-a3e_arr_leafletdrone = ["LIB_HORSA"];
+a3e_arr_leafletdrone = sov_planes_a36948 + allies_planes_0ae895;
 
 //////////////////////////////////////////////////////////////////
 // EscapeSurprises.sqf and CreateSearchDrone.sqf
@@ -1840,6 +1922,7 @@ a3e_arr_MortarSite = [
 	// ,"LIB_GrWr34"
 	,"lib_dak_flak_36_arty"
 	,"lib_flak_36_arty"
+	,"lib_flak_36_arty_w"
 	// ,"fow_v_type97_mortar_adv_ija"
 	// ,"lib_lefh18"
 	];
