@@ -701,6 +701,28 @@ a3e_arr_Escape_InfantryTypes = [
   ,"LNRD_Luftwaffe_radioman"
   ,"SG_sturmpanzer_unterofficer"
   ,"SG_sturmpanzer_officer"
+  ,"fow_s_ija_rifleman"
+  ,"fow_s_ija_rifleman_at"
+  ,"fow_s_ija_radio_operator"
+  ,"fow_s_ija_officer"
+  ,"fow_s_ija_nco"
+  ,"fow_s_ija_medic"
+  ,"fow_s_ija_type99_gunner"
+  ,"fow_s_ija_type99_asst"
+  ,"fow_s_ija_snlf_rifleman"
+  ,"fow_s_ija_snlf_radio_operator"
+  ,"fow_s_ija_snlf_nco"
+  ,"fow_s_ija_snlf_medic"
+  ,"fow_s_ija_snlf_type99_gunner"
+  ,"fow_s_ija_snlf_type99_asst"
+  ,"fow_s_ija_f_rifleman"
+  ,"fow_s_ija_f_rifleman_at"
+  ,"fow_s_ija_f_radio_operator"
+  ,"fow_s_ija_f_officer"
+  ,"fow_s_ija_f_nco"
+  ,"fow_s_ija_f_medic"
+  ,"fow_s_ija_f_type99_gunner"
+  ,"fow_s_ija_f_type99_asst"
 	];
 
 a3e_arr_Escape_InfantryTypes_Ind = [
@@ -836,9 +858,6 @@ a3e_arr_Escape_InfantryTypes_Ind = [
   ,"LIB_WP_Starszy_saper"
   ,"LIB_WP_Strzelec_ADS"
   ,"LIB_US_rifleman_ADS"
-  ,"LIB_US_pilot"
-  ,"LIB_US_tank_sergeant"
-  ,"LIB_US_tank_second_lieutenant"
   // ,"LIB_SOV_soldier_PPSH41"
   // ,"LIB_SOV_soldier_mosin_rifle_0"
   // ,"LIB_SOV_sergeant_PPSH41_0"
@@ -871,13 +890,10 @@ a3e_arr_Escape_InfantryTypes_Ind = [
   // ,"LIB_SOV_rifleman_ADS"
 	];
 
-a3e_arr_recon_InfantryTypes = [
-  "SPE_FSJ_Mortar_AmmoBearer"
-  ,"SPE_FSJ_HMG_AmmoBearer"
+ger_recon_inf_345c1c = [
+  "SPE_FSJ_HMG_AmmoBearer"
   ,"SPE_FSJ_AT_Soldier_Assistant"
   ,"SPE_FSJ_Assist_SquadLead"
-  ,"SPE_FSJ_Mortar_AGunner"
-  ,"SPE_FSJ_ahmgunner"
   ,"SPE_FSJ_AT_grenadier"
   ,"SPE_FSJ_LAT_Soldier"
   ,"SPE_FSJ_AT_soldier"
@@ -885,7 +901,6 @@ a3e_arr_recon_InfantryTypes = [
   ,"SPE_FSJ_Mortar_Gunner"
   ,"SPE_FSJ_hmgunner2"
   ,"SPE_FSJ_hmgunner"
-  ,"SPE_FSJ_amgunner"
   ,"SPE_FSJ_Mgunner2"
   ,"SPE_FSJ_Mgunner"
   ,"SPE_FSJ_medic"
@@ -895,7 +910,6 @@ a3e_arr_recon_InfantryTypes = [
   ,"SPE_FSJ_Soldier_STG44"
   ,"SPE_FSJ_sapper"
   ,"SPE_FSJ_sapper_gefr"
-  ,"SPE_FSJ_Lieutenant"
   ,"SPE_FSJ_Sniper"
   ,"SPE_FSJ_Sniper_FG42"
   ,"SPE_FSJ_SquadLead"
@@ -903,7 +917,6 @@ a3e_arr_recon_InfantryTypes = [
   ,"LIB_GER_scout_smgunner"
   ,"LIB_GER_scout_lieutenant"
   ,"LIB_GER_scout_mgunner"
-  ,"LIB_GER_radioman"
   ,"LIB_GER_scout_ober_rifleman"
   ,"LIB_GER_soldier_camo_base"
   ,"LIB_GER_soldier_camo2_base"
@@ -911,11 +924,25 @@ a3e_arr_recon_InfantryTypes = [
   ,"LIB_GER_soldier_camo4_base"
   ,"LIB_GER_soldier_camo5_base"
   ,"LIB_GER_scout_rifleman"
-  ,"LIB_GER_sapper"
-  ,"LIB_GER_sapper_gefr"
-  ,"LIB_GER_scout_unterofficer"
   ,"LIB_GER_scout_sniper"
-	];
+  ,"fow_s_ija_f_type99_gunner"
+  ,"fow_s_ija_f_type99_asst"
+  ,"fow_s_ija_f_rifleman"
+  ,"fow_s_ija_f_rifleman_at"
+  ,"fow_s_ija_snlf_type99_gunner"
+  ,"fow_s_ija_snlf_type99_asst"
+  ,"fow_s_ija_snlf_nco"
+  ,"fow_s_ija_snlf_radio_operator"
+  ,"fow_s_ija_snlf_rifleman"
+  ,"fow_s_ija_type99_gunner"
+  ,"fow_s_ija_rifleman"
+  ,"fow_s_ija_nco"
+  ,"fow_s_ija_officer"
+  ,"fow_s_ija_rifleman_at"
+  ];
+
+// Most likely to spawn recon types, but can spawn normal infantry
+a3e_arr_recon_InfantryTypes = ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + a3e_arr_Escape_InfantryTypes;
 
 a3e_arr_recon_I_InfantryTypes = a3e_arr_Escape_InfantryTypes_Ind;
 
