@@ -283,7 +283,6 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_opelblitz_open_y_camo"
   ,"lib_opelblitz_open_g_camo"
   ,"lib_opelblitz_tent_y_camo"
-  ,"lib_grwr34"
   ,"lib_stug_iii_g_ws"
   ,"lib_kfz1_mg42_camo"
   ,"lib_dak_kfz1_mg42"
@@ -317,8 +316,15 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"FA_Sdkfz234_4"
   ,"FA_BA64_Captured"
   ,"LIB_PzKpfwV"
-  ,"LIB_PzKpfwV_w"
+  ,"lib_pzkpfwv_w"
   ,"lib_pzkpfwvi_b_camo_w"
+  ,"fow_v_type97_truck_fuel_ija"
+  ,"fow_v_type97_truck_utility_ija"
+  ,"fow_v_type97_truck_open_ija"
+  ,"fow_v_type97_truck_ija"
+  ,"fow_ija_type95_hago_1_jja"
+  ,"fow_ija_type95_hago_2_jja"
+  ,"fow_ija_type95_hago_3_jja"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
 sov_vehicles_125ff9 = [
@@ -1015,7 +1021,6 @@ a3e_arr_comcenstaticweapons = [
   ,"lib_mg42_lafette"
   ,"lib_mg42_lafette_trench"
   ,"lib_mg42_lafette_low"
-  ,"lib_grwr34"
   ,"lib_flak_38"
   ,"lib_flakvierling_38"
   ,"lib_pak40_g"
@@ -1046,12 +1051,12 @@ allies_static_f39100 =
   ,"lib_maxim_m30_trench"
   ,"i_g_hmg_02_high_f"
   ,"fow_w_vickers_uk"
-  // mortar
-  ,"lib_bm37"
-  ,"spe_m1_81"
-  ,"lib_m2_60"
-  ,"fow_w_6pounder_usa"
-  ,"fow_w_m2_mortar_usa"
+  // // mortar
+  // ,"lib_bm37"
+  // ,"spe_m1_81"
+  // ,"lib_m2_60"
+  // ,"fow_w_6pounder_usa"
+  // ,"fow_w_m2_mortar_usa"
   ];
 
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind =
@@ -1111,6 +1116,8 @@ a3e_arr_O_attack_heli = [
 	,"LIB_Ju87"
 	,"LIB_Ju87_Italy"
 	,"LIB_MKHL_Ju87"
+	,"fow_va_a6m_green"
+	,"fow_va_a6m_white"
 
 	// ,"SPE_P47"
 	// ,"LIB_Pe2"
@@ -1830,10 +1837,11 @@ A3E_MortarSiteTemplates = [
 //////////////////////////////////////////////////////////////////
 a3e_arr_MortarSite = [
 	"SPE_ST_GrW278_1"
-	,"LIB_GrWr34"
-	,"LIB_FlaK_36_ARTY"
-	,"fow_v_type97_mortar_adv_ija"
-	,"lib_lefh18"
+	// ,"LIB_GrWr34"
+	,"lib_dak_flak_36_arty"
+	,"lib_flak_36_arty"
+	// ,"fow_v_type97_mortar_adv_ija"
+	// ,"lib_lefh18"
 	];
 
 //////////////////////////////////////////////////////////////////
