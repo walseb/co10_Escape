@@ -1188,8 +1188,7 @@ a3e_arr_Escape_AmmoDepot_StaticWeaponClasses = a3e_arr_ComCenStaticWeapons;
 // An ammo depot have one parked and empty vehicle of the following possible types.
 a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
 
-//Random array. Types of helicopters to spawn
-a3e_arr_O_attack_heli = [
+ger_planes_f762dc = [
 	"SPE_FW190F8"
 	,"LIB_DAK_FW190F8"
 	,"LIB_DAK_FW190F8_desert2"
@@ -1209,6 +1208,9 @@ a3e_arr_O_attack_heli = [
 	,"fow_va_a6m_green"
 	,"fow_va_a6m_white"
 	];
+
+//Random array. Types of helicopters to spawn
+a3e_arr_O_attack_heli = ger_planes_f762dc + sov_planes_a36948 + allies_planes_0ae895;
 a3e_arr_O_transport_heli = [
 	"LIB_Ju52"
 	// ,"LIB_Li2"
@@ -1252,6 +1254,7 @@ a3e_arr_I_transport_heli = [
 	"LIB_HORSA"
 	,"LIB_C47_Skytrain"
 	];
+
 a3e_arr_I_pilots = [
 	"LIB_US_Pilot"
 	,"LIB_US_Pilot_2"
@@ -1887,7 +1890,7 @@ if(A3E_Param_SearchChopper==2) then {
 // EscapeSurprises.sqf
 // Classnames of leaflet drones, disabled if array is created but empty 
 //////////////////////////////////////////////////////////////////
-a3e_arr_leafletdrone = sov_planes_a36948 + allies_planes_0ae895;
+a3e_arr_leafletdrone = [];
 
 //////////////////////////////////////////////////////////////////
 // EscapeSurprises.sqf and CreateSearchDrone.sqf
@@ -1958,7 +1961,7 @@ a3e_arr_MortarSite = [
 // fn_CallCAS.sqf
 // Classnames of planes for the CAS module
 //////////////////////////////////////////////////////////////////
-a3e_arr_CASplane = a3e_arr_O_attack_heli;
+a3e_arr_CASplane = ger_planes_f762dc;
 
 //////////////////////////////////////////////////////////////////
 // fn_CrashSite
