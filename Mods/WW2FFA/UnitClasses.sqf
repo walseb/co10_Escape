@@ -122,14 +122,14 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"lib_gazm1"
       ,"lib_gazm1_dirty"
       ,"lib_gazm1_sov_camo_sand"
-      ,"lib_zis6_parm"
-      ,"lib_zis5v"
+      // ,"lib_zis6_parm"
+      // ,"lib_zis5v"
       ,"lib_zis5v_fuel"
       ,"lib_zis5v_med"
       // ,"lib_us_gmc_tent"
       // ,"lib_us_m3_halftrack"
       // ,"lib_us_scout_m3"
-      ,"lib_uk_willys_mb"
+      // ,"lib_uk_willys_mb"
       ,"lib_uk_willys_mb_hood"
       ,"lib_willys_mb_ambulance"
       ,"lib_us6_ammo"
@@ -138,11 +138,11 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"lib_us6_open_cargo"
       ,"lib_us6_tent"
       ,"lib_us6_tent_cargo"
-      ,"lib_willys_mb"
-      ,"lib_willys_mb_hood"
-      ,"lib_opelblitz_open_y_camo"
-      ,"lib_opelblitz_open_g_camo"
-      ,"lib_opelblitz_tent_y_camo"
+      // ,"lib_willys_mb"
+      // ,"lib_willys_mb_hood"
+      // ,"lib_opelblitz_open_y_camo"
+      // ,"lib_opelblitz_open_g_camo"
+      // ,"lib_opelblitz_tent_y_camo"
       ,"lib_opelblitz_fuel"
       ,"lib_opelblitz_ambulance"
       ,"lib_opelblitz_parm"
@@ -307,8 +307,18 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"fow_v_sdkfz_250_9_ger_heer"
   ,"fow_v_sdkfz_251_camo_ger_heer"
   ,"fow_v_panther_ger_heer"
+  ,"fow_v_panther_camo_foliage_ger_heer"
   ,"fow_v_type97_truck_utility_ija"
   ,"fow_ija_type95_hago_3_ija"
+  ,"FA_Sdkfz231_DAK"
+  ,"FA_BA10M_Captured"
+  ,"FA_Sdkfz231"
+  ,"FA_Sdkfz234"
+  ,"FA_Sdkfz234_4"
+  ,"FA_BA64_Captured"
+  ,"LIB_PzKpfwV"
+  ,"LIB_PzKpfwV_w"
+  ,"lib_pzkpfwvi_b_camo_w"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
 sov_vehicles_125ff9 = [
@@ -329,6 +339,8 @@ sov_vehicles_125ff9 = [
   ,"fa_t26"
   ,"fa_kv1"
   ,"fa_valentinemk3_sov"
+  ,"FA_BA1OM"
+  ,"FA_BA64"
   ];
 
 allies_vehicles_0d7fd7 = [
@@ -467,6 +479,9 @@ allies_vehicles_0d7fd7 = [
   ,"fow_v_m4a2_usa"
   ,"fow_v_cromwell_uk"
   ,"fow_v_universalcarrier"
+  ,"FA_DaimlerMk2"
+  ,"FA_T17E1"
+  ,"FA_DaimlerMk2_DR"
   ];
 
 static_sov_ba213a = [
@@ -1007,8 +1022,8 @@ a3e_arr_comcenstaticweapons = [
   ,"spe_st_lefh18_at"
   ,"spe_st_pak40"
   ,"lib_lefh18_at"
-  ,"lib_lefh18"
   ,"lib_nebelwerfer41"
+  ,"lib_nebelwerfer41_camo"
   ,"fow_w_6pounder_ija"
 	];
 
@@ -1029,6 +1044,8 @@ allies_static_f39100 =
   ,"lib_61k"
   ,"lib_su_searchlight"
   ,"lib_maxim_m30_trench"
+  ,"i_g_hmg_02_high_f"
+  ,"fow_w_vickers_uk"
   // mortar
   ,"lib_bm37"
   ,"spe_m1_81"
@@ -1093,6 +1110,7 @@ a3e_arr_O_attack_heli = [
 	,"LIB_FW190F8_3"
 	,"LIB_Ju87"
 	,"LIB_Ju87_Italy"
+	,"LIB_MKHL_Ju87"
 
 	// ,"SPE_P47"
 	// ,"LIB_Pe2"
@@ -1815,6 +1833,7 @@ a3e_arr_MortarSite = [
 	,"LIB_GrWr34"
 	,"LIB_FlaK_36_ARTY"
 	,"fow_v_type97_mortar_adv_ija"
+	,"lib_lefh18"
 	];
 
 //////////////////////////////////////////////////////////////////
