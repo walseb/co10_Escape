@@ -521,6 +521,13 @@
 			"name" : "co10_Escape_WW2FFA_US_vs_GER-US"
 		},
 		{
+			"island" : "Lybor Winter",
+			"sqm": "Lybor",
+			"mod" : "WW2FFA US vs GER-US",
+			"replace" : {},
+			"name" : "co10_Escape_WW2FFA_US_vs_GER-US"
+		},
+		{
 			"island": "Staszow",
 			"sqm": "Staszow",
 			"mod" : "WW2FFA US vs GER-US",
