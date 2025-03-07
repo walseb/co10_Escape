@@ -1187,7 +1187,7 @@ ger_planes_f762dc = [
 	];
 
 //Random array. Types of helicopters to spawn
-a3e_arr_O_attack_heli = ger_planes_f762dc + sov_planes_a36948 + allies_planes_0ae895;
+a3e_arr_O_attack_heli = ger_planes_f762dc;
 a3e_arr_O_transport_heli = [
 	"LIB_Ju52"
 	// ,"LIB_Li2"
@@ -1873,7 +1873,7 @@ a3e_arr_leafletdrone = [];
 // EscapeSurprises.sqf and CreateSearchDrone.sqf
 // Classnames of drones
 //////////////////////////////////////////////////////////////////
-a3e_arr_searchdrone = a3e_arr_O_attack_heli;
+a3e_arr_searchdrone = ger_planes_f762dc + sov_planes_a36948 + allies_planes_0ae895;
 
 //////////////////////////////////////////////////////////////////
 // fn_AmbientInfantry
