@@ -46,47 +46,21 @@ A3E_PrisonTemplates = [
 	];
 
 // Random array. Start position guard types around the prison
-a3e_arr_Escape_StartPositionGuardTypes = [
-	"LIB_WP_Strzelec"
-	,"LIB_WP_Starszy_strzelec"
-	,"LIB_WP_Mgunner"
-	,"LIB_WP_AT_grenadier"
-	,"LIB_WP_Stggunner"
-	,"LIB_WP_Sierzant"
-	,"LIB_WP_Porucznic"
-	,"LIB_WP_Sniper"
-	,"LIB_WP_Medic"
-	,"LIB_WP_Radioman"
-	,"LIB_WP_Saper"
-	,"LIB_WP_Starszy_saper"
-	,"LIB_WP_Strzelec_ADS"
-	,"LIB_US_rifleman_ADS"
+// "LIB_WP_Strzelec"
+// ,"LIB_WP_Starszy_strzelec"
+// ,"LIB_WP_Mgunner"
+// ,"LIB_WP_AT_grenadier"
+// ,"LIB_WP_Stggunner"
+// ,"LIB_WP_Sierzant"
+// ,"LIB_WP_Porucznic"
+// ,"LIB_WP_Sniper"
+// ,"LIB_WP_Medic"
+// ,"LIB_WP_Radioman"
+// ,"LIB_WP_Saper"
+// ,"LIB_WP_Starszy_saper"
+// ,"LIB_WP_Strzelec_ADS"
 
-	// "LIB_US_rifleman"
-	// ,"LIB_US_rifleman"
-	// ,"LIB_US_second_lieutenant"
-	// ,"LIB_US_first_lieutenant"
-	// ,"LIB_US_rifleman"
-	// "SPE_Milice_FG_Sentry"
-	// ,"SPE_Milice_FG_Sentry_Sten"
-	// ,"SPE_Milice_FG_SquadLead"
-	// ,"SPE_Milice_FG_Rifleman"
-	// ,"SPE_Milice_FG_Assist_Autorifleman"
-	// ,"SPE_Milice_FG_Autorifleman"
-	// ,"LIB_GER_unequip"
-	// ,"LIB_GER_rifleman"
-	// ,"LIB_GER_gun_crew"
-	// ,"LIB_GER_gun_unterofficer"
-	// ,"LIB_GER_ober_rifleman"
-	// ,"LIB_US_rifleman"
-	// ,"LIB_US_rifleman"
-	// ,"LIB_US_second_lieutenant"
-	// ,"LIB_US_first_lieutenant"
-	// ,"LIB_US_rifleman"
-      // "SPE_ST_R200_Hood"
-      // ,"SPE_ST_OpelBlitz"
-
-	];
+a3e_arr_Escape_StartPositionGuardTypes = a3e_arr_Escape_InfantryTypes + sov_infantry_24c563;
 	
 // Prison backpacks
 a3e_arr_PrisonBackpacks = [
@@ -725,6 +699,39 @@ a3e_arr_Escape_InfantryTypes = [
   ,"fow_s_ija_f_type99_asst"
 	];
 
+sov_infantry_24c563 = [
+  "LIB_SOV_soldier_PPSH41"
+  ,"LIB_SOV_soldier_mosin_rifle_0"
+  ,"LIB_SOV_sergeant_PPSH41_0"
+  ,"LIB_SOV_lieutenant_PPSH41"
+  ,"LIB_SOV_rifleman"
+  ,"LIB_SOV_smgunner"
+  ,"LIB_SOV_LC_rifleman"
+  ,"LIB_SOV_mgunner"
+  ,"LIB_SOV_medic"
+  ,"LIB_SOV_AT_soldier"
+  ,"LIB_SOV_AT_grenadier"
+  ,"LIB_SOV_staff_sergeant"
+  ,"LIB_SOV_sergeant"
+  ,"LIB_SOV_p_officer"
+  ,"LIB_SOV_lieutenant"
+  ,"LIB_SOV_first_lieutenant"
+  ,"LIB_SOV_captain"
+  ,"LIB_SOV_scout_rifleman"
+  ,"LIB_SOV_scout_smgunner"
+  ,"LIB_SOV_scout_mgunner"
+  ,"LIB_SOV_scout_sergeant"
+  ,"LIB_SOV_scout_p_officer"
+  ,"LIB_SOV_scout_lieutenant"
+  ,"LIB_SOV_scout_sniper"
+  ,"LIB_SOV_operator"
+  ,"LIB_SOV_sapper"
+  ,"LIB_SOV_assault_smgunner"
+  ,"LIB_SOV_assault_mgunner"
+  ,"LIB_SOV_assault_sergeant"
+  ,"LIB_SOV_rifleman_ADS"
+  ];
+
 a3e_arr_Escape_InfantryTypes_Ind = [
   "SPE_US_Rangers_Rifleman_AmmoBearer"
   ,"SPE_US_Rangers_Assist_Autorifleman"
@@ -858,36 +865,6 @@ a3e_arr_Escape_InfantryTypes_Ind = [
   ,"LIB_WP_Starszy_saper"
   ,"LIB_WP_Strzelec_ADS"
   ,"LIB_US_rifleman_ADS"
-  // ,"LIB_SOV_soldier_PPSH41"
-  // ,"LIB_SOV_soldier_mosin_rifle_0"
-  // ,"LIB_SOV_sergeant_PPSH41_0"
-  // ,"LIB_SOV_lieutenant_PPSH41"
-  // ,"LIB_SOV_rifleman"
-  // ,"LIB_SOV_smgunner"
-  // ,"LIB_SOV_LC_rifleman"
-  // ,"LIB_SOV_mgunner"
-  // ,"LIB_SOV_medic"
-  // ,"LIB_SOV_AT_soldier"
-  // ,"LIB_SOV_AT_grenadier"
-  // ,"LIB_SOV_staff_sergeant"
-  // ,"LIB_SOV_sergeant"
-  // ,"LIB_SOV_p_officer"
-  // ,"LIB_SOV_lieutenant"
-  // ,"LIB_SOV_first_lieutenant"
-  // ,"LIB_SOV_captain"
-  // ,"LIB_SOV_scout_rifleman"
-  // ,"LIB_SOV_scout_smgunner"
-  // ,"LIB_SOV_scout_mgunner"
-  // ,"LIB_SOV_scout_sergeant"
-  // ,"LIB_SOV_scout_p_officer"
-  // ,"LIB_SOV_scout_lieutenant"
-  // ,"LIB_SOV_scout_sniper"
-  // ,"LIB_SOV_operator"
-  // ,"LIB_SOV_sapper"
-  // ,"LIB_SOV_assault_smgunner"
-  // ,"LIB_SOV_assault_mgunner"
-  // ,"LIB_SOV_assault_sergeant"
-  // ,"LIB_SOV_rifleman_ADS"
 	];
 
 ger_recon_inf_345c1c = [
@@ -1903,7 +1880,8 @@ a3e_arr_searchdrone = a3e_arr_O_attack_heli;
 // only INS is used
 //is this even used?
 //////////////////////////////////////////////////////////////////
-a3e_arr_AmbientInfantry_Inf_INS = a3e_arr_Escape_InfantryTypes;
+a3e_arr_AmbientInfantry_Inf_INS = sov_infantry_24c563;
+// a3e_arr_AmbientInfantry_Inf_INS = a3e_arr_Escape_InfantryTypes;
 a3e_arr_AmbientInfantry_Inf_GUE = a3e_arr_Escape_InfantryTypes_Ind;
 
 //////////////////////////////////////////////////////////////////

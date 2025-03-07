@@ -1,5 +1,3 @@
-
-
 //SearchLeader
 
 a3e_var_knownPositionHelperObject = "Land_HelipadEmpty_F";
@@ -42,8 +40,8 @@ missionNamespace setvariable["MaxSpawnDistance",2000];
 missionNamespace setvariable["DebugRoadblocks",false];
 missionNamespace setvariable["MinRoadblockSpawnDistance",1500];
 missionNamespace setvariable["MaxRoadblockSpawnDistance",2000];
-missionNamespace setvariable["MinRoadblockDistance",750];
-missionNamespace setvariable["MaxNumberOfRoadblocks",15];
+missionNamespace setvariable["MinRoadblockDistance",1500];
+missionNamespace setvariable["MaxNumberOfRoadblocks",30];
 
 
 //Crashsites
