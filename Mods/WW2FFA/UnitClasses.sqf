@@ -89,6 +89,45 @@ a3e_arr_PrisonBackpackWeapons pushback ["LIB_P38","LIB_8Rnd_9x19"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_TT33","LIB_8Rnd_762x25"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_WaltherPPK","LIB_7Rnd_9x19"];
 
+civ_vehicles_df526f = 
+  [
+    "lib_civ_ffi_citc4"
+    ,"lib_civ_ffi_citc4_4"
+    ,"lib_civ_ffi_citc4_2"
+    ,"lib_civ_ffi_citc4_2"
+    ,"lib_civ_ffi_citc4_3"
+    ,"lib_civ_ffi_citc4_5"
+    ,"Renault_AG_1910_Red"
+    ,"Peugeot_bebe_1916_open_yellow"
+    ,"Peugeot_bebe_1916_open_white"
+    ,"Peugeot_bebe_1916_open_red"
+    ,"Peugeot_bebe_1916_open_grey"
+    ,"Peugeot_bebe_1916_open"
+    ,"Peugeot_bebe_1916_open_brown"
+    ,"Peugeot_bebe_1916_open_blue"
+    ,"Peugeot_bebe_1916_yellow"
+    ,"Peugeot_bebe_1916_white"
+    ,"Peugeot_bebe_1916_red"
+    ,"Peugeot_bebe_1916_grey"
+    ,"Peugeot_bebe_1916"
+    ,"Peugeot_bebe_1916_brown"
+    ,"Peugeot_bebe_1916_blue"
+    ,"peugeot_500cc"
+    ,"Mercedes_race_1914"
+    ,"legano_1908_open"
+    ,"legano_1908"
+    ,"fordT_truck_tonneau"
+    ,"fordT_truck_benne"
+    ,"fordT_truck_bache"
+    ,"charette_cheval"
+    ,"charette"
+    ,"charette2"
+    ,"Cadillac1903_truck"
+    ,"Cadillac1903_4seat"
+    ,"Cadillac1903_2seat"
+    ,"Berlier_cba"
+  ];
+
 // Random array. Civilian vehicle classes for ambient traffic.
 a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       "spe_st_r200_hood"
@@ -128,46 +167,11 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"fow_v_truppenfahrrad_ger_ss"
       ,"fow_v_truppenfahrrad_ger_heer"
       ,"fow_v_truppenfahrrad_ger_ss"
-      ,"lib_civ_ffi_citc4"
-      ,"lib_civ_ffi_citc4_4"
-      ,"lib_civ_ffi_citc4_2"
-      ,"lib_civ_ffi_citc4_2"
-      ,"lib_civ_ffi_citc4_3"
-      ,"lib_civ_ffi_citc4_5"
       ,"lib_gazm1_ffi"
       ,"lib_gazm1_ffi_camo_sand"
       ,"lib_gazm1_ffi_camo"
       ,"lib_gazm1_ffi_sand"
-      ,"Renault_AG_1910_Red"
-      ,"Peugeot_bebe_1916_open_yellow"
-      ,"Peugeot_bebe_1916_open_white"
-      ,"Peugeot_bebe_1916_open_red"
-      ,"Peugeot_bebe_1916_open_grey"
-      ,"Peugeot_bebe_1916_open"
-      ,"Peugeot_bebe_1916_open_brown"
-      ,"Peugeot_bebe_1916_open_blue"
-      ,"Peugeot_bebe_1916_yellow"
-      ,"Peugeot_bebe_1916_white"
-      ,"Peugeot_bebe_1916_red"
-      ,"Peugeot_bebe_1916_grey"
-      ,"Peugeot_bebe_1916"
-      ,"Peugeot_bebe_1916_brown"
-      ,"Peugeot_bebe_1916_blue"
-      ,"peugeot_500cc"
-      ,"Mercedes_race_1914"
-      ,"legano_1908_open"
-      ,"legano_1908"
-      ,"fordT_truck_tonneau"
-      ,"fordT_truck_benne"
-      ,"fordT_truck_bache"
-      ,"charette_cheval"
-      ,"charette"
-      ,"charette2"
-      ,"Cadillac1903_truck"
-      ,"Cadillac1903_4seat"
-      ,"Cadillac1903_2seat"
-      ,"Berlier_cba"
-  ];
+  ] + civ_vehicles_df526f;
 
 // Random array. Vehicle classes (preferrably trucks) transporting enemy reinforcements.
 a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
@@ -571,7 +575,7 @@ allies_vehicles_0d7fd7 = [
   ,"lib_lci"
   ];
 
-static_sov_ba213a = [
+sov_static_ba213a = [
   "LIB_Zis3"
   ,"LIB_Maxim_M30_base"
   ,"LIB_Maxim_m30_base"
@@ -608,7 +612,7 @@ static_sov_ba213a = [
   ];
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
-  static_sov_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
+  sov_static_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
 
 // Random array. General infantry types. E.g. village patrols, ambient infantry, etc. (for ammo depot guards and communication center guards see further down in this file at fn_InitGuardedLocations)
 a3e_arr_Escape_InfantryTypes = [
@@ -1243,7 +1247,7 @@ a3e_arr_ComCenStaticWeapons = [
 	];
 
 // Random array. A roadblock has a manned vehicle. This array contains possible manned vehicles (can be of any kind, like cars, armored and statics).
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons;
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_ComCenStaticWeapons;
 
 allies_static_f39100 = 
   [
@@ -1267,7 +1271,7 @@ allies_static_f39100 =
   ];
 
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind =
-  allies_transport_5a712a + allies_static_f39100 + allies_static_f39100 + allies_static_f39100 + allies_vehicles_0d7fd7;
+  allies_static_f39100;
 
 // Random array. Motorized search groups are sometimes sent to look for you. This array contains possible class definitions for the vehicles.
 a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses = a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
@@ -1293,16 +1297,16 @@ A3E_ComCenterTemplates = [
 	];
 
 // Random array. Light armored vehicles guarding the communication centers.
-a3e_arr_ComCenDefence_lightArmorClasses = a3e_arr_Escape_RoadBlock_MannedVehicleTypes;
+a3e_arr_ComCenDefence_lightArmorClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons;
 // Random array. Heavy armored vehicles guarding the communication centers.
-a3e_arr_ComCenDefence_heavyArmorClasses = a3e_arr_Escape_RoadBlock_MannedVehicleTypes;
+a3e_arr_ComCenDefence_heavyArmorClasses = a3e_arr_ComCenDefence_lightArmorClasses;
 
 // A communication center have two parked and empty vehicles of the following possible types.
 a3e_arr_ComCenParkedVehicles = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 //Should be civilian, as there are no civ vehicles its a normal enemy truck
-a3e_arr_Escape_EnemyCivilianCarTypes = a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses;
+a3e_arr_Escape_EnemyCivilianCarTypes = civ_vehicles_df526f;
 
 // Vehicles, weapons and ammo at ammo depots
 
@@ -1310,7 +1314,7 @@ a3e_arr_Escape_EnemyCivilianCarTypes = a3e_arr_Escape_MilitaryTraffic_CivilianVe
 a3e_arr_Escape_AmmoDepot_StaticWeaponClasses = a3e_arr_ComCenStaticWeapons;
 
 // An ammo depot have one parked and empty vehicle of the following possible types.
-a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
+a3e_arr_Escape_AmmoDepot_ParkedVehicleClasses = a3e_arr_ComCenParkedVehicles;
 
 ger_planes_f762dc = [
 	"SPE_FW190F8"
@@ -1951,16 +1955,10 @@ A3E_IntelItems = [
 // Basic fallback is always Heli extraction
 // Available types: a3e_arr_extractiontypes = ["air","land","sea"];
 //////////////////////////////////////////////////////////////////
-if (isClass(configFile >> "CfgPatches" >> "spex_tem_utah_beach")) 
-then {
-	a3e_arr_extractiontypes = [
-	"land"
-	,"sea"];
-		} 
-else {
-	a3e_arr_extractiontypes = [
-	"land"];
-	};
+a3e_arr_extractiontypes = [
+  "land"
+  ,"sea"
+  ];
 
 //////////////////////////////////////////////////////////////////
 // RunExtraction.sqf
@@ -2058,9 +2056,9 @@ a3e_arr_searchdrone = ger_planes_f762dc;
 // only INS is used
 //is this even used?
 //////////////////////////////////////////////////////////////////
-a3e_arr_AmbientInfantry_Inf_INS = sov_infantry_24c563;
-// a3e_arr_AmbientInfantry_Inf_INS = a3e_arr_Escape_InfantryTypes;
-a3e_arr_AmbientInfantry_Inf_GUE = a3e_arr_Escape_InfantryTypes_Ind;
+a3e_arr_AmbientInfantry_Inf_INS = a3e_arr_Escape_InfantryTypes;
+a3e_arr_AmbientInfantry_Inf_GUE = sov_infantry_24c563;
+// a3e_arr_AmbientInfantry_Inf_GUE = a3e_arr_Escape_InfantryTypes_Ind;
 
 //////////////////////////////////////////////////////////////////
 // fn_InitGuardedLocations
