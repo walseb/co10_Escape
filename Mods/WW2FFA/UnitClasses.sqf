@@ -107,20 +107,19 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"lib_uk_willys_mb_hood"
       ,"lib_willys_mb_ambulance"
       ,"lib_us6_ammo"
-      // ,"lib_us6_bm13"
-      ,"lib_us6_open"
-      ,"lib_us6_open_cargo"
-      ,"lib_us6_tent"
-      ,"lib_us6_tent_cargo"
+      // ,"lib_us6_open"
+      // ,"lib_us6_open_cargo"
+      // ,"lib_us6_tent"
+      // ,"lib_us6_tent_cargo"
       // ,"lib_willys_mb"
       // ,"lib_willys_mb_hood"
       // ,"lib_opelblitz_open_y_camo"
       // ,"lib_opelblitz_open_g_camo"
       // ,"lib_opelblitz_tent_y_camo"
-      ,"lib_opelblitz_fuel"
-      ,"lib_opelblitz_ambulance"
-      ,"lib_opelblitz_parm"
-      ,"lib_opelblitz_ammo"
+      // ,"lib_opelblitz_fuel"
+      // ,"lib_opelblitz_ambulance"
+      // ,"lib_opelblitz_parm"
+      // ,"lib_opelblitz_ammo"
       ,"fow_v_truppenfahrrad_ger_heer"
       ,"fow_v_truppenfahrrad_ger_ss"
       ,"fow_v_truppenfahrrad_ger_heer"
@@ -139,6 +138,35 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"lib_gazm1_ffi_camo_sand"
       ,"lib_gazm1_ffi_camo"
       ,"lib_gazm1_ffi_sand"
+      ,"Renault_AG_1910_Red"
+      ,"Peugeot_bebe_1916_open_yellow"
+      ,"Peugeot_bebe_1916_open_white"
+      ,"Peugeot_bebe_1916_open_red"
+      ,"Peugeot_bebe_1916_open_grey"
+      ,"Peugeot_bebe_1916_open"
+      ,"Peugeot_bebe_1916_open_brown"
+      ,"Peugeot_bebe_1916_open_blue"
+      ,"Peugeot_bebe_1916_yellow"
+      ,"Peugeot_bebe_1916_white"
+      ,"Peugeot_bebe_1916_red"
+      ,"Peugeot_bebe_1916_grey"
+      ,"Peugeot_bebe_1916"
+      ,"Peugeot_bebe_1916_brown"
+      ,"Peugeot_bebe_1916_blue"
+      ,"peugeot_500cc"
+      ,"Mercedes_race_1914"
+      ,"legano_1908_open"
+      ,"legano_1908"
+      ,"fordT_truck_tonneau"
+      ,"fordT_truck_benne"
+      ,"fordT_truck_bache"
+      ,"charette_cheval"
+      ,"charette"
+      ,"charette2"
+      ,"Cadillac1903_truck"
+      ,"Cadillac1903_4seat"
+      ,"Cadillac1903_2seat"
+      ,"Berlier_cba"
   ];
 
 // Random array. Vehicle classes (preferrably trucks) transporting enemy reinforcements.
@@ -344,6 +372,29 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_SdKfz251_w"
   ,"LIB_Kfz1_w"
   ,"LIB_Kfz1_hood_w"
+  ,"wwi_MarkIMale_toit"
+  ,"wwi_MarkIMale_poulie"
+  ,"wwi_MarkIMale_nocart"
+  ,"wwi_MarkIMale_desert"
+  ,"wwi_MarkIMale"
+  ,"rollsroyceac"
+  ,"Ford_T_MG"
+  ,"fiat_Omsky"
+  ,"lancia_1zM"
+  ,"lancia_1z"
+  ,"fiat15_ter_tonneau"
+  ,"fiat15_ter_decapote"
+  ,"fiat15_ter_amb"
+  ,"fiat15_ter"
+  ,"wwi_schneider_ca1"
+  ,"wwi_ft17_tsf"
+  ,"wwi_ft17_8mm_girod"
+  ,"wwi_ft17_75BS"
+  ,"wwi_ft17_2018"
+  ,"wwi_ft17_37mm_girod"
+  ,"peugeot_1914"
+  ,"Renault_french_army_AG_1910_Red"
+  ,"Berlier_cba_fr"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
 sov_vehicles_125ff9 = [
@@ -371,6 +422,12 @@ sov_vehicles_125ff9 = [
   ,"lib_us6_open"
   ,"lib_us6_ammo"
   ,"lib_us6_bm13"
+  ,"wwi_MarkIMaleCaptured"
+  ,"wwi_A7v_nu"
+  ,"Daimler_marienfeld_benne"
+  ,"Daimler_marienfeld_bache"
+  ,"Daimler_marienfeld_arceau"
+  ,"Ehrhardt"
   ];
 
 allies_vehicles_0d7fd7 = [
@@ -525,6 +582,18 @@ static_sov_ba213a = [
   ,"lib_zis3"
   ,"lib_maxim_m30_base"
   ,"lib_maxim_m30_trench"
+  ,"wwi_MG08_low"
+  ,"wwi_MG08"
+  ,"wwi_MG08_noarmour"
+  ,"Krupp_280_coastal"
+  ,"Fk96na_2016"
+  ,"wwi_lmg1914_aa"
+  ,"Flak14"
+  ,"wwi_37mm_revolver"
+  ,"37mm_tak"
+  ,"sfh1893_2016"
+  ,"75mm_Skoda"
+  ,"wwi_tkvz24mg"
   ];
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
@@ -697,6 +766,31 @@ a3e_arr_Escape_InfantryTypes = [
   ,"fow_s_ija_f_medic"
   ,"fow_s_ija_f_type99_gunner"
   ,"fow_s_ija_f_type99_asst"
+  ,"wwi_fr_soldier3"
+  ,"wwi_fr_soldier4"
+  ,"wwi_fr_soldier5"
+  ,"wwi_fr_soldier6"
+  ,"wwi_fr_soldier1"
+  ,"wwi_fr_soldier3.coat"
+  ,"wwi_fr_soldier1.coat"
+  ,"wwi_fr_soldier2.bag"
+  ,"wwi_fr_soldier3.bag"
+  ,"wwi_fr_pilot"
+  ,"wwi_fr_soldier4.coat_sniper"
+  ,"wwi_fr_soldier_coat_1914"
+  ,"wwi_fr_soldier5.coat_chauchat"
+  ,"wwi_fr_soldier_coat_1914_kepi"
+  ,"WW1_italsoldier2"
+  ,"WW1_italsoldier3"
+  ,"WW1_tankiste"
+  ,"WW1_italsoldier1"
+  ,"WW1_fr_nco2"
+  ,"WW1_fr_soldier_senegalais"
+  ,"WW1_fr_nco1"
+  ,"WW1_ensoldier3"
+  ,"WW1_ensoldier2"
+  ,"WW1_ensoldier1"
+  ,"WW1_russ_soldier1"
 	];
 
 sov_infantry_24c563 = [
@@ -730,6 +824,24 @@ sov_infantry_24c563 = [
   ,"LIB_SOV_assault_mgunner"
   ,"LIB_SOV_assault_sergeant"
   ,"LIB_SOV_rifleman_ADS"
+  ,"WW1_gesoldier23"
+  ,"WW1_gesoldier21"
+  ,"WW1_gesoldier22"
+  ,"WW1_gesoldier24"
+  ,"wwi_ger_pilot"
+  ,"WW1_gesoldier5"
+  ,"WW1_gesoldier9"
+  ,"WW1_gesoldier2"
+  ,"WW1_gesoldier1"
+  ,"WW1_gesoldier31"
+  ,"WW1_gesoldier6"
+  ,"WW1_gesoldier8"
+  ,"WW1_gesoldier71"
+  ,"WW1_gesoldier4"
+  ,"WW1_gesoldier3"
+  ,"WW1_aurtichien1"
+  ,"WW1_aurtichien2"
+  ,"WW1_aurtichien3"
   ];
 
 a3e_arr_Escape_InfantryTypes_Ind = [
@@ -1044,6 +1156,8 @@ a3e_units_civilian_InfantryTypes = [
   ,"SPE_CIV_Worker_4"
   ,"SPE_CIV_Worker_4_tie"
   ,"SPE_CIV_Worker_4_trop"
+  ,"ww1_civ_rich_man"
+  ,"ww1_civ_rich_man2"
 	];
 
 //////////////////////////////////////////////////////////////////
@@ -1051,8 +1165,11 @@ a3e_units_civilian_InfantryTypes = [
 // Array of templates to use for roadblocks
 //////////////////////////////////////////////////////////////////
 A3E_RoadblockTemplates = [
-	"rb_spe_rb1"];
-
+	"rb_spe_rb1"
+	,"rb_bis_rb1"
+	,"rb_bis_rb2"
+	,"rb_bis_rb3"
+	];
 
 // A communication center contains two static weapons (in two corners of the communication center).
 // Random array. Possible static weapon types for communication centers.
@@ -1093,10 +1210,29 @@ a3e_arr_ComCenStaticWeapons = [
   ,"lib_nebelwerfer41"
   ,"lib_nebelwerfer41_camo"
   ,"fow_w_6pounder_ija"
+  ,"wwi_Vickers_MK1"
+  ,"QF18_pounder"
+  ,"wwi_russ_maxim_hmg"
+  ,"76mm_putilov_m1909"
+  ,"wwi_Fiat_Rivelli"
+  ,"75mm_deport_1911"
+  ,"wwi_St_etienne_mg"
+  ,"wwi_hotchkiss_mg_AA"
+  ,"wwi_hotchkiss_mg1914"
+  ,"wwi_hotchkiss_mg"
+  ,"75mm_1897_field_gun"
+  ,"65mm_Mountain"
+  ,"wwi_52mm_crapouillot"
+  ,"47mm_Hotchkiss_rapidfire"
+  ,"155mm_long_debange_trench"
+  ,"155mm_long_debange_siege"
+  ,"155mm_long_debange_trench_green"
+  ,"155mm_long_debange_green"
+  ,"155mm_long_debange"
 	];
 
 // Random array. A roadblock has a manned vehicle. This array contains possible manned vehicles (can be of any kind, like cars, armored and statics).
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_ComCenStaticWeapons; 
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons;
 
 allies_static_f39100 = 
   [
@@ -1120,7 +1256,7 @@ allies_static_f39100 =
   ];
 
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind =
-  allies_transport_5a712a + allies_static_f39100 + allies_vehicles_0d7fd7; 
+  allies_transport_5a712a + allies_static_f39100 + allies_static_f39100 + allies_static_f39100 + allies_vehicles_0d7fd7;
 
 // Random array. Motorized search groups are sometimes sent to look for you. This array contains possible class definitions for the vehicles.
 a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses = a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
@@ -1184,6 +1320,17 @@ ger_planes_f762dc = [
 	,"LIB_MKHL_Ju87"
 	,"fow_va_a6m_green"
 	,"fow_va_a6m_white"
+	,"SE5a_red_devil"
+	,"SE5a_G"
+	,"SE5a_bishop"
+	,"SE5a"
+	,"Nieuport11_Russia"
+	,"Nieuport11_Barraca"
+	,"Nieuport11_Italy"
+	,"Nieuport11"
+	,"Nieuport11_Nungesser"
+	,"Caudron_G4_b"
+	,"Caudron_G4"
 	];
 
 //Random array. Types of helicopters to spawn
@@ -1203,6 +1350,20 @@ sov_planes_a36948 = [
   ,"LIB_Pe2"
   ,"LIB_Pe2_2"
   ,"LIB_Li2"
+  ,"FokkerE3_Ottoman_green"
+  ,"FokkerE3_Ottoman"
+  ,"FokkerE3"
+  ,"FokkerDR1_Red_Baron"
+  ,"FokkerDR1_Lothar"
+  ,"FokkerDR1"
+  ,"FokkerDR1_Edelweiss"
+  ,"Albatross_DIII_jaune"
+  ,"Albatross_DIII_white"
+  ,"Albatross_DIII_red_baron"
+  ,"Albatross_DIII_jasta2"
+  ,"Albatross_DIII_brauneck"
+  ,"Albatross_DIII"
+  ,"FokkerE3_Austrian_green"
   ];
 
 allies_planes_0ae895 = [
@@ -1230,7 +1391,7 @@ a3e_arr_I_transport_heli = [
         // Only transport planes from allies
 	"LIB_HORSA"
 	,"LIB_C47_Skytrain"
-	];
+	] + sov_planes_a36948 + allies_planes_0ae895;
 
 a3e_arr_I_pilots = [
 	"LIB_US_Pilot"
@@ -1809,14 +1970,20 @@ a3e_arr_extraction_chopper_escort = [
 //////////////////////////////////////////////////////////////////
 a3e_arr_AquaticPatrols = [
   // "SPEX_LCVP"
-  "LIB_LCM3_Armed"
-  ,"LIB_LCVP"
-  ,"fow_usmc_lcvp"
-  ,"fow_usa_lcvp"
-  ,"lib_lca"
-  ,"lib_lci"
-  ,"lib_uk_lca"
-  ,"lib_uk_lci"
+
+  // To enable later:
+  // "LIB_LCM3_Armed"
+  // ,"LIB_LCVP"
+  // ,"fow_usmc_lcvp"
+  // ,"fow_usa_lcvp"
+  // ,"lib_lca"
+  // ,"lib_lci"
+  // ,"lib_uk_lca"
+  // ,"lib_uk_lci"
+
+  "msub"
+  ,"wwi_puffer"
+  ,"wwi_ramona_steamer"
   ,"c_rubberboat"
   ];
 
@@ -1873,7 +2040,7 @@ a3e_arr_leafletdrone = [];
 // EscapeSurprises.sqf and CreateSearchDrone.sqf
 // Classnames of drones
 //////////////////////////////////////////////////////////////////
-a3e_arr_searchdrone = ger_planes_f762dc + sov_planes_a36948 + allies_planes_0ae895;
+a3e_arr_searchdrone = ger_planes_f762dc;
 
 //////////////////////////////////////////////////////////////////
 // fn_AmbientInfantry
@@ -1919,6 +2086,7 @@ a3e_additional_weapon_box_2 = "SPE_BasicWeaponsBox_GER";
 //////////////////////////////////////////////////////////////////
 A3E_MortarSiteTemplates = [
 	"A3E_fnc_MortarSite_spe1"
+	,"A3E_fnc_MortarSite"
 	];
 
 //////////////////////////////////////////////////////////////////
@@ -1933,6 +2101,7 @@ a3e_arr_MortarSite = [
 	,"lib_flak_36_arty_w"
 	// ,"fow_v_type97_mortar_adv_ija"
 	// ,"lib_lefh18"
+	,"wwi_stokes"
 	];
 
 //////////////////////////////////////////////////////////////////
