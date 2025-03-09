@@ -32,6 +32,28 @@ A3E_ItemsToBeRemoved = [
 //Disable NVGs parameter for the whole SPE version.
 missionNamespace setvariable["A3E_Param_NoNightvision",1];
 
+allies_static_f39100 = 
+  [
+  // Static IND weapons:
+  "lib_m1919_m2"
+  ,"spe_m1919a6_bipod"
+  ,"spe_m1919_m2"
+  ,"spe_m2_m3"
+  ,"spe_57mm_m1"
+  ,"spe_m45_quadmount"
+  ,"i_g_hmg_02_high_f"
+  ,"fow_w_vickers_uk"
+  ,"spe_105mm_m3"
+  ,"spe_105mm_m3_direct"
+  // // mortar
+  // ,"lib_bm37"
+  // ,"spe_m1_81"
+  // ,"lib_m2_60"
+  // ,"fow_w_6pounder_usa"
+  // ,"fow_w_m2_mortar_usa"
+  ];
+
+
 sov_planes_a36948 = [
   "LIB_Li2"
   ,"LIB_P39"
@@ -1309,31 +1331,11 @@ a3e_arr_ComCenStaticWeapons = [
 	];
 
 // Random array. A roadblock has a manned vehicle. This array contains possible manned vehicles (can be of any kind, like cars, armored and statics).
-a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_ComCenStaticWeapons;
+a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses;
 
-allies_static_f39100 = 
-  [
-  // Static IND weapons:
-  "lib_m1919_m2"
-  ,"spe_m1919a6_bipod"
-  ,"spe_m1919_m2"
-  ,"spe_m2_m3"
-  ,"spe_57mm_m1"
-  ,"spe_m45_quadmount"
-  ,"i_g_hmg_02_high_f"
-  ,"fow_w_vickers_uk"
-  ,"spe_105mm_m3"
-  ,"spe_105mm_m3_direct"
-  // // mortar
-  // ,"lib_bm37"
-  // ,"spe_m1_81"
-  // ,"lib_m2_60"
-  // ,"fow_w_6pounder_usa"
-  // ,"fow_w_m2_mortar_usa"
-  ];
 
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind =
-  allies_static_f39100;
+  allies_static_f39100 + allies_static_f39100 + allies_vehicles_0d7fd7;
 
 // Random array. Motorized search groups are sometimes sent to look for you. This array contains possible class definitions for the vehicles.
 a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses = a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
