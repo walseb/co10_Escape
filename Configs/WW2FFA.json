@@ -177,6 +177,13 @@
 			"replace" : {},
 			"name" : "co10_Escape_WW2FFA_US_vs_GER-US"
 		},
+                {
+			"island" : "Chernarus_Winter",
+			"sqm": "Chernarus_Winter",
+			"mod" : "WW2FFA US vs GER-US",
+			"replace" : {},
+			"name" : "co10_Escape_WW2FFA_US_vs_GER-US"
+		},
 		{
 			"island" : "Podagorsk",
 			"sqm": "FDF_Isle1_a",
