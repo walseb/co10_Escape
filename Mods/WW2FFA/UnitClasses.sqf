@@ -983,8 +983,6 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"berlier_cba_fr"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
-
-
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
   sov_static_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
 
@@ -1128,7 +1126,9 @@ a3e_arr_Escape_InfantryTypes_Ind = [
 // Most likely to spawn recon types, but can spawn normal infantry
 a3e_arr_recon_InfantryTypes = ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + a3e_arr_Escape_InfantryTypes;
 
-a3e_arr_recon_I_InfantryTypes = a3e_arr_Escape_InfantryTypes_Ind;
+// Spawn in Soviets as independent recon
+a3e_arr_recon_I_InfantryTypes = sov_infantry_24c563;
+// a3e_arr_Escape_InfantryTypes_Ind
 
 a3e_units_civilian_InfantryTypes = [
   "spe_civ_citizen_1"
@@ -1327,7 +1327,6 @@ a3e_arr_ComCenStaticWeapons = [
 
 // Random array. A roadblock has a manned vehicle. This array contains possible manned vehicles (can be of any kind, like cars, armored and statics).
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes = a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses;
-
 
 a3e_arr_Escape_RoadBlock_MannedVehicleTypes_Ind =
   allies_static_f39100 + allies_static_f39100 + allies_vehicles_0d7fd7;

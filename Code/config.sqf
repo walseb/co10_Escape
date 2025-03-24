@@ -27,7 +27,7 @@ a3e_var_artilleryTimeThreshold = 120;
 a3e_var_artillery_cooldown = 100; //600
 a3e_var_artillery_rounds = 6;
 a3e_var_artillery_dispersion = 80;
-a3e_var_artillery_chance = 10;
+a3e_var_artillery_chance = 20;
 a3e_var_artillery_chance_cooldown = 60;
 a3e_var_artillery_fleeingDistance = 400;
 

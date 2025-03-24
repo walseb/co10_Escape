@@ -1,6 +1,6 @@
-private _maxGroups = missionNamespace getvariable ["A3E_MaxMilitaryTrafficGroups",3];
-private _MinSpawnCircleDistance = missionNamespace getvariable ["A3E_MinSpawnCircleDistance",800];
-private _MaxSpawnCircleDistance = missionNamespace getvariable ["A3E_MaxSpawnCircleDistance",1500];
+private _maxGroups = missionNamespace getvariable ["A3E_MaxMilitaryTrafficGroups",9]; // originally 3
+private _MinSpawnCircleDistance = missionNamespace getvariable ["A3E_MinSpawnCircleDistance",1200]; // originally 800
+private _MaxSpawnCircleDistance = missionNamespace getvariable ["A3E_MaxSpawnCircleDistance",1700]; // originally 1500
 private _removalDistance = missionNamespace getvariable ["A3E_UnitRemovalDistance",2000];
 
 private _groups = missionNamespace getvariable ["A3E_MilitaryTrafficGroups",[]];
@@ -53,7 +53,8 @@ if(count(_groups)<_maxGroups) then {
 	private _spawnpos = [_MinSpawnCircleDistance,_MaxSpawnCircleDistance,"ROAD"] call A3E_fnc_GetCircularSpawnPos;
 
 	if(count(_spawnpos)==3) then {//If spawnpos failed it has <3 elements
-		private _group = [_spawnpos,selectRandom [A3E_VAR_Side_Opfor,A3E_VAR_Side_Ind,A3E_VAR_Side_Ind,A3E_VAR_Side_Ind]] call A3E_fnc_SpawnMilitaryVehicle;
+                // Changed to 50/50 chance of spawning each side
+		private _group = [_spawnpos,selectRandom [A3E_VAR_Side_Opfor,A3E_VAR_Side_Ind]] call A3E_fnc_SpawnMilitaryVehicle;
 		["Military Traffic created",["MilitaryTraffic","Spawning"],[_group,_spawnpos,count(units _group)]] call A3E_fnc_Log;
 		_groups pushBack _group;
 		[_group] spawn A3E_fnc_MilitaryTrafficPatrol;
