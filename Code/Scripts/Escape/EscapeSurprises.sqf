@@ -110,8 +110,7 @@ while {true} do {
         _isExecuted = _x select 3;
         _surpriseArgs = _x select 4;
         
-        // Surprise every 8 minutes
-        if (!_isExecuted && time > 500) then {
+        if (!_isExecuted && time > _surpriseTimeSec) then {
             
             if (call _condition) then {
                 _surprise set [3, true];

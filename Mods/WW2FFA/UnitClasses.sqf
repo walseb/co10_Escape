@@ -1670,7 +1670,7 @@ a3e_arr_CivilianCarWeapons = [
   ,["LIB_M1903A4_Springfield", "LIB_5Rnd_762x63", 6]
   ,["LIB_M1A1_Thompson", "LIB_30Rnd_45ACP", 6]
   ,["LIB_DELISLE", "LIB_7Rnd_45ACP", 6]
-  ] + a3e_arr_CrashSiteWeapons + a3e_arr_CrashSiteItems + a3e_arr_AmmoDepotItems + a3e_arr_AmmoDepotVehicleItems + a3e_arr_AmmoDepotVehicle + a3e_arr_AmmoDepotOrdnance + a3e_arr_AmmoDepotLaunchers + a3e_arr_AmmoDepotSpecialWeapons;
+  ];
 
 // Vehicles, weapons and ammo at ammo depots
 
