@@ -278,8 +278,6 @@ allies_vehicles_0d7fd7 = [
   ,"lib_us6_tent_cargo"
   ,"lib_us6_open_cargo"
   ,"lib_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
   ,"lib_willys_mb_ambulance"
   ,"lib_us_willys_mb_ambulance"
   ,"lib_uk_willys_mb_ambulance"
@@ -310,15 +308,119 @@ allies_vehicles_0d7fd7 = [
   ,"lib_churchill_mk7_howitzer_desert"
   ,"fa_m26"
   ,"fa_valentinemk3"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
   ,"fow_v_m5a1_usa"
   ,"fow_v_m4a2_usa"
   ,"fow_v_cromwell_uk"
   ,"fow_v_universalcarrier"
   ,"fa_daimlermk2"
   ,"fa_t17e1"
+  ,"fa_t17e1"
+  ,"fa_t17e1"
   ,"fa_daimlermk2_dr"
   // boat:
   ,"lib_lci"
+
+  // Increase chances of vehicles with small-arms
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
   ];
 
 sov_static_ba213a = [
@@ -335,17 +437,6 @@ sov_static_ba213a = [
   ,"wwi_mg08_low"
   ,"wwi_mg08"
   ,"wwi_mg08_noarmour"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
-  ,"krupp_280_coastal"
   ,"krupp_280_coastal"
   ,"fk96na_2016"
   ,"wwi_lmg1914_aa"
@@ -389,6 +480,46 @@ sov_vehicles_125ff9 = [
   ,"daimler_marienfeld_bache"
   ,"daimler_marienfeld_arceau"
   ,"ehrhardt"
+
+  // Increase chances of machinegun vehicles
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"ehrhardt"
+  ,"lib_gazm1_sov"
+  ,"lib_gazm1_sov_camo_sand"
+  ,"wwi_a7v_nu"
+  ,"ehrhardt"
   ];
 
 civ_vehicles_df526f = 
@@ -422,8 +553,8 @@ civ_vehicles_df526f =
     ,"fordt_truck_benne"
     ,"fordt_truck_bache"
     ,"charette_cheval"
-    ,"charette"
-    ,"charette2"
+    // ,"charette" // Chariot without horse
+    // ,"charette2"
     ,"cadillac1903_truck"
     ,"cadillac1903_4seat"
     ,"cadillac1903_2seat"
@@ -731,7 +862,6 @@ a3e_arr_Escape_InfantryTypes = [
   ,"wwi_russ_soldier1"
 	];
 
-
 a3e_arr_Escape_StartPositionGuardTypes = a3e_arr_Escape_InfantryTypes + sov_infantry_24c563;
 	
 // Prison backpacks
@@ -760,6 +890,8 @@ a3e_arr_PrisonBackpackWeapons pushback ["LIB_P08","LIB_8Rnd_9x19_P08"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_P38","LIB_8Rnd_9x19"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_TT33","LIB_8Rnd_762x25"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_WaltherPPK","LIB_7Rnd_9x19"];
+a3e_arr_PrisonBackpackWeapons pushback ["LIB_Binocular_SU","LIB_7Rnd_9x19"];
+a3e_arr_PrisonBackpackWeapons pushback ["LIB_Binocular_SU","LIB_7Rnd_9x19"];
 
 
 // Random array. Civilian vehicle classes for ambient traffic.
@@ -772,13 +904,13 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       // ,"lib_zis6_parm"
       // ,"lib_zis5v"
       ,"lib_zis5v_fuel"
-      ,"lib_zis5v_med"
+      // ,"lib_zis5v_med"
       // ,"lib_us_gmc_tent"
       // ,"lib_us_m3_halftrack"
       // ,"lib_us_scout_m3"
       // ,"lib_uk_willys_mb"
-      ,"lib_uk_willys_mb_hood"
-      ,"lib_willys_mb_ambulance"
+      // ,"lib_uk_willys_mb_hood"
+      // ,"lib_willys_mb_ambulance"
       ,"lib_us6_ammo"
       // ,"lib_us6_open"
       // ,"lib_us6_open_cargo"
@@ -801,10 +933,18 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses = [
       ,"fow_v_truppenfahrrad_ger_ss"
       ,"fow_v_truppenfahrrad_ger_heer"
       ,"fow_v_truppenfahrrad_ger_ss"
-      ,"lib_gazm1_ffi"
-      ,"lib_gazm1_ffi_camo_sand"
-      ,"lib_gazm1_ffi_camo"
-      ,"lib_gazm1_ffi_sand"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      ,"fow_v_truppenfahrrad_ger_heer"
+      ,"fow_v_truppenfahrrad_ger_ss"
+      // ,"lib_gazm1_ffi"
+      // ,"lib_gazm1_ffi_camo_sand"
+      // ,"lib_gazm1_ffi_camo"
+      // ,"lib_gazm1_ffi_sand"
   ] + civ_vehicles_df526f;
 
 // Random array. Vehicle classes (preferrably trucks) transporting enemy reinforcements.
@@ -981,11 +1121,109 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"peugeot_1914"
   ,"renault_french_army_ag_1910_red"
   ,"berlier_cba_fr"
+
+
+  ,"rollsroyceac"
+  ,"rollsroyceac"
+  ,"rollsroyceac"
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
   sov_static_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
-
 
 a3e_arr_Escape_InfantryTypes_Ind = [
   "spe_us_rangers_rifleman_ammobearer"
@@ -1124,7 +1362,8 @@ a3e_arr_Escape_InfantryTypes_Ind = [
 
 
 // Most likely to spawn recon types, but can spawn normal infantry
-a3e_arr_recon_InfantryTypes = ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + a3e_arr_Escape_InfantryTypes;
+a3e_arr_recon_InfantryTypes = sov_infantry_24c563;
+// ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + ger_recon_inf_345c1c + a3e_arr_Escape_InfantryTypes;
 
 // Spawn in Soviets as independent recon
 a3e_arr_recon_I_InfantryTypes = sov_infantry_24c563;
@@ -1365,6 +1604,73 @@ a3e_arr_ComCenParkedVehicles = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasse
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 //Should be civilian, as there are no civ vehicles its a normal enemy truck
 a3e_arr_Escape_EnemyCivilianCarTypes = civ_vehicles_df526f;
+
+// Weapons that may show up in civilian cars
+
+// Index 0: Weapon classname.
+// Index 1: Magazine classname.
+// Index 2: Number of magazines.
+a3e_arr_CivilianCarWeapons = [
+  ["SPE_P08", "SPE_8Rnd_9x19_P08", 3]
+  ,["SPE_M1911", "SPE_7Rnd_45ACP_1911", 5]
+  ,["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_Pellets", 6]
+  ,["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_No4_Buck", 6]
+  ,["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Slug", 6]
+  ,["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Pellets", 6]
+  ,["SPE_K98_Late", "SPE_5Rnd_792x57", 6]
+  ,["SPE_PzFaust_30m", "SPE_1Rnd_PzFaust_30m", 1]
+  ,["SPE_M1903A3_Springfield", "SPE_5Rnd_762x63_M1", 6]
+  ,["SPE_M1A1_Carbine", "SPE_15Rnd_762x33_t", 6]
+  ,["SPE_No3_Mk1_Enfield_M1917_Bayonet", "SPE_5Rnd_770x56", 6]
+  ,["SPE_MAS_36", "SPE_5Rnd_75x54", 6]
+  ,["SPE_MP40", "SPE_32Rnd_9x19", 6]
+  ,["SPE_MP35", "SPE_32rnd_MP35_9x19_t", 6]
+  ,["SPE_STG44", "SPE_30Rnd_792x33", 12]
+  ,["SPE_FM_24_M29", "SPE_25Rnd_75x54", 12]
+  ,["SPE_Faustpatrone", "SPE_1Rnd_Faustpatrone", 1]
+  ,["SPE_Sten_Mk2_Suppressed", "SPE_32Rnd_9x19_Sten", 8]
+  ,["SPE_GER_FirstAidKit",  "SPE_1Rnd_Faustpatrone", 0]
+  ,["SPE_US_Medkit", "SPE_1Rnd_Faustpatrone", 0]
+  ,["SPE_ToolKit", "SPE_1Rnd_Faustpatrone", 0]
+  ,["SPE_Binocular_US", "SPE_1Rnd_Faustpatrone", 0]
+  ,["LIB_M1_Garand", "LIB_8Rnd_762x63", 9]
+  ,["LIB_MP40", "lib_32Rnd_9x19", 6]
+  ,["LIB_K98ZF39", 75, 2, 4, "lib_5Rnd_792x57", 4]
+  ,["LIB_K98ZF39", 75, 2, 4, "lib_10Rnd_792x57", 4]
+  ,["LIB_M1_Carbine", "LIB_15Rnd_762x33", 6]
+  ,["LIB_M1903A3_Springfield", "LIB_5Rnd_762x63", 6]
+  ,["LIB_M1903A4_Springfield", "LIB_5Rnd_762x63", 6]
+  ,["LIB_M1A1_Thompson", "LIB_30Rnd_45ACP", 6]
+  ,["LIB_DELISLE", "LIB_7Rnd_45ACP", 6]
+  ,["LIB_Bagpipes", "LIB_7Rnd_45ACP", 6]
+  ,["SPE_P08", "SPE_8Rnd_9x19_P08", 5]
+  ,["SPE_M1911", "SPE_7Rnd_45ACP_1911", 5]
+  ,["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_Pellets", 6]
+  ,["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_No4_Buck", 6]
+  ,["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Slug", 6]
+  ,["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Pellets", 6]
+  ,["SPE_Model_37_Riotgun", "SPE_5Rnd_12x70_Pellets", 6]
+  ,["SPE_Model_37_Riotgun", "SPE_5Rnd_12x70_No4_Buck", 6]
+  ,["SPE_K98_Late", "SPE_5Rnd_792x57", 10]
+  ,["SPE_PzFaust_30m", "SPE_1Rnd_PzFaust_30m", 1]
+  ,["SPE_M1903A3_Springfield", "SPE_5Rnd_762x63_M1", 6]
+  ,["SPE_No3_Mk1_Enfield_M1917_Bayonet", "SPE_5Rnd_770x56", 6]
+  ,["SPE_MP40", "SPE_32Rnd_9x19", 8]
+  ,["SPE_STG44", "SPE_30Rnd_792x33", 12]
+  ,["SPE_FM_24_M29", "SPE_25Rnd_75x54", 12]
+  ,["SPE_Faustpatrone", "SPE_1Rnd_Faustpatrone", 1]
+  ,["SPE_GER_FirstAidKit", "SPE_1Rnd_Faustpatrone", 0]
+  ,["SPE_US_Medkit", "SPE_1Rnd_Faustpatrone", 0]
+  ,["SPE_ToolKit", "SPE_1Rnd_Faustpatrone", 0]
+  ,["SPE_Binocular_US", "SPE_1Rnd_Faustpatrone", 0]
+  ,["LIB_M1_Garand", "LIB_8Rnd_762x63", 9]
+  ,["LIB_MP40", "lib_32Rnd_9x19", 6]
+  ,["LIB_M1_Carbine", "LIB_15Rnd_762x33", 6]
+  ,["LIB_M1903A3_Springfield", "LIB_5Rnd_762x63", 6]
+  ,["LIB_M1903A4_Springfield", "LIB_5Rnd_762x63", 6]
+  ,["LIB_M1A1_Thompson", "LIB_30Rnd_45ACP", 6]
+  ,["LIB_DELISLE", "LIB_7Rnd_45ACP", 6]
+  ] + a3e_arr_CrashSiteWeapons + a3e_arr_CrashSiteItems + a3e_arr_AmmoDepotItems + a3e_arr_AmmoDepotVehicleItems + a3e_arr_AmmoDepotVehicle + a3e_arr_AmmoDepotOrdnance + a3e_arr_AmmoDepotLaunchers + a3e_arr_AmmoDepotSpecialWeapons;
 
 // Vehicles, weapons and ammo at ammo depots
 
@@ -1806,86 +2112,6 @@ a3e_arr_AmmoDepotItems pushback ["G_LIB_Scarf_B", 50, 1, 10];
 a3e_arr_AmmoDepotItems pushback ["ItemWatch", 50, 1, 10];
 
 
-// Weapons that may show up in civilian cars
-
-// Index 0: Weapon classname.
-// Index 1: Magazine classname.
-// Index 2: Number of magazines.
-a3e_arr_CivilianCarWeapons = [];
-a3e_arr_CivilianCarWeapons pushback ["SPE_P08", "SPE_8Rnd_9x19_P08", 3];
-a3e_arr_CivilianCarWeapons pushback ["SPE_M1911", "SPE_7Rnd_45ACP_1911", 5];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_Pellets", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_No4_Buck", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Slug", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Pellets", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_K98_Late", "SPE_5Rnd_792x57", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_PzFaust_30m", "SPE_1Rnd_PzFaust_30m", 1];
-a3e_arr_CivilianCarWeapons pushback ["SPE_M1903A3_Springfield", "SPE_5Rnd_762x63_M1", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_M1A1_Carbine", "SPE_15Rnd_762x33_t", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_No3_Mk1_Enfield_M1917_Bayonet", "SPE_5Rnd_770x56", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_MAS_36", "SPE_5Rnd_75x54", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_MP40", "SPE_32Rnd_9x19", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_MP35", "SPE_32rnd_MP35_9x19_t", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_STG44", "SPE_30Rnd_792x33", 12];
-a3e_arr_CivilianCarWeapons pushback ["SPE_FM_24_M29", "SPE_25Rnd_75x54", 12];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Faustpatrone", "SPE_1Rnd_Faustpatrone", 1];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Sten_Mk2_Suppressed", "SPE_32Rnd_9x19_Sten", 8];
-//a3e_arr_CivilianCarWeapons pushback ["SMG_01_Holo_F", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", 5];
-//a3e_arr_CivilianCarWeapons pushback ["SMG_02_ACO_F", "30Rnd_9x21_Mag", 12];
-//a3e_arr_CivilianCarWeapons pushback ["srifle_DMR_06_camo_khs_F", "20Rnd_762x51_Mag", 8];
-//a3e_arr_CivilianCarWeapons pushback ["launch_RPG32_F", "RPG32_F", 2];
-a3e_arr_CivilianCarWeapons pushback ["SPE_GER_FirstAidKit",  "SPE_1Rnd_Faustpatrone", 0];
-a3e_arr_CivilianCarWeapons pushback ["SPE_US_Medkit", "SPE_1Rnd_Faustpatrone", 0];
-a3e_arr_CivilianCarWeapons pushback ["SPE_ToolKit", "SPE_1Rnd_Faustpatrone", 0];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Binocular_US", "SPE_1Rnd_Faustpatrone", 0];
-// a3e_arr_CivilianCarWeapons pushback [objNull, "SPE_US_TNT_4pound_mag", 2];
-// a3e_arr_CivilianCarWeapons pushback [objNull, "SPE_Shg24_Frag", 5];
-// a3e_arr_CivilianCarWeapons pushback [objNull, "SPE_Rauchsichtzeichen_Orange", 5];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1_Garand", "LIB_8Rnd_762x63", 9];
-a3e_arr_CivilianCarWeapons pushback ["LIB_MP40", "lib_32Rnd_9x19", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_K98ZF39", 75, 2, 4, "lib_5Rnd_792x57", 4];
-a3e_arr_CivilianCarWeapons pushback ["LIB_K98ZF39", 75, 2, 4, "lib_10Rnd_792x57", 4];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1_Carbine", "LIB_15Rnd_762x33", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1903A3_Springfield", "LIB_5Rnd_762x63", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1903A4_Springfield", "LIB_5Rnd_762x63", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1A1_Thompson", "LIB_30Rnd_45ACP", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_DELISLE", "LIB_7Rnd_45ACP", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_Bagpipes", "LIB_7Rnd_45ACP", 6];
-
-a3e_arr_CivilianCarWeapons pushback ["SPE_P08", "SPE_8Rnd_9x19_P08", 5];
-a3e_arr_CivilianCarWeapons pushback ["SPE_M1911", "SPE_7Rnd_45ACP_1911", 5];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_Pellets", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12_Sawedoff", "SPE_2Rnd_12x65_No4_Buck", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Slug", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Fusil_Mle_208_12", "SPE_2Rnd_12x65_Pellets", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Model_37_Riotgun", "SPE_5Rnd_12x70_Pellets", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Model_37_Riotgun", "SPE_5Rnd_12x70_No4_Buck", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_K98_Late", "SPE_5Rnd_792x57", 10];
-a3e_arr_CivilianCarWeapons pushback ["SPE_PzFaust_30m", "SPE_1Rnd_PzFaust_30m", 1];
-a3e_arr_CivilianCarWeapons pushback ["SPE_M1903A3_Springfield", "SPE_5Rnd_762x63_M1", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_No3_Mk1_Enfield_M1917_Bayonet", "SPE_5Rnd_770x56", 6];
-a3e_arr_CivilianCarWeapons pushback ["SPE_MP40", "SPE_32Rnd_9x19", 8];
-a3e_arr_CivilianCarWeapons pushback ["SPE_STG44", "SPE_30Rnd_792x33", 12];
-a3e_arr_CivilianCarWeapons pushback ["SPE_FM_24_M29", "SPE_25Rnd_75x54", 12];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Faustpatrone", "SPE_1Rnd_Faustpatrone", 1];
-//a3e_arr_CivilianCarWeapons pushback ["SMG_01_Holo_F", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", 5];
-//a3e_arr_CivilianCarWeapons pushback ["SMG_02_ACO_F", "30Rnd_9x21_Mag", 12];
-//a3e_arr_CivilianCarWeapons pushback ["srifle_DMR_06_camo_khs_F", "20Rnd_762x51_Mag", 8];
-//a3e_arr_CivilianCarWeapons pushback ["launch_RPG32_F", "RPG32_F", 2];
-a3e_arr_CivilianCarWeapons pushback ["SPE_GER_FirstAidKit", "SPE_1Rnd_Faustpatrone", 0];
-a3e_arr_CivilianCarWeapons pushback ["SPE_US_Medkit", "SPE_1Rnd_Faustpatrone", 0];
-a3e_arr_CivilianCarWeapons pushback ["SPE_ToolKit", "SPE_1Rnd_Faustpatrone", 0];
-a3e_arr_CivilianCarWeapons pushback ["SPE_Binocular_US", "SPE_1Rnd_Faustpatrone", 0];
-// a3e_arr_CivilianCarWeapons pushback [objNull, "SPE_US_TNT_4pound_mag", 2];
-// a3e_arr_CivilianCarWeapons pushback [objNull, "SPE_Shg24_Frag", 5];
-// a3e_arr_CivilianCarWeapons pushback [objNull, "SPE_Rauchsichtzeichen_Orange", 5];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1_Garand", "LIB_8Rnd_762x63", 9];
-a3e_arr_CivilianCarWeapons pushback ["LIB_MP40", "lib_32Rnd_9x19", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1_Carbine", "LIB_15Rnd_762x33", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1903A3_Springfield", "LIB_5Rnd_762x63", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1903A4_Springfield", "LIB_5Rnd_762x63", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_M1A1_Thompson", "LIB_30Rnd_45ACP", 6];
-a3e_arr_CivilianCarWeapons pushback ["LIB_DELISLE", "LIB_7Rnd_45ACP", 6];
 
 
 // Here is a list of scopes, might get randomly added to enemy patrols:
@@ -1898,7 +2124,10 @@ a3e_arr_TWSScopes = [];
 
 // Here is a list of bipods, might get randomly added to enemy patrols:
 a3e_arr_Bipods = [
-	"SPE_M1918A2_BAR_Bipod"];
+	"SPE_M1918A2_BAR_Bipod"
+	,"SPE_M1918A2_BAR_Handle"
+	,"SPE_ACC_M3_Suppressor_45acp"
+	];
 
 //////////////////////////////////////////////////////////////////
 // revive/functions/revive/fn_Check_Revive_FAK.sqf and fn_HandleRevive
@@ -2089,13 +2318,15 @@ A3E_MortarSiteTemplates = [
 //////////////////////////////////////////////////////////////////
 a3e_arr_MortarSite = [
 	"SPE_ST_GrW278_1"
+	,"SPE_ST_GrW278_1"
+	,"SPE_ST_GrW278_1"
 	// ,"LIB_GrWr34"
-	,"lib_dak_flak_36_arty"
-	,"lib_flak_36_arty"
+	// ,"lib_dak_flak_36_arty"
+	// ,"lib_flak_36_arty"
 	,"lib_flak_36_arty_w"
 	// ,"fow_v_type97_mortar_adv_ija"
 	// ,"lib_lefh18"
-	,"wwi_stokes"
+	// ,"wwi_stokes"
 	];
 
 //////////////////////////////////////////////////////////////////
