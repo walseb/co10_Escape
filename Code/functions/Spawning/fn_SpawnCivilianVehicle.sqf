@@ -34,23 +34,24 @@ clearitemcargoglobal _vehicle;
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;			
 
-if (random 100 < 20) then {
-	private ["_weaponItem"];
-	
-	_weaponItem = selectRandom a3e_arr_CivilianCarWeapons;
-	
-	_vehicle addWeaponCargoGlobal [_weaponItem select 0, 1];
-	_vehicle addMagazineCargoGlobal [_weaponItem select 1, _weaponItem select 2];
-};	
-if (random 100 < 80) then {
-   _vehicle addItemCargoglobal ["firstaidkit", 3];	
-};
-if (random 100 < 80) then {
-   _vehicle addMagazineCargoglobal ["smokeshellRed", 2];	
-};
-if (random 100 < 80) then {
-   _vehicle addMagazineCargoglobal ["Chemlight_green", 5];	
-};
+private ["_weaponItem"];
+
+_weaponItem = selectRandom a3e_arr_CivilianCarWeapons;
+
+_vehicle addWeaponCargoGlobal [_weaponItem select 0, 1];
+_vehicle addMagazineCargoGlobal [_weaponItem select 1, _weaponItem select 2];
+
+// if (random 100 < 20) then {
+// };	
+// if (random 100 < 80) then {
+//    _vehicle addItemCargoglobal ["firstaidkit", 3];	
+// };
+// if (random 100 < 80) then {
+//    _vehicle addMagazineCargoglobal ["smokeshellRed", 2];	
+// };
+// if (random 100 < 80) then {
+//    _vehicle addMagazineCargoglobal ["Chemlight_green", 5];	
+// };
 
 ["Creating group.",["Spawning","CivilianCommuters"]] call a3e_fnc_log;
 

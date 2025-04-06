@@ -63,7 +63,7 @@ while {isNil "a3e_var_commonLibInitialized"} do {
 
 
  if(_side != civilian) then {
-	sleep 180; //Wait three mins until creating enemy vehicles
+	sleep 10; //Wait 10 seconds until creating enemy vehicles (default 3 minutes)
 };
 
 

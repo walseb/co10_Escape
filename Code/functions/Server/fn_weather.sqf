@@ -1,10 +1,11 @@
 //Clouds
-private _weatherParamOvercast = if (A3E_Param_WeatherOvercast isEqualTo -1) then {
-    selectrandomweighted [0,100,1,400,2,800,3,1000,4,1000,5,700,6,600,7,400,8,300,9,200,10,100];
+// private _weatherParamOvercast = if (A3E_Param_WeatherOvercast isEqualTo -1) then {
+//     selectrandomweighted [0,100,1,400,2,800,3,1000,4,1000,5,700,6,600,7,400,8,300,9,200,10,100];
 
-} else {
-    A3E_Param_WeatherOvercast
-};
+// } else {
+//     A3E_Param_WeatherOvercast
+// };
+private _weatherParamOvercast = 1;
 
 switch _weatherParamOvercast do {
     //Cloudless
@@ -54,12 +55,13 @@ switch _weatherParamOvercast do {
 };
 
 //Fog
-private _weatherParamFog = if (A3E_Param_WeatherFog isEqualTo -1) then {
-    selectrandomweighted [0,10000,1,500,2,400,3,300,4,200,5,100,6,90,7,80,8,70,9,60,10,50];
+// private _weatherParamFog = if (A3E_Param_WeatherFog isEqualTo -1) then {
+//     selectrandomweighted [0,10000,1,500,2,400,3,300,4,200,5,100,6,90,7,80,8,70,9,60,10,50];
 
-} else {
-    A3E_Param_WeatherFog
-};
+// } else {
+//     A3E_Param_WeatherFog
+// };
+private _weatherParamFog = 0;
 
 switch _weatherParamFog do {
     //No Fog

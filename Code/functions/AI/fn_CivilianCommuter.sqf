@@ -9,7 +9,7 @@ private _movePos = [getpos (leader _group), 500,_MaxSpawnCircleDistance,"ROAD"] 
 
 if(count(_movePos)==0) exitwith {
 	[_group] spawn {
-		sleep 10;
+		sleep 3;
 		[_this select 0] spawn A3E_fnc_CivilianCommuter;
 	};
 };

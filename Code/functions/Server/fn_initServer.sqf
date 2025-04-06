@@ -126,7 +126,8 @@ publicVariable "a3e_var_Escape_hoursSkipped";
 [_date] call bis_fnc_setDate;
 
 
-setTimeMultiplier A3E_Param_TimeMultiplier;
+// setTimeMultiplier A3E_Param_TimeMultiplier;
+setTimeMultiplier 1;
 
 
 
@@ -203,7 +204,7 @@ private _backpack = [] call A3E_fnc_createStartpos;
 //### The following is a mission function now
 
 [true] call A3E_fnc_InitVillageMarkers;
-//[true] call drn_fnc_InitAquaticPatrolMarkers;
+[true] call drn_fnc_InitAquaticPatrolMarkers;
 
 //Wait for players to actually arrive ingame. This may be a long time if server is set to persistent
 waituntil{uisleep 1; count([] call A3E_FNC_GetPlayers)>0};
@@ -248,7 +249,8 @@ _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 [] spawn A3E_fnc_initVillages;
 
 //Uncommenting all legacy scripts for now
-if(false) then {
+// Handles aquatic patrols. Let's enable for now
+if(true) then {
 [_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] spawn {
 	params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_enemyFrequency"];
 
@@ -288,155 +290,155 @@ if(false) then {
 
 
 
-    // Initialize ambient infantry groups
+    // // Initialize ambient infantry groups
 
-	_fnc_OnSpawnAmbientInfantryUnit = {
-		_this call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;
-	};
+    // 	_fnc_OnSpawnAmbientInfantryUnit = {
+    // 		_this call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;
+    // 	};
 
-	_fnc_OnSpawnAmbientInfantryGroup = {
-		private ["_unit", "_enemyUnit"];
-		private ["_scriptHandle"];
+    // 	_fnc_OnSpawnAmbientInfantryGroup = {
+    // 		private ["_unit", "_enemyUnit"];
+    // 		private ["_scriptHandle"];
 
-		_unit = units _this select 0;
+    // 		_unit = units _this select 0;
 
-		while {!(isNull _unit)} do {
-			_enemyUnit = _unit findNearestEnemy (getPos _unit);
-			if (!(isNull _enemyUnit)) exitWith {
+    // 		while {!(isNull _unit)} do {
+    // 			_enemyUnit = _unit findNearestEnemy (getPos _unit);
+    // 			if (!(isNull _enemyUnit)) exitWith {
 
-				private _i = 0;
-				for [{_i = (count waypoints _this) - 1}, {_i >= 0}, {_i = _i - 1}] do {
-					deleteWaypoint [_this, _i];
-				};
+    // 				private _i = 0;
+    // 				for [{_i = (count waypoints _this) - 1}, {_i >= 0}, {_i = _i - 1}] do {
+    // 					deleteWaypoint [_this, _i];
+    // 				};
 
-				_scriptHandle = [_this, drn_searchAreaMarkerName, (getPos _enemyUnit), A3E_Debug] spawn drn_fnc_searchGroup;
-				_this setVariable ["drn_scriptHandle", _scriptHandle];
-			};
+    // 				_scriptHandle = [_this, drn_searchAreaMarkerName, (getPos _enemyUnit), A3E_Debug] spawn drn_fnc_searchGroup;
+    // 				_this setVariable ["drn_scriptHandle", _scriptHandle];
+    // 			};
 
-			sleep 5;
-		};
-	};
+    // 			sleep 5;
+    // 		};
+    // 	};
 
-	private ["_infantryGroupsCount", "_radius", "_groupsPerSqkm"];
+    // 	private ["_infantryGroupsCount", "_radius", "_groupsPerSqkm"];
 
-	switch (_enemyFrequency) do
-	{
-		case 1: // 1-2 players
-		{
-			_minEnemiesPerGroup = 2;
-			_maxEnemiesPerGroup = 4;
-			_groupsPerSqkm = 1;
-		};
-		case 2: // 3-5 players
-		{
-			_minEnemiesPerGroup = 2;
-			_maxEnemiesPerGroup = 8;
-			_groupsPerSqkm = 1.2;
-		};
-		default // 6-8 players
-		{
-			_minEnemiesPerGroup = 2;
-			_maxEnemiesPerGroup = 12;
-			_groupsPerSqkm = 1.4;
-		};
-	};
+    // 	switch (_enemyFrequency) do
+    // 	{
+    // 		case 1: // 1-2 players
+    // 		{
+    // 			_minEnemiesPerGroup = 2;
+    // 			_maxEnemiesPerGroup = 4;
+    // 			_groupsPerSqkm = 1;
+    // 		};
+    // 		case 2: // 3-5 players
+    // 		{
+    // 			_minEnemiesPerGroup = 2;
+    // 			_maxEnemiesPerGroup = 8;
+    // 			_groupsPerSqkm = 1.2;
+    // 		};
+    // 		default // 6-8 players
+    // 		{
+    // 			_minEnemiesPerGroup = 2;
+    // 			_maxEnemiesPerGroup = 12;
+    // 			_groupsPerSqkm = 1.4;
+    // 		};
+    // 	};
 
-	_radius = (_enemySpawnDistance + 500) / 1000;
-	_infantryGroupsCount = round (_groupsPerSqkm * _radius * _radius * 3.141592);
+    // 	_radius = (_enemySpawnDistance + 500) / 1000;
+    // 	_infantryGroupsCount = round (_groupsPerSqkm * _radius * _radius * 3.141592);
 
-	[_playerGroup, A3E_VAR_Side_Opfor, a3e_arr_Escape_InfantryTypes, _infantryGroupsCount, _enemySpawnDistance + 200, _enemySpawnDistance + 500, _minEnemiesPerGroup, _maxEnemiesPerGroup, _enemyMinSkill, _enemyMaxSkill, 750, _fnc_OnSpawnAmbientInfantryUnit, _fnc_OnSpawnAmbientInfantryGroup, A3E_Debug] spawn drn_fnc_AmbientInfantry;
-
-
-    // Initialize the Escape military and civilian traffic
-	private ["_vehiclesPerSqkm", "_radius", "_vehiclesCount", "_fnc_onSpawnCivilian"];
-
-	// Civilian traffic
-
-	switch (_enemyFrequency) do
-	{
-		case 1: // 1-3 players
-		{
-			_vehiclesPerSqkm = 1.6;
-		};
-		case 2: // 4-6 players
-		{
-			_vehiclesPerSqkm = 1.4;
-		};
-		default // 7-8 players
-		{
-			_vehiclesPerSqkm = 1.2;
-		};
-	};
-
-	_radius = _enemySpawnDistance + 500;
-	_vehiclesCount = round (_vehiclesPerSqkm * (_radius / 1000) * (_radius / 1000) * 3.141592);
+    // 	[_playerGroup, A3E_VAR_Side_Opfor, a3e_arr_Escape_InfantryTypes, _infantryGroupsCount, _enemySpawnDistance + 200, _enemySpawnDistance + 500, _minEnemiesPerGroup, _maxEnemiesPerGroup, _enemyMinSkill, _enemyMaxSkill, 750, _fnc_OnSpawnAmbientInfantryUnit, _fnc_OnSpawnAmbientInfantryGroup, A3E_Debug] spawn drn_fnc_AmbientInfantry;
 
 
+    // // Initialize the Escape military and civilian traffic
+    // 	private ["_vehiclesPerSqkm", "_radius", "_vehiclesCount", "_fnc_onSpawnCivilian"];
 
-	// Enemy military traffic
+    // 	// Civilian traffic
 
-	switch (_enemyFrequency) do
-	{
-		case 1: // 1-3 players
-		{
-			_vehiclesPerSqkm = 0.6;
-		};
-		case 2: // 4-6 players
-		{
-			_vehiclesPerSqkm = 0.8;
-		};
-		default // 7-8 players
-		{
-			_vehiclesPerSqkm = 1;
-		};
-	};
+    // 	switch (_enemyFrequency) do
+    // 	{
+    // 		case 1: // 1-3 players
+    // 		{
+    // 			_vehiclesPerSqkm = 1.6;
+    // 		};
+    // 		case 2: // 4-6 players
+    // 		{
+    // 			_vehiclesPerSqkm = 1.4;
+    // 		};
+    // 		default // 7-8 players
+    // 		{
+    // 			_vehiclesPerSqkm = 1.2;
+    // 		};
+    // 	};
 
-	_radius = _enemySpawnDistance + 500;
-	_vehiclesCount = round (_vehiclesPerSqkm * (_radius / 1000) * (_radius / 1000) * 3.141592);
-	[_vehiclesCount,_enemySpawnDistance,_radius,_enemyMinSkill, _enemyMaxSkill] spawn {
-		params["_vehiclesCount","_enemySpawnDistance","_radius","_enemyMinSkill", "_enemyMaxSkill"];
-		sleep 60*15; //Wait 15 Minutes before heavy vehicles may arrive
-		[A3E_VAR_Side_Opfor, [], _vehiclesCount/2, _enemySpawnDistance, _radius, _enemyMinSkill, _enemyMaxSkill, drn_fnc_Escape_TrafficSearch, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
-		[A3E_VAR_Side_Ind, [], _vehiclesCount/2, _enemySpawnDistance, _radius, _enemyMinSkill, _enemyMaxSkill, drn_fnc_Escape_TrafficSearch, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
-    };
-
-	private ["_areaPerRoadBlock", "_maxEnemySpawnDistanceKm", "_roadBlockCount"];
-	private ["_fnc_OnSpawnInfantryGroup", "_fnc_OnSpawnMannedVehicle"];
-
-	_fnc_OnSpawnInfantryGroup = {{_x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;} foreach units _this;};
-	_fnc_OnSpawnMannedVehicle = {{_x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;} foreach (_this select 1);};
-
-	switch (_enemyFrequency) do {
-		case 1: {
-			_areaPerRoadBlock = 4.19;
-		};
-		case 2: {
-			_areaPerRoadBlock = 3.14;
-		};
-		default {
-			_areaPerRoadBlock = 2.5;
-		};
-	};
-
-	_maxEnemySpawnDistanceKm = (_enemySpawnDistance + 500) / 1000;
-	_roadBlockCount = round ((_maxEnemySpawnDistanceKm * _maxEnemySpawnDistanceKm * 3.141592) / _areaPerRoadBlock);
-
-	if (_roadBlockCount < 1) then {
-		_roadBlockCount = 1;
-	};
-	//A3E_VAR_Side_Ind
-	[a3e_arr_Escape_InfantryTypes, a3e_arr_Escape_RoadBlock_MannedVehicleTypes, _fnc_OnSpawnInfantryGroup, _fnc_OnSpawnMannedVehicle, A3E_Debug] spawn A3E_fnc_RoadBlocks;
-
-	//Spawn crashsites
-
-	private _crashSiteCount = ceil(random(missionNamespace getvariable["CrashSiteCountMax",3]));
-	for "_i" from 1 to _crashSiteCount step 1 do {
-		private _pos = [] call A3E_fnc_findFlatArea;
-		[_pos] call A3E_fnc_crashSite;
-	};
+    // 	_radius = _enemySpawnDistance + 500;
+    // 	_vehiclesCount = round (_vehiclesPerSqkm * (_radius / 1000) * (_radius / 1000) * 3.141592);
 
 
-};
+
+    // 	// Enemy military traffic
+
+    // 	switch (_enemyFrequency) do
+    // 	{
+    // 		case 1: // 1-3 players
+    // 		{
+    // 			_vehiclesPerSqkm = 0.6;
+    // 		};
+    // 		case 2: // 4-6 players
+    // 		{
+    // 			_vehiclesPerSqkm = 0.8;
+    // 		};
+    // 		default // 7-8 players
+    // 		{
+    // 			_vehiclesPerSqkm = 1;
+    // 		};
+    // 	};
+
+    // 	_radius = _enemySpawnDistance + 500;
+    // 	_vehiclesCount = round (_vehiclesPerSqkm * (_radius / 1000) * (_radius / 1000) * 3.141592);
+    // 	[_vehiclesCount,_enemySpawnDistance,_radius,_enemyMinSkill, _enemyMaxSkill] spawn {
+    // 		params["_vehiclesCount","_enemySpawnDistance","_radius","_enemyMinSkill", "_enemyMaxSkill"];
+    // 		sleep 60*0.5; //Wait 30 seconds before heavy vehicles may arrive
+    // 		[A3E_VAR_Side_Opfor, [], _vehiclesCount/2, _enemySpawnDistance, _radius, _enemyMinSkill, _enemyMaxSkill, drn_fnc_Escape_TrafficSearch, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
+    // 		[A3E_VAR_Side_Ind, [], _vehiclesCount/2, _enemySpawnDistance, _radius, _enemyMinSkill, _enemyMaxSkill, drn_fnc_Escape_TrafficSearch, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
+    // };
+
+    // 	private ["_areaPerRoadBlock", "_maxEnemySpawnDistanceKm", "_roadBlockCount"];
+    // 	private ["_fnc_OnSpawnInfantryGroup", "_fnc_OnSpawnMannedVehicle"];
+
+    // 	_fnc_OnSpawnInfantryGroup = {{_x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;} foreach units _this;};
+    // 	_fnc_OnSpawnMannedVehicle = {{_x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;} foreach (_this select 1);};
+
+    // 	switch (_enemyFrequency) do {
+    // 		case 1: {
+    // 			_areaPerRoadBlock = 4.19;
+    // 		};
+    // 		case 2: {
+    // 			_areaPerRoadBlock = 3.14;
+    // 		};
+    // 		default {
+    // 			_areaPerRoadBlock = 2.5;
+    // 		};
+    // 	};
+
+    // 	_maxEnemySpawnDistanceKm = (_enemySpawnDistance + 500) / 1000;
+    // 	_roadBlockCount = round ((_maxEnemySpawnDistanceKm * _maxEnemySpawnDistanceKm * 3.141592) / _areaPerRoadBlock);
+
+    // 	if (_roadBlockCount < 1) then {
+    // 		_roadBlockCount = 1;
+    // 	};
+    // 	//A3E_VAR_Side_Ind
+    // 	[a3e_arr_Escape_InfantryTypes, a3e_arr_Escape_RoadBlock_MannedVehicleTypes, _fnc_OnSpawnInfantryGroup, _fnc_OnSpawnMannedVehicle, A3E_Debug] spawn A3E_fnc_RoadBlocks;
+
+    // 	//Spawn crashsites
+
+    // 	private _crashSiteCount = ceil(random(missionNamespace getvariable["CrashSiteCountMax",3]));
+    // 	for "_i" from 1 to _crashSiteCount step 1 do {
+    // 		private _pos = [] call A3E_fnc_findFlatArea;
+    // 		[_pos] call A3E_fnc_crashSite;
+    // 	};
+
+
+// };
 
 };
 //Start local and remote statistic tracking
@@ -469,7 +471,19 @@ call A3E_fnc_InitTraps;
 		private _weapon = a3e_arr_PrisonBackpackWeapons select floor(random(count(a3e_arr_PrisonBackpackWeapons)));
 		_backpack addWeaponCargoGlobal[(_weapon select 0),1];
 		_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+
 	};
+
+	private _weapon = a3e_arr_PrisonBackpackWeapons select 0;
+	_backpack addWeaponCargoGlobal[(_weapon select 0),1];
+	_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+
+	_backpack addWeaponCargoGlobal[(_weapon select 0),1];
+	_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+
+	private _weapon = a3e_arr_PrisonBackpackWeapons select 1;
+	_backpack addWeaponCargoGlobal[(_weapon select 0),1];
+	_backpack addMagazineCargoGlobal[(_weapon select 1),3];
 
     // Spawn more guards
     _marker = createMarker ["drn_guardAreaMarker", _startPos];
@@ -489,7 +503,9 @@ call A3E_fnc_InitTraps;
     while {_pos679d5fc2 distance _startPos < 10} do {
 	_pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
     };
-    _d7d166 = createVehicle [ "SPE_FFI_R200_MG34", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
+
+    _d7d166 = createVehicle [ "lib_us_willys_mb_m1919", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
+    // _d7d166 = createVehicle [ "SPE_FFI_R200_MG34", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
 
     for [{_i = 0}, {_i < _guardCount}, {_i = _i + 1}] do {
         private ["_pos"];
@@ -585,84 +601,11 @@ call A3E_fnc_InitTraps;
 
     } foreach _guardGroups;
 
-	//Add an alert trigger to the prison
-	A3E_fnc_revealPlayers = {
-		private _guardGroup = _this;
-		{
-			_guardGroup reveal [_x,1.5];
-		} foreach call A3E_fnc_GetPlayers;
-	};
-	A3E_fnc_soundAlarm = {
-		params ["_guardGroups"];
-		if(isNil("A3E_SoundPrisonAlarm")) then {
-			A3E_SoundPrisonAlarm = true;
-			publicvariable "A3E_SoundPrisonAlarm";
-			{
-				_x spawn A3E_fnc_revealPlayers;
-			} foreach _guardGroups;
-			sleep 30;
-			A3E_SoundPrisonAlarm = false;
-			publicvariable "A3E_SoundPrisonAlarm";
-		};
-	};
-    // Start thread that waits for escape to start
-    [_guardGroups] spawn {
-        params ["_guardGroups"];
+	A3E_SoundPrisonAlarm = false;
+	publicvariable "A3E_SoundPrisonAlarm";
 
-        sleep 5;
-
-        while {isNil("A3E_EscapeHasStarted")} do {
-			sleep 1;
-            // If any member of the group is to far away from fence, then escape has started
-            {
-				if(_x getvariable ["A3E_PlayerInitializedServer",false]) then {
-					if ((_x distance A3E_StartPos) > 15 && (_x distance A3E_StartPos) < 100) exitWith {
-						A3E_EscapeHasStarted = true;
-						publicVariable "A3E_EscapeHasStarted";
-					};
-					// If any player have picked up a weapon, escape has started
-					if (count weapons _x > 0) exitWith {
-						A3E_EscapeHasStarted = true;
-						publicVariable "A3E_EscapeHasStarted";
-					};
-				};
-            } foreach call A3E_FNC_GetPlayers;
-        };
-
-        // ESCAPE HAS STARTED
-        //{
-		//	[[[_x], {(_this select 0) setCaptive false;}], "BIS_fnc_spawn", _x, false] call BIS_fnc_MP;
-		//} foreach call A3E_fnc_GetPlayers;
-	   diag_log "Server: Escape has started.";
-    };
-	//Spawn alarm watchdog
-	[_guardGroups] spawn {
-		params ["_guardGroups"];
-		while{isNil("A3E_SoundPrisonAlarm")} do {
-			if(!isNil("A3E_EscapeHasStarted")) then {
-				{
-					private ["_guardGroup"];
-					_guardGroup = _x;
-					{
-						if((_guardGroup knowsAbout _x)>2.5) exitwith {
-							[_guardGroups] call A3E_fnc_soundAlarm;
-						};
-					} foreach call A3E_fnc_GetPlayers;
-				} foreach _guardGroups;
-			};
-			if(!isNil("A3E_PrisonGateObject")) then {
-				if((A3E_PrisonGateObject animationPhase "Door_1_rot") > 0.5 ||
-				(A3E_PrisonGateObject animationPhase "Door_2_rot") > 0.5) then {
-					if(isNil("A3E_EscapeHasStarted")) then {
-						A3E_EscapeHasStarted = true;
-						publicVariable "A3E_EscapeHasStarted";
-					};
-					[_guardGroups] call A3E_fnc_soundAlarm;
-				};
-			};
-			sleep 0.5;
-		};
-	};
+	A3E_EscapeHasStarted = true;
+	publicVariable "A3E_EscapeHasStarted";
 
 	//Watch for captive state
 	[] spawn {

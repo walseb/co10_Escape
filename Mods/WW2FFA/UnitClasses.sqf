@@ -180,6 +180,23 @@ ger_recon_inf_345c1c = [
   ,"fow_s_ija_rifleman_at"
   ];
 
+allies_combat_unarmored_ca42d6 = [
+  "lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
+  ,"lib_willys_mb"
+  ,"lib_us_willys_mb"
+  ,"spe_m20_auc"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_ffi_r200_mg34"
+  ,"lib_us_willys_mb_m1919"
+  ,"lib_uk_willys_mb_m1919"
+  ,"spe_us_g503_mb_m1919"
+  ,"spe_us_g503_mb_m1919_armoured"
+  ,"spe_us_g503_mb_m2"
+  ,"spe_us_g503_mb_m2_armoured"
+  ];
+
 allies_vehicles_0d7fd7 = [
   "lib_willys_mb"
   ,"spe_m20_auc"
@@ -322,106 +339,45 @@ allies_vehicles_0d7fd7 = [
   // boat:
   ,"lib_lci"
 
-  // Increase chances of vehicles with small-arms
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
-  ,"spe_us_g503_mb_m1919"
-  ,"spe_us_g503_mb_m1919_armoured"
-  ,"spe_us_g503_mb_m2"
-  ,"spe_us_g503_mb_m2_armoured"
-  ];
+  ]
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6
+    + allies_combat_unarmored_ca42d6;
 
 sov_static_ba213a = [
   "lib_zis3"
@@ -871,6 +827,8 @@ a3e_arr_PrisonBackpacks = [
 	,"B_SPE_CIV_musette"];
 // Prison backpack secondary weapon (and corresponding magazine type).
 a3e_arr_PrisonBackpackWeapons = [];
+a3e_arr_PrisonBackpackWeapons pushback ["LIB_Binocular_SU","LIB_7Rnd_9x19"];
+a3e_arr_PrisonBackpackWeapons pushback ["SPE_M1A1_Bazooka","SPE_1Rnd_60mm_M6"];
 a3e_arr_PrisonBackpackWeapons pushback ["SPE_P08","SPE_8Rnd_9x19_P08"];
 a3e_arr_PrisonBackpackWeapons pushback ["SPE_P08","SPE_8Rnd_9x19_P08"];
 a3e_arr_PrisonBackpackWeapons pushback ["SPE_M1911","SPE_7Rnd_45ACP_1911"];
@@ -890,8 +848,6 @@ a3e_arr_PrisonBackpackWeapons pushback ["LIB_P08","LIB_8Rnd_9x19_P08"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_P38","LIB_8Rnd_9x19"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_TT33","LIB_8Rnd_762x25"];
 a3e_arr_PrisonBackpackWeapons pushback ["LIB_WaltherPPK","LIB_7Rnd_9x19"];
-a3e_arr_PrisonBackpackWeapons pushback ["LIB_Binocular_SU","LIB_7Rnd_9x19"];
-a3e_arr_PrisonBackpackWeapons pushback ["LIB_Binocular_SU","LIB_7Rnd_9x19"];
 
 
 // Random array. Civilian vehicle classes for ambient traffic.
@@ -970,20 +926,11 @@ a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
   ,"lib_opelblitz_open_y_camo_w"
 	];
 
-
 a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = allies_transport_5a712a;
 
-// Random arrays. Enemy vehicle classes for ambient traffic.
-// Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
-a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
-  "spe_st_r200_unarmed"
-  ,"spe_st_r200_mg34"
-  ,"spe_st_opelblitz_ambulance"
-  ,"spe_st_opelblitz_ammo"
-  ,"spe_st_opelblitz_fuel"
-  ,"spe_st_opelblitz_repair"
+ger_armored_370313 = [
+  "spe_st_r200_mg34"
   ,"spe_st_sdkfz250_1"
-  ,"spe_st_opelblitz_flak38"
   ,"spe_st_stug_iii_g_early"
   ,"spe_st_stug_iii_g_late"
   ,"spe_st_stug_iii_g_skb"
@@ -996,17 +943,94 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"spe_st_pzkpfwiv_g"
   ,"spe_st_pzkpfwv_g"
   ,"spe_st_pzkpfwvi_h1"
-  ,"lib_kfz1_mg42"
-  ,"lib_opelblitz_parm"
-  ,"lib_opelblitz_ambulance"
-  ,"lib_opelblitz_ammo"
-  ,"lib_opelblitz_fuel"
   ,"lib_sdkfz251"
   ,"lib_sdkfz_7"
   ,"lib_sdkfz_7_aa"
   ,"lib_flakpanzeriv_wirbelwind"
   ,"lib_stug_iii_g"
   ,"lib_pzkpfwiv_h"
+  ,"lib_flakpanzeriv"
+  ,"lib_pzkpfwv"
+  ,"lib_sdkfz124"
+  ,"lib_dak_flakpanzeriv_wirbelwind"
+  ,"lib_dak_sdkfz251"
+  ,"spe_stug_iii_g_early"
+  ,"spe_stug_iii_g_late"
+  ,"spe_stug_iii_g_skb"
+  ,"spe_stuh_42"
+  ,"spe_jagdpanther_g1"
+  ,"spe_nashorn"
+  ,"lib_stug_iii_g_w"
+  ,"lib_stug_iii_g_ws_w"
+  ,"fow_v_panther_ger_heer"
+  ,"fow_v_panther_camo_foliage_ger_heer"
+  ,"fa_sdkfz231"
+  ,"fa_sdkfz234"
+  ,"fa_sdkfz234_4"
+  ,"lib_pzkpfwv_w"
+  ,"lib_sdkfz_7_aa_w"
+  ,"lib_sdkfz251_ffv_w"
+  ,"lib_sdkfz251_w"
+  ,"wwi_ft17_tsf"
+  ,"wwi_ft17_8mm_girod"
+  ,"wwi_ft17_75bs"
+  ,"wwi_ft17_2018"
+  ,"wwi_ft17_37mm_girod"
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+  ,"fow_ija_type95_hago_1_ija"
+  ,"fow_ija_type95_hago_2_ija"
+  ,"fow_ija_type95_hago_3_ija"
+  ];
+
+ger_combat_unarmored_1c04c5 = [
+  "spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ,"spe_st_r200_mg34"
+  ,"lib_kfz1_mg42"
+  ,"lib_sdkfz251"
+  ,"lib_sdkfz_7"
+  ,"lib_sdkfz_7_aa"
+  ,"lib_sdkfz251_ffv"
+  ,"lib_kfz1_mg42_camo"
+  ,"lib_dak_kfz1_mg42"
+  ,"fow_v_sdkfz_222_camo_ger_ss"
+  ,"fow_v_sdkfz_251_camo_ger_heer"
+  ,"fa_sdkfz231_dak"
+  ,"fa_sdkfz231"
+  ];
+
+// Random arrays. Enemy vehicle classes for ambient traffic.
+// Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
+a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
+  "spe_st_r200_unarmed"
+  ,"spe_st_opelblitz_ambulance"
+  ,"spe_st_opelblitz_ammo"
+  ,"spe_st_opelblitz_fuel"
+  ,"spe_st_opelblitz_repair"
+  ,"spe_st_opelblitz_flak38"
+  ,"lib_opelblitz_parm"
+  ,"lib_opelblitz_ambulance"
+  ,"lib_opelblitz_ammo"
+  ,"lib_opelblitz_fuel"
   ,"lib_pzkpfwiv_h_tarn51c"
   ,"lib_pzkpfwiv_h_tarn51d"
   ,"lib_pzkpfwvi_b_tarn51c"
@@ -1018,15 +1042,10 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_pzkpfwvi_e_tarn51c"
   ,"lib_dak_pzkpfwvi_e"
   ,"lib_dak_m3_halftrack"
-  ,"lib_flakpanzeriv"
-  ,"lib_pzkpfwv"
   ,"lib_pzkpfwvi_b"
   ,"lib_pzkpfwvi_b_w"
   ,"lib_pzkpfwvi_b_camo_w"
   ,"lib_pzkpfwv_no_lods"
-  ,"lib_sdkfz124"
-  ,"lib_dak_flakpanzeriv_wirbelwind"
-  ,"lib_dak_sdkfz251"
   ,"lib_sdkfz_7_aa_koth"
   ,"lib_dak_sdkfz_7_aa"
   ,"lib_pzkpfwvi_e_tarn51d"
@@ -1039,11 +1058,6 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"spe_opelblitz_repair"
   ,"spe_sdkfz250_1"
   ,"spe_opelblitz_flak38"
-  ,"spe_stug_iii_g_early"
-  ,"spe_stug_iii_g_late"
-  ,"spe_stug_iii_g_skb"
-  ,"spe_stuh_42"
-  ,"spe_jagdpanther_g1"
   ,"spe_pzkpfwiii_j"
   ,"spe_pzkpfwiii_l"
   ,"spe_pzkpfwiii_m"
@@ -1051,16 +1065,10 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"spe_pzkpfwiv_g"
   ,"spe_pzkpfwv_g"
   ,"spe_pzkpfwvi_h1"
-  ,"spe_nashorn"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_stug_iii_g_w"
-  ,"lib_stug_iii_g_ws_w"
   ,"lib_opelblitz_open_y_camo"
   ,"lib_opelblitz_open_g_camo"
   ,"lib_opelblitz_tent_y_camo"
   ,"lib_stug_iii_g_ws"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
   ,"lib_dak_scout_m3"
   ,"lib_dak_pzkpfwiv_h"
   ,"lib_sdkfz_7_aa_w_dlv"
@@ -1069,33 +1077,18 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"fa_pz38t"
   ,"lib_pzkpfwiv_h_w"
   ,"lib_flakpanzeriv_wirbelwind_w"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
   ,"fow_v_sdkfz_222_ger_heer"
   ,"fow_v_sdkfz_222_foliage_ger_heer"
   ,"fow_v_sdkfz_234_1"
   ,"fa_panzer2_dak"
   ,"fa_valentinemk3_captured"
   ,"fow_v_sdkfz_250_9_ger_heer"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fow_v_panther_ger_heer"
-  ,"fow_v_panther_camo_foliage_ger_heer"
   ,"fow_v_type97_truck_utility_ija"
-  ,"fa_sdkfz231_dak"
   ,"fa_ba10m_captured"
-  ,"fa_sdkfz231"
-  ,"fa_sdkfz234"
-  ,"fa_sdkfz234_4"
   ,"fa_ba64_captured"
-  ,"lib_pzkpfwv_w"
   ,"fow_v_type97_truck_fuel_ija"
   ,"fow_v_type97_truck_open_ija"
   ,"fow_v_type97_truck_ija"
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
-  ,"lib_sdkfz_7_aa_w"
-  ,"lib_sdkfz251_ffv_w"
-  ,"lib_sdkfz251_w"
   ,"lib_kfz1_w"
   ,"lib_kfz1_hood_w"
   ,"wwi_markimale_toit"
@@ -1113,114 +1106,58 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"fiat15_ter_amb"
   ,"fiat15_ter"
   ,"wwi_schneider_ca1"
-  ,"wwi_ft17_tsf"
-  ,"wwi_ft17_8mm_girod"
-  ,"wwi_ft17_75bs"
-  ,"wwi_ft17_2018"
-  ,"wwi_ft17_37mm_girod"
   ,"peugeot_1914"
   ,"renault_french_army_ag_1910_red"
   ,"berlier_cba_fr"
-
-
+  
   ,"rollsroyceac"
   ,"rollsroyceac"
   ,"rollsroyceac"
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-
-  ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
+  
+  ] + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + ger_combat_unarmored_1c04c5
+    + a3e_arr_Escape_ReinforcementTruck_vehicleClasses + ger_armored_370313;
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
   sov_static_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
@@ -1500,7 +1437,7 @@ a3e_units_civilian_InfantryTypes = [
 //////////////////////////////////////////////////////////////////
 A3E_RoadblockTemplates = [
 	"rb_spe_rb1"
-	,"rb_bis_rb1"
+	// ,"rb_bis_rb1"
 	,"rb_bis_rb2"
 	,"rb_bis_rb3"
 	];
@@ -1596,7 +1533,7 @@ A3E_ComCenterTemplates = [
 // Random array. Light armored vehicles guarding the communication centers.
 a3e_arr_ComCenDefence_lightArmorClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_ComCenStaticWeapons + a3e_arr_ComCenStaticWeapons;
 // Random array. Heavy armored vehicles guarding the communication centers.
-a3e_arr_ComCenDefence_heavyArmorClasses = a3e_arr_ComCenDefence_lightArmorClasses;
+a3e_arr_ComCenDefence_heavyArmorClasses = ger_armored_370313;
 
 // A communication center have two parked and empty vehicles of the following possible types.
 a3e_arr_ComCenParkedVehicles = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
@@ -2192,19 +2129,17 @@ a3e_arr_extraction_chopper_escort = [
 // boats that are spawned
 //////////////////////////////////////////////////////////////////
 a3e_arr_AquaticPatrols = [
-  // "SPEX_LCVP"
-
   // To enable later:
-  // "LIB_LCM3_Armed"
-  // ,"LIB_LCVP"
-  // ,"fow_usmc_lcvp"
-  // ,"fow_usa_lcvp"
-  // ,"lib_lca"
-  // ,"lib_lci"
-  // ,"lib_uk_lca"
-  // ,"lib_uk_lci"
-
-  "msub"
+  "SPEX_LCVP"
+  ,"LIB_LCM3_Armed"
+  ,"LIB_LCVP"
+  ,"fow_usmc_lcvp"
+  ,"fow_usa_lcvp"
+  ,"lib_lca"
+  ,"lib_lci"
+  ,"lib_uk_lca"
+  ,"lib_uk_lci"
+  ,"msub"
   ,"wwi_puffer"
   ,"wwi_ramona_steamer"
   ,"c_rubberboat"
