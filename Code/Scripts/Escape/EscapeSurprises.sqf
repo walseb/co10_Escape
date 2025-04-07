@@ -74,6 +74,8 @@ if(count(missionNamespace getvariable ["a3e_arr_leafletdrone",[]])>0 || isNil "a
 _surpriseArgs = [_minEnemySkill, _maxEnemySkill];
 _timeInSek = 20 * 60 + random (60 * 60);
 _timeInSek = time + (_timeInSek * (0.5 + (4 - _enemyFrequency) / 4));
+// Override with 10-25 minutes
+_timeInSek = 10 * 60 + random (5 * 60);
 _surprise = ["MOTORIZEDSEARCHGROUP", _timeInSek, {[drn_searchAreaMarkerName] call drn_fnc_CL_MarkerExists}, false, _surpriseArgs];
 _surprises set [count _surprises, _surprise];
 diag_log ("ESCAPE SURPRISE: " + str _surprise);
@@ -83,6 +85,8 @@ diag_log ("ESCAPE SURPRISE: " + str _surprise);
 _surpriseArgs = [_minEnemySkill, _maxEnemySkill];
 _timeInSek = 10 * 60 + random (30 * 60);
 _timeInSek = time + (_timeInSek * (0.5 + (4 - _enemyFrequency) / 4));
+// Override with 10-25 minutes
+_timeInSek = 10 * 60 + random (5 * 60);
 _surprise = ["REINFORCEMENTTRUCK", _timeInSek, {[drn_searchAreaMarkerName] call drn_fnc_CL_MarkerExists}, false, _surpriseArgs];
 _surprises set [count _surprises, _surprise];
 diag_log ("ESCAPE SURPRISE: " + str _surprise);
@@ -92,6 +96,8 @@ diag_log ("ESCAPE SURPRISE: " + str _surprise);
 _surpriseArgs = [_minEnemySkill, _maxEnemySkill];
 _timeInSek = 60 + random (60);
 _timeInSek = time + (_timeInSek * (0.5 + (4 - _enemyFrequency) / 4));
+// Override with 10-25 minutes
+_timeInSek = 10 * 60 + random (5 * 60);
 _surprise = ["CIVILIANENEMY", _timeInSek, {[drn_searchAreaMarkerName] call drn_fnc_CL_MarkerExists}, false, _surpriseArgs];
 _surprises set [count _surprises, _surprise];
 diag_log ("ESCAPE SURPRISE: " + str _surprise);
@@ -135,6 +141,9 @@ while {true} do {
                     _surpriseArgs = [_minEnemySkill, _maxEnemySkill];
                     _timeInSek = 20 * 60 + random (60 * 60);
                     _timeInSek = time + _timeInSek * (4 - _enemyFrequency);
+
+                    // Override with 10-25 minutes
+                    _timeInSek = 10 * 60 + random (5 * 60);
                     _surprise = ["MOTORIZEDSEARCHGROUP", _timeInSek, {[drn_searchAreaMarkerName] call drn_fnc_CL_MarkerExists}, false, _surpriseArgs];
                     _surprises set [count _surprises, _surprise];
                     diag_log ("ESCAPE SURPRISE: " + str _surprise);
@@ -338,6 +347,8 @@ while {true} do {
                     _surpriseArgs = [_minEnemySkill, _maxEnemySkill];
                     _timeInSek = random (45 * 60);
                     _timeInSek = time + (_timeInSek * (0.5 + (4 - _enemyFrequency) / 4));
+                    // Override with 10-25 minutes
+                    _timeInSek = 10 * 60 + random (5 * 60);
                     _surprise = ["REINFORCEMENTTRUCK", _timeInSek, {[drn_searchAreaMarkerName] call drn_fnc_CL_MarkerExists}, false, _surpriseArgs];
                     _surprises set [count _surprises, _surprise];
                     diag_log ("ESCAPE SURPRISE: " + str _surprise);
@@ -356,6 +367,9 @@ while {true} do {
                     _surpriseArgs = [_minEnemySkill, _maxEnemySkill];
                     _timeInSek = 15 * 60 + random (45 * 60);
                     _timeInSek = time + (_timeInSek * (0.5 + (4 - _enemyFrequency) / 4));
+
+                    // Override with 10-25 minutes
+                    _timeInSek = 10 * 60 + random (5 * 60);
                     _surprise = ["CIVILIANENEMY", _timeInSek, {[drn_searchAreaMarkerName] call drn_fnc_CL_MarkerExists}, false, _surpriseArgs];
                     _surprises set [count _surprises, _surprise];
                     diag_log ("ESCAPE SURPRISE: " + str _surprise);

@@ -11,7 +11,8 @@ if(_zoneArea > 5000) then {
 
 
 private _patrolsPerSqmSqrt = 0.01;
-private _spawnCount = missionNamespace getvariable ["A3E_Param_VillageSpawnCount",1];
+// private _spawnCount = missionNamespace getvariable ["A3E_Param_VillageSpawnCount",1];
+private _spawnCount = 2;
 switch (_spawnCount) do
 {
 	case 1: // 1-2 players
