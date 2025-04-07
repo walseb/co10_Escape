@@ -30,7 +30,7 @@ private ["_fnc_OnSpawnUnit", "_fnc_OnSpawnGroup"];
 _referenceGroup = _this select 0;
 _side = _this select 1;
 _infantryClasses = _this select 2;
-_groupsCount = 3;
+_groupsCount = 5;
 // if (count _this > 3) then {_groupsCount = _this select 3;} else {_groupsCount = 10;};
 _minSpawnDistance = 1500;
 // if (count _this > 4) then {_minSpawnDistance = _this select 4;} else {_minSpawnDistance = 1500;};
@@ -46,7 +46,7 @@ if (count _this > 12) then {_fnc_OnSpawnGroup = _this select 12;} else {_fnc_OnS
 
 
 //WHY!?!?!?!?!
-_factionsArray = [A3E_VAR_Side_Ind , A3E_VAR_Side_Ind , A3E_VAR_Side_Ind , A3E_VAR_Side_Ind , A3E_VAR_Side_Ind , A3E_VAR_Side_Ind , A3E_VAR_Side_Opfor , A3E_VAR_Side_Opfor , A3E_VAR_Side_Opfor , A3E_VAR_Side_Opfor ,A3E_VAR_Side_Opfor];
+_factionsArray = [A3E_VAR_Side_Ind, A3E_VAR_Side_Opfor ];
 
 
 if (isNil "a3e_var_commonLibInitialized") then {

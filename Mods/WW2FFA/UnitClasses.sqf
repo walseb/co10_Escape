@@ -180,7 +180,7 @@ ger_recon_inf_345c1c = [
   ,"fow_s_ija_rifleman_at"
   ];
 
-allies_combat_unarmored_ca42d6 = [
+allies_light_bfff77 = [
   "lib_us_willys_mb_hood"
   ,"lib_uk_willys_mb_hood"
   ,"lib_willys_mb"
@@ -195,13 +195,9 @@ allies_combat_unarmored_ca42d6 = [
   ,"spe_us_g503_mb_m1919_armoured"
   ,"spe_us_g503_mb_m2"
   ,"spe_us_g503_mb_m2_armoured"
-  ];
-
-allies_vehicles_0d7fd7 = [
-  "lib_willys_mb"
+  ,"lib_willys_mb"
   ,"spe_m20_auc"
   ,"lib_scout_m3"
-  ,"lib_willys_mb"
   ,"lib_us_willys_mb"
   ,"spe_ffi_r200_hood"
   ,"spe_cckw_353"
@@ -218,32 +214,14 @@ allies_vehicles_0d7fd7 = [
   ,"spe_us_m3_halftrack_ammo"
   ,"spe_us_m3_halftrack_fuel"
   ,"spe_us_m3_halftrack_repair"
-  ,"spe_m20_auc"
   ,"spe_m8_lac"
   ,"spe_m8_lac_ringmount"
   ,"spe_m10"
   ,"spe_m18_hellcat"
-  ,"spe_m4a0_75_early"
-  ,"spe_m4a0_75"
-  ,"spe_m4a0_composite"
-  ,"spe_m4a0_105"
-  ,"spe_m4a1_75_erla"
-  ,"spe_m4a1_75"
-  ,"spe_m4a1_76"
-  ,"spe_m4a1_t34_calliope_direct"
-  ,"spe_m4a1_t34_calliope"
-  ,"spe_m4a3_75"
-  ,"spe_m4a3_76"
-  ,"spe_m4a3_105"
-  ,"spe_m4a3_t34_calliope_direct"
-  ,"spe_m4a3_t34_calliope"
+  ,"spe_us6_bm13_singlefire"
   ,"lib_us6_bm13_singlefire"
-  ,"lib_scout_m3_ffv"
-  ,"lib_willys_mb"
   ,"spe_ffi_sdkfz250_1"
   ,"spe_ffi_r200_unarmed"
-  ,"spe_ffi_r200_hood"
-  ,"spe_ffi_r200_mg34"
   ,"spe_ffi_opelblitz"
   ,"spe_ffi_opelblitz_open"
   ,"spe_ffi_opelblitz_ambulance"
@@ -259,14 +237,6 @@ allies_vehicles_0d7fd7 = [
   ,"spe_fr_m20_auc"
   ,"spe_fr_m8_lac"
   ,"spe_fr_m8_lac_ringmount"
-  ,"spe_fr_m4a0_105"
-  ,"spe_fr_m4a3_75"
-  ,"spe_fr_m4a3_76"
-  ,"spe_fr_m10"
-  ,"spe_fr_m4a0_75_early"
-  ,"spe_fr_m4a0_75_mid"
-  ,"spe_fr_m4a1_75"
-  ,"spe_fr_m4a1_76"
   ,"lib_us_m3_halftrack"
   ,"lib_us_gmc_tent"
   ,"lib_us_gmc_ambulance"
@@ -276,22 +246,9 @@ allies_vehicles_0d7fd7 = [
   ,"lib_us_gmc_parm"
   ,"lib_us_scout_m3"
   ,"lib_us_scout_m3_ffv"
-  ,"lib_us_willys_mb"
   ,"lib_m8_greyhound"
-  ,"lib_m3a3_stuart"
-  ,"lib_m4a3_75"
-  ,"lib_m4a3_75_tubes"
-  ,"lib_m4a4_firefly"
-  ,"lib_m4a3_76"
-  ,"lib_m4a3_76_hvss"
-  ,"lib_m5a1_stuart"
   ,"lib_universalcarrier"
   ,"lib_universalcarrier_desert"
-  ,"lib_cromwell_mk4"
-  ,"lib_churchill_mk7"
-  ,"lib_churchill_mk7_crocodile"
-  ,"lib_churchill_mk7_avre"
-  ,"lib_churchill_mk7_howitzer"
   ,"lib_us6_tent_cargo"
   ,"lib_us6_open_cargo"
   ,"lib_willys_mb_hood"
@@ -302,25 +259,76 @@ allies_vehicles_0d7fd7 = [
   ,"lib_uk_willys_mb_m1919"
   ,"spe_us_g503_mb_open"
   ,"spe_us_g503_mb"
-  ,"spe_us_g503_mb_armoured"
   ,"spe_us_g503_mb_ambulance"
+  ,"spe_fr_m45_quadmount"
+  ,"lib_universalcarrier_base"
+  ,"lib_us_nac_scout_m3"
+  ,"lib_us_nac_m3_halftrack"
+  ,"lib_uk_m3_halftrack"
+  ,"lib_uk_dr_m3_halftrack"
+  ,"fa_daimlermk2"
+  ,"fa_t17e1"
+  ,"fow_v_universalcarrier"
+  ,"lib_scout_m3_ffv"             
+  ,"spe_ffi_r200_mg34"            
+  ,"lib_us_willys_mb_hood"        
+  ,"lib_uk_willys_mb_hood"        
+  ,"spe_us_g503_mb_armoured"      
+  ,"spe_us_g503_mb_m1919"         
+  ,"spe_us_g503_mb_m2"            
+  ,"spe_us_g503_mb_m1919_patrol"  
+  ,"spe_us_g503_mb_m2_patrol"     
+  ];
+
+allies_armor_3ac0dd = [
+  "spe_m4a0_75_early"
+  ,"spe_m4a0_75"
+  ,"spe_m4a0_composite"
+  ,"spe_m4a0_105"
+  ,"spe_m4a1_75_erla"
+  ,"spe_m4a1_75"
+  ,"spe_m4a1_76"
+  ,"spe_m4a1_t34_calliope_direct"
+  ,"spe_m4a1_t34_calliope"
+  ,"spe_m4a3_75"
+  ,"spe_m4a3_76"
+  ,"spe_m4a3_105"
+  ,"spe_m4a3_t34_calliope_direct"
+  ,"spe_m4a3_t34_calliope"
+  ,"lib_scout_m3_ffv"
+  ,"spe_ffi_r200_mg34"
+  ,"spe_fr_m4a0_105"
+  ,"spe_fr_m4a3_75"
+  ,"spe_fr_m4a3_76"
+  ,"spe_fr_m10"
+  ,"spe_fr_m4a0_75_early"
+  ,"spe_fr_m4a0_75_mid"
+  ,"spe_fr_m4a1_75"
+  ,"spe_fr_m4a1_76"
+  ,"lib_m3a3_stuart"
+  ,"lib_m4a3_75"
+  ,"lib_m4a3_75_tubes"
+  ,"lib_m4a4_firefly"
+  ,"lib_m4a3_76"
+  ,"lib_m4a3_76_hvss"
+  ,"lib_m5a1_stuart"
+  ,"lib_cromwell_mk4"
+  ,"lib_churchill_mk7"
+  ,"lib_churchill_mk7_crocodile"
+  ,"lib_churchill_mk7_avre"
+  ,"lib_churchill_mk7_howitzer"
+  ,"spe_us_g503_mb_armoured"
   ,"spe_us_g503_mb_m1919"
   ,"spe_us_g503_mb_m1919_armoured"
   ,"spe_us_g503_mb_m2"
   ,"spe_us_g503_mb_m2_armoured"
   ,"spe_us_g503_mb_m1919_patrol"
   ,"spe_us_g503_mb_m2_patrol"
-  ,"spe_fr_m45_quadmount"
-  ,"lib_universalcarrier_base"
   ,"lib_churchill_mk7_avre_desert"
   ,"lib_churchill_mk7_desert"
-  ,"lib_us_nac_scout_m3"
   ,"lib_us_nac_m4a3_75"
   ,"lib_uk_dr_m4a3_75"
   ,"lib_uk_italy_m4a3_75"
-  ,"lib_us_nac_m3_halftrack"
-  ,"lib_uk_m3_halftrack"
-  ,"lib_uk_dr_m3_halftrack"
   ,"lib_churchill_mk7_crocodile_desert"
   ,"lib_churchill_mk7_howitzer_desert"
   ,"fa_m26"
@@ -330,54 +338,43 @@ allies_vehicles_0d7fd7 = [
   ,"fow_v_m5a1_usa"
   ,"fow_v_m4a2_usa"
   ,"fow_v_cromwell_uk"
-  ,"fow_v_universalcarrier"
-  ,"fa_daimlermk2"
-  ,"fa_t17e1"
-  ,"fa_t17e1"
-  ,"fa_t17e1"
   ,"fa_daimlermk2_dr"
-  // boat:
-  ,"lib_lci"
+  ];
 
-  ]
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6
-    + allies_combat_unarmored_ca42d6;
+allies_vehicles_0d7fd7 = [
+  // boat:
+  "lib_lci"
+
+  ] + allies_armor_3ac0dd
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77
+    + allies_light_bfff77;
 
 sov_static_ba213a = [
   "lib_zis3"
@@ -929,8 +926,7 @@ a3e_arr_Escape_ReinforcementTruck_vehicleClasses = [
 a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = allies_transport_5a712a;
 
 ger_armored_370313 = [
-  "spe_st_r200_mg34"
-  ,"spe_st_sdkfz250_1"
+  "spe_st_sdkfz250_1"
   ,"spe_st_stug_iii_g_early"
   ,"spe_st_stug_iii_g_late"
   ,"spe_st_stug_iii_g_skb"
@@ -979,16 +975,43 @@ ger_armored_370313 = [
   ,"fow_ija_type95_hago_1_ija"
   ,"fow_ija_type95_hago_2_ija"
   ,"fow_ija_type95_hago_3_ija"
-
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
-  ,"fow_ija_type95_hago_1_ija"
-  ,"fow_ija_type95_hago_2_ija"
-  ,"fow_ija_type95_hago_3_ija"
+  ,"lib_pzkpfwiv_h_tarn51c"
+  ,"lib_pzkpfwiv_h_tarn51d"
+  ,"lib_pzkpfwvi_b_tarn51c"
+  ,"lib_pzkpfwvi_b_tarn51d"
+  ,"lib_pzkpfwvi_b_camo"
+  ,"lib_pzkpfwvi_e"
+  ,"lib_pzkpfwvi_e_1"
+  ,"lib_pzkpfwvi_e_2"
+  ,"lib_pzkpfwvi_e_tarn51c"
+  ,"lib_dak_pzkpfwvi_e"
+  ,"lib_pzkpfwvi_b"
+  ,"lib_pzkpfwvi_b_w"
+  ,"lib_pzkpfwvi_b_camo_w"
+  ,"lib_pzkpfwv_no_lods"
+  ,"lib_pzkpfwi_e_tarn51d"
+  ,"lib_pzkpfwi_e_tarn52c"
+  ,"lib_pzkpfwi_e_tarn52d"
+  ,"spe_pzkpfwiii_j"
+  ,"spe_pzkpfwiii_l"
+  ,"spe_pzkpfwiii_m"
+  ,"spe_pzkpfwiii_n"
+  ,"spe_pzkpfwiv_g"
+  ,"spe_pzkpfwv_g"
+  ,"spe_pzkpfwvi_h1"
+  ,"lib_stug_iii_g_ws"
+  ,"lib_dak_pzkpfwiv_h"
+  ,"fa_t26_captured"
+  ,"fa_pz38t"
+  ,"lib_pzkpfwiv_h_w"
+  ,"lib_flakpanzeriv_wirbelwind_w"
+  ,"fa_panzer2_dak"
+  ,"fa_valentinemk3_captured"
+  ,"lib_pzkpfwvi_e_tarn51d"
+  ,"lib_pzkpfwvi_e_tarn52c"
+  ,"lib_pzkpfwvi_e_tarn52d"
+  ,"fow_v_sdkfz_234_1"
+  ,"lib_pzkpfwvi_e_w"
   ];
 
 ger_combat_unarmored_1c04c5 = [
@@ -1004,24 +1027,7 @@ ger_combat_unarmored_1c04c5 = [
   ,"fow_v_sdkfz_251_camo_ger_heer"
   ,"fa_sdkfz231_dak"
   ,"fa_sdkfz231"
-  ,"spe_st_r200_mg34"
-  ,"lib_kfz1_mg42"
-  ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
-  ,"lib_sdkfz_7_aa"
-  ,"lib_sdkfz251_ffv"
-  ,"lib_kfz1_mg42_camo"
-  ,"lib_dak_kfz1_mg42"
-  ,"fow_v_sdkfz_222_camo_ger_ss"
-  ,"fow_v_sdkfz_251_camo_ger_heer"
-  ,"fa_sdkfz231_dak"
-  ,"fa_sdkfz231"
-  ];
-
-// Random arrays. Enemy vehicle classes for ambient traffic.
-// Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
-a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
-  "spe_st_r200_unarmed"
+  ,"spe_st_r200_unarmed"
   ,"spe_st_opelblitz_ambulance"
   ,"spe_st_opelblitz_ammo"
   ,"spe_st_opelblitz_fuel"
@@ -1031,26 +1037,9 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"lib_opelblitz_ambulance"
   ,"lib_opelblitz_ammo"
   ,"lib_opelblitz_fuel"
-  ,"lib_pzkpfwiv_h_tarn51c"
-  ,"lib_pzkpfwiv_h_tarn51d"
-  ,"lib_pzkpfwvi_b_tarn51c"
-  ,"lib_pzkpfwvi_b_tarn51d"
-  ,"lib_pzkpfwvi_b_camo"
-  ,"lib_pzkpfwvi_e"
-  ,"lib_pzkpfwvi_e_1"
-  ,"lib_pzkpfwvi_e_2"
-  ,"lib_pzkpfwvi_e_tarn51c"
-  ,"lib_dak_pzkpfwvi_e"
   ,"lib_dak_m3_halftrack"
-  ,"lib_pzkpfwvi_b"
-  ,"lib_pzkpfwvi_b_w"
-  ,"lib_pzkpfwvi_b_camo_w"
-  ,"lib_pzkpfwv_no_lods"
   ,"lib_sdkfz_7_aa_koth"
   ,"lib_dak_sdkfz_7_aa"
-  ,"lib_pzkpfwvi_e_tarn51d"
-  ,"lib_pzkpfwvi_e_tarn52c"
-  ,"lib_pzkpfwvi_e_tarn52d"
   ,"spe_ger_r200_unarmed"
   ,"spe_opelblitz_ambulance"
   ,"spe_opelblitz_ammo"
@@ -1058,30 +1047,13 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"spe_opelblitz_repair"
   ,"spe_sdkfz250_1"
   ,"spe_opelblitz_flak38"
-  ,"spe_pzkpfwiii_j"
-  ,"spe_pzkpfwiii_l"
-  ,"spe_pzkpfwiii_m"
-  ,"spe_pzkpfwiii_n"
-  ,"spe_pzkpfwiv_g"
-  ,"spe_pzkpfwv_g"
-  ,"spe_pzkpfwvi_h1"
   ,"lib_opelblitz_open_y_camo"
   ,"lib_opelblitz_open_g_camo"
   ,"lib_opelblitz_tent_y_camo"
-  ,"lib_stug_iii_g_ws"
   ,"lib_dak_scout_m3"
-  ,"lib_dak_pzkpfwiv_h"
   ,"lib_sdkfz_7_aa_w_dlv"
-  ,"lib_pzkpfwvi_e_w"
-  ,"fa_t26_captured"
-  ,"fa_pz38t"
-  ,"lib_pzkpfwiv_h_w"
-  ,"lib_flakpanzeriv_wirbelwind_w"
   ,"fow_v_sdkfz_222_ger_heer"
   ,"fow_v_sdkfz_222_foliage_ger_heer"
-  ,"fow_v_sdkfz_234_1"
-  ,"fa_panzer2_dak"
-  ,"fa_valentinemk3_captured"
   ,"fow_v_sdkfz_250_9_ger_heer"
   ,"fow_v_type97_truck_utility_ija"
   ,"fa_ba10m_captured"
@@ -1109,55 +1081,32 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses = [
   ,"peugeot_1914"
   ,"renault_french_army_ag_1910_red"
   ,"berlier_cba_fr"
-  
-  ,"rollsroyceac"
-  ,"rollsroyceac"
-  ,"rollsroyceac"
-  
-  ] + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + ger_combat_unarmored_1c04c5
-    + a3e_arr_Escape_ReinforcementTruck_vehicleClasses + ger_armored_370313;
+  ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
+
+// Random arrays. Enemy vehicle classes for ambient traffic.
+// Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
+a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses =
+  ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_armored_370313;
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
   sov_static_ba213a + sov_vehicles_125ff9 + allies_vehicles_0d7fd7 + sov_transport_1be340 + allies_transport_5a712a;
@@ -1536,7 +1485,29 @@ a3e_arr_ComCenDefence_lightArmorClasses = a3e_arr_Escape_MilitaryTraffic_EnemyVe
 a3e_arr_ComCenDefence_heavyArmorClasses = ger_armored_370313;
 
 // A communication center have two parked and empty vehicles of the following possible types.
-a3e_arr_ComCenParkedVehicles = a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND;
+a3e_arr_ComCenParkedVehicles =
+  allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_light_bfff77
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_combat_unarmored_1c04c5;
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 //Should be civilian, as there are no civ vehicles its a normal enemy truck
