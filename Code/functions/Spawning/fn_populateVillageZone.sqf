@@ -4,12 +4,12 @@ private _zone = A3E_Zones select _zoneIndex;
 private _marker = _zone get "marker";
 private _area = _zone get "zonearea";
 
-private _sides = [A3E_VAR_Side_Ind];
-if(_zoneArea > 5000) then {
-	_sides pushBack A3E_VAR_Side_Opfor;
-	_sides pushBack A3E_VAR_Side_Opfor;
-};
-
+// private _sides = [A3E_VAR_Side_Ind];
+private _sides = [A3E_VAR_Side_Opfor];
+// if(_zoneArea > 5000) then {
+// 	_sides pushBack A3E_VAR_Side_Opfor;
+// 	_sides pushBack A3E_VAR_Side_Opfor;
+// };
 
 private _patrolsPerSqmSqrt = 0.01;
 private _spawnCount = missionNamespace getvariable ["A3E_Param_VillageSpawnCount",1];
@@ -60,19 +60,19 @@ for "_x" from 1 to _patrolCount do {
 	    clearItemCargoGlobal _box_515545;
 
 	    private _weapon_0fe5ff = selectRandom a3e_arr_CrashSiteWeapons;
-	    _backpack addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
-	    _backpack addMagazineCargoGlobal[(_weapon_0fe5ff select 4),5];
+	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
+	    _box_515545 addMagazineCargoGlobal[(_weapon_0fe5ff select 4),5];
 
 	    private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
-	    _backpack addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
-	    _backpack addMagazineCargoGlobal[(_weapon_0fe5fe select 4),5];
+	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
+	    _box_515545 addMagazineCargoGlobal[(_weapon_0fe5fe select 4),5];
 
 	    private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
-	    _backpack addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
-	    _backpack addMagazineCargoGlobal[(_weapon_0fe5fe select 4),5];
+	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
+	    _box_515545 addMagazineCargoGlobal[(_weapon_0fe5fe select 4),5];
 
             private _intel_dd4afb = ["Files","FileTopSecret","FilesSecret","DocumentsSecret","Wallet_ID","FileNetworkStructure"];
-	    _backpack addMagazineCargoGlobal[(selectRandom _intel_dd4afb),2];
+	    _box_515545 addMagazineCargoGlobal[(selectRandom _intel_dd4afb),2];
 	};
 
 	private _vehicleType_9d942d = selectRandom (a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND);
