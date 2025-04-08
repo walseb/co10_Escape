@@ -4,8 +4,8 @@
 
 /*
  * Description: This file contains the vehicle types and unit types for the units spawned in the mission, and the weapons and magazines found in ammo boxes/cars.
- * "Random array" (used below) means that array will be used to spawn units, and that chance is 1/n that each element will be spawned on each spawn. The array can contain 
- * many elements of the same type, so the example array ["Offroad_DSHKM_INS", "Pickup_PK_INS", "Pickup_PK_INS"] will spawn an Offroad with 1/3 probability, and a 
+ * "Random array" (used below) means that array will be used to spawn units, and that chance is 1/n that each element will be spawned on each spawn. The array can contain
+ * many elements of the same type, so the example array ["Offroad_DSHKM_INS", "Pickup_PK_INS", "Pickup_PK_INS"] will spawn an Offroad with 1/3 probability, and a
  * Pickup with 2/3 probability.
  */
 
@@ -32,7 +32,7 @@ A3E_ItemsToBeRemoved = [
 //Disable NVGs parameter for the whole SPE version.
 missionNamespace setvariable["A3E_Param_NoNightvision",1];
 
-allies_static_f39100 = 
+allies_static_f39100 =
   [
   // static ind weapons:
   "lib_m1919_m2"
@@ -180,47 +180,61 @@ ger_recon_inf_345c1c = [
   ,"fow_s_ija_rifleman_at"
   ];
 
-allies_light_bfff77 = [
-  "lib_us_willys_mb_hood"
-  ,"lib_uk_willys_mb_hood"
-  ,"lib_willys_mb"
-  ,"lib_us_willys_mb"
-  ,"spe_m20_auc"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_ffi_r200_mg34"
+allies_combat_unarmored_880b39 = [
+  "spe_ffi_r200_mg34"
   ,"lib_us_willys_mb_m1919"
   ,"lib_uk_willys_mb_m1919"
   ,"spe_us_g503_mb_m1919"
   ,"spe_us_g503_mb_m1919_armoured"
   ,"spe_us_g503_mb_m2"
   ,"spe_us_g503_mb_m2_armoured"
+  ,"spe_us_m16_halftrack"
+  ,"spe_us_m3_halftrack"
+  ,"spe_ffi_sdkfz250_1"
+  ,"spe_fr_m16_halftrack"
+  ,"spe_fr_m3_halftrack"
+  ,"spe_fr_m20_auc"
+  ,"spe_fr_m8_lac"
+  ,"spe_fr_m8_lac_ringmount"
+  ,"lib_us_m3_halftrack"
+  ,"lib_us_scout_m3"
+  ,"lib_us_scout_m3_ffv"
+  ,"lib_universalcarrier"
+  ,"lib_universalcarrier_desert"
+  ,"lib_fr_m45_quadmount"
+  ,"lib_us_nac_scout_m3"
+  ,"lib_us_nac_m3_halftrack"
+  ,"lib_uk_m3_halftrack"
+  ,"lib_uk_dr_m3_halftrack"
+  ,"spe_us_g503_mb_m1919_patrol"
+  ,"spe_us_g503_mb_m2_patrol"
+  ,"lib_us_willys_mb_hood"
+  ,"lib_uk_willys_mb_hood"
   ,"lib_willys_mb"
-  ,"spe_m20_auc"
-  ,"lib_scout_m3"
   ,"lib_us_willys_mb"
+  ,"lib_universalcarrier_base"
+  ,"fow_v_universalcarrier"
+  ,"lib_scout_m3_ffv"
+  ,"spe_us6_bm13_singlefire"
+  ,"lib_us6_bm13_singlefire"
   ,"spe_ffi_r200_hood"
-  ,"spe_cckw_353"
+  ,"lib_scout_m3"
+  ,"spe_fr_m45_quadmount"
+  ];
+
+allies_unarmored_bfff77 = [
+  "spe_cckw_353"
   ,"spe_cckw_353_open"
   ,"spe_cckw_353_ambulance"
   ,"spe_cckw_353_ammo"
   ,"spe_cckw_353_fuel"
   ,"spe_cckw_353_repair"
-  ,"spe_us_m16_halftrack"
   ,"spe_us_m3_halftrack_unarmed"
   ,"spe_us_m3_halftrack_unarmed_open"
-  ,"spe_us_m3_halftrack"
   ,"spe_us_m3_halftrack_ambulance"
   ,"spe_us_m3_halftrack_ammo"
   ,"spe_us_m3_halftrack_fuel"
   ,"spe_us_m3_halftrack_repair"
-  ,"spe_m8_lac"
-  ,"spe_m8_lac_ringmount"
-  ,"spe_m10"
-  ,"spe_m18_hellcat"
-  ,"spe_us6_bm13_singlefire"
-  ,"lib_us6_bm13_singlefire"
-  ,"spe_ffi_sdkfz250_1"
   ,"spe_ffi_r200_unarmed"
   ,"spe_ffi_opelblitz"
   ,"spe_ffi_opelblitz_open"
@@ -228,60 +242,38 @@ allies_light_bfff77 = [
   ,"spe_ffi_opelblitz_ammo"
   ,"spe_ffi_opelblitz_fuel"
   ,"spe_ffi_opelblitz_repair"
-  ,"spe_fr_m16_halftrack"
-  ,"spe_fr_m3_halftrack"
   ,"spe_fr_m3_halftrack_ambulance"
   ,"spe_fr_m3_halftrack_ammo"
   ,"spe_fr_m3_halftrack_fuel"
   ,"spe_fr_m3_halftrack_repair"
-  ,"spe_fr_m20_auc"
-  ,"spe_fr_m8_lac"
-  ,"spe_fr_m8_lac_ringmount"
-  ,"lib_us_m3_halftrack"
   ,"lib_us_gmc_tent"
   ,"lib_us_gmc_ambulance"
   ,"lib_us_gmc_ammo"
   ,"lib_us_gmc_fuel"
   ,"lib_us_gmc_open"
   ,"lib_us_gmc_parm"
-  ,"lib_us_scout_m3"
-  ,"lib_us_scout_m3_ffv"
-  ,"lib_m8_greyhound"
-  ,"lib_universalcarrier"
-  ,"lib_universalcarrier_desert"
   ,"lib_us6_tent_cargo"
   ,"lib_us6_open_cargo"
   ,"lib_willys_mb_hood"
   ,"lib_willys_mb_ambulance"
   ,"lib_us_willys_mb_ambulance"
   ,"lib_uk_willys_mb_ambulance"
-  ,"lib_us_willys_mb_m1919"
-  ,"lib_uk_willys_mb_m1919"
   ,"spe_us_g503_mb_open"
   ,"spe_us_g503_mb"
   ,"spe_us_g503_mb_ambulance"
-  ,"spe_fr_m45_quadmount"
-  ,"lib_universalcarrier_base"
-  ,"lib_us_nac_scout_m3"
-  ,"lib_us_nac_m3_halftrack"
-  ,"lib_uk_m3_halftrack"
-  ,"lib_uk_dr_m3_halftrack"
-  ,"fa_daimlermk2"
-  ,"fa_t17e1"
-  ,"fow_v_universalcarrier"
-  ,"lib_scout_m3_ffv"             
-  ,"spe_ffi_r200_mg34"            
-  ,"lib_us_willys_mb_hood"        
-  ,"lib_uk_willys_mb_hood"        
-  ,"spe_us_g503_mb_armoured"      
-  ,"spe_us_g503_mb_m1919"         
-  ,"spe_us_g503_mb_m2"            
-  ,"spe_us_g503_mb_m1919_patrol"  
-  ,"spe_us_g503_mb_m2_patrol"     
+  ,"spe_us_g503_mb_armoured"
   ];
 
 allies_armor_3ac0dd = [
-  "spe_m4a0_75_early"
+  "spe_m10"
+  ,"fa_daimlermk2"
+  ,"fa_t17e1"
+  ,"spe_m18_hellcat"
+  ,"lib_m8_greyhound"
+  ,"spe_m8_lac"
+  ,"spe_m8_lac_ringmount"
+  ,"spe_m20_auc"
+  ,"spe_m4a0_75_early"
   ,"spe_m4a0_75"
   ,"spe_m4a0_composite"
   ,"spe_m4a0_105"
@@ -345,36 +337,29 @@ allies_vehicles_0d7fd7 = [
   // boat:
   "lib_lci"
 
-  ] + allies_armor_3ac0dd
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77
-    + allies_light_bfff77;
+  ] + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_combat_unarmored_880b39
+    + allies_unarmored_bfff77
+    + allies_unarmored_bfff77
+    + allies_unarmored_bfff77
+    + allies_unarmored_bfff77
+    + allies_armor_3ac0dd;
 
 sov_static_ba213a = [
   "lib_zis3"
@@ -475,7 +460,7 @@ sov_vehicles_125ff9 = [
   ,"ehrhardt"
   ];
 
-civ_vehicles_df526f = 
+civ_vehicles_df526f =
   [
     "lib_civ_ffi_citc4"
     ,"lib_civ_ffi_citc4_4"
@@ -585,10 +570,10 @@ allies_transport_5a712a = [
   ,"lib_us_scout_m3_ffv"
   ,"lib_us_gmc_tent"
   ,"lib_us_gmc_open"
-  ,"spe_us_m3_halftrack"	
-  ,"spe_us_m3_halftrack_unarmed"	
-  ,"spe_cckw_353"	
-  ,"spe_cckw_353_open"	
+  ,"spe_us_m3_halftrack"
+  ,"spe_us_m3_halftrack_unarmed"
+  ,"spe_cckw_353"
+  ,"spe_cckw_353_open"
   ,"spe_fr_m3_halftrack_unarmed"
   ,"spe_fr_m3_halftrack_unarmed_open"
   ];
@@ -816,7 +801,7 @@ a3e_arr_Escape_InfantryTypes = [
 	];
 
 a3e_arr_Escape_StartPositionGuardTypes = a3e_arr_Escape_InfantryTypes + sov_infantry_24c563;
-	
+
 // Prison backpacks
 a3e_arr_PrisonBackpacks = [
 	"B_SPE_US_M36"
@@ -927,6 +912,11 @@ a3e_arr_Escape_ReinforcementTruck_vehicleClasses_Ind = allies_transport_5a712a;
 
 ger_armored_370313 = [
   "spe_st_sdkfz250_1"
+  ,"wwi_markimale_toit"
+  ,"wwi_markimale_poulie"
+  ,"wwi_markimale_nocart"
+  ,"wwi_markimale_desert"
+  ,"wwi_markimale"
   ,"spe_st_stug_iii_g_early"
   ,"spe_st_stug_iii_g_late"
   ,"spe_st_stug_iii_g_skb"
@@ -1018,7 +1008,6 @@ ger_combat_unarmored_1c04c5 = [
   "spe_st_r200_mg34"
   ,"lib_kfz1_mg42"
   ,"lib_sdkfz251"
-  ,"lib_sdkfz_7"
   ,"lib_sdkfz_7_aa"
   ,"lib_sdkfz251_ffv"
   ,"lib_kfz1_mg42_camo"
@@ -1027,57 +1016,56 @@ ger_combat_unarmored_1c04c5 = [
   ,"fow_v_sdkfz_251_camo_ger_heer"
   ,"fa_sdkfz231_dak"
   ,"fa_sdkfz231"
-  ,"spe_st_r200_unarmed"
+  ,"spe_st_opelblitz_flak38"
+  ,"lib_sdkfz_7_aa_koth"
+  ,"lib_dak_sdkfz_7_aa"
+  ,"spe_sdkfz250_1"
+  ,"spe_opelblitz_flak38"
+  ,"lib_dak_scout_m3"
+  ,"fow_v_sdkfz_222_ger_heer"
+  ,"fow_v_sdkfz_222_foliage_ger_heer"
+  ,"fow_v_sdkfz_250_9_ger_heer"
+  ,"fa_ba10m_captured"
+  ,"fa_ba64_captured"
+  ,"rollsroyceac"
+  ,"ford_t_mg"
+  ,"lancia_1zm"
+  ,"lancia_1z"
+  ,"wwi_schneider_ca1"
+  ,"lib_sdkfz_7"
+  ];
+
+ger_unarmored_1c04c5 = [
+  "spe_st_r200_unarmed"
   ,"spe_st_opelblitz_ambulance"
   ,"spe_st_opelblitz_ammo"
   ,"spe_st_opelblitz_fuel"
   ,"spe_st_opelblitz_repair"
-  ,"spe_st_opelblitz_flak38"
   ,"lib_opelblitz_parm"
   ,"lib_opelblitz_ambulance"
   ,"lib_opelblitz_ammo"
   ,"lib_opelblitz_fuel"
   ,"lib_dak_m3_halftrack"
-  ,"lib_sdkfz_7_aa_koth"
-  ,"lib_dak_sdkfz_7_aa"
   ,"spe_ger_r200_unarmed"
   ,"spe_opelblitz_ambulance"
   ,"spe_opelblitz_ammo"
   ,"spe_opelblitz_fuel"
   ,"spe_opelblitz_repair"
-  ,"spe_sdkfz250_1"
-  ,"spe_opelblitz_flak38"
   ,"lib_opelblitz_open_y_camo"
   ,"lib_opelblitz_open_g_camo"
   ,"lib_opelblitz_tent_y_camo"
-  ,"lib_dak_scout_m3"
   ,"lib_sdkfz_7_aa_w_dlv"
-  ,"fow_v_sdkfz_222_ger_heer"
-  ,"fow_v_sdkfz_222_foliage_ger_heer"
-  ,"fow_v_sdkfz_250_9_ger_heer"
   ,"fow_v_type97_truck_utility_ija"
-  ,"fa_ba10m_captured"
-  ,"fa_ba64_captured"
   ,"fow_v_type97_truck_fuel_ija"
   ,"fow_v_type97_truck_open_ija"
   ,"fow_v_type97_truck_ija"
   ,"lib_kfz1_w"
   ,"lib_kfz1_hood_w"
-  ,"wwi_markimale_toit"
-  ,"wwi_markimale_poulie"
-  ,"wwi_markimale_nocart"
-  ,"wwi_markimale_desert"
-  ,"wwi_markimale"
-  ,"rollsroyceac"
-  ,"ford_t_mg"
   ,"fiat_omsky"
-  ,"lancia_1zm"
-  ,"lancia_1z"
   ,"fiat15_ter_tonneau"
   ,"fiat15_ter_decapote"
   ,"fiat15_ter_amb"
   ,"fiat15_ter"
-  ,"wwi_schneider_ca1"
   ,"peugeot_1914"
   ,"renault_french_army_ag_1910_red"
   ,"berlier_cba_fr"
@@ -1099,13 +1087,9 @@ a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses =
   + ger_combat_unarmored_1c04c5
   + ger_combat_unarmored_1c04c5
   + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
+  + ger_unarmored_1c04c5
+  + ger_unarmored_1c04c5
+  + ger_unarmored_1c04c5
   + ger_armored_370313;
 
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND =
@@ -1467,7 +1451,7 @@ A3E_MotorPoolTemplates = [
 	"A3E_fnc_BuildMotorPool_SPE"
 	];
 
-// A communication center is guarded by vehicles depending on variable _enemyFrequency. 1 = a random light armor. 2 = a random heavy armor. 3 = a random 
+// A communication center is guarded by vehicles depending on variable _enemyFrequency. 1 = a random light armor. 2 = a random heavy armor. 3 = a random
 // light *and* a random heavy armor.
 
 //////////////////////////////////////////////////////////////////
@@ -1496,7 +1480,13 @@ a3e_arr_ComCenParkedVehicles =
   + allies_armor_3ac0dd
   + allies_armor_3ac0dd
   + allies_armor_3ac0dd
-  + allies_light_bfff77
+  + allies_combat_unarmored_880b39
+  + allies_combat_unarmored_880b39
+  + allies_combat_unarmored_880b39
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + ger_combat_unarmored_1c04c5
+  + allies_unarmored_bfff77
   + ger_armored_370313
   + ger_armored_370313
   + ger_armored_370313
@@ -1507,7 +1497,7 @@ a3e_arr_ComCenParkedVehicles =
   + ger_armored_370313
   + ger_armored_370313
   + ger_armored_370313
-  + ger_combat_unarmored_1c04c5;
+  + ger_unarmored_1c04c5;
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 //Should be civilian, as there are no civ vehicles its a normal enemy truck
@@ -1601,7 +1591,7 @@ a3e_arr_O_pilots = [
 	];
 
 a3e_arr_I_transport_heli = [
-        // Only transport planes from allies
+	// Only transport planes from allies
 	"LIB_HORSA"
 	,"LIB_C47_Skytrain"
 	] + sov_planes_a36948 + allies_planes_0ae895;
@@ -1612,7 +1602,7 @@ a3e_arr_I_pilots = [
 	,"LIB_US_Bomber_Pilot"
 	,"LIB_US_Bomber_Crew"
 	];
-	
+
 //////////////////////////////////////////////////////////////////
 // fn_createAmmoDepots.sqf
 // Array of templates to usefor ammo depots
@@ -1622,7 +1612,7 @@ A3E_AmmoDepotTemplates = [
 	,"A3E_fnc_AmmoDepot_spe2"
 	,"A3E_fnc_AmmoDepot_spe3"
 	];
-	
+
 //Ammo Depot Crates
 // classnames to be used for the crates that are placed at an ammo depot
 a3e_arr_AmmoDepotCrate_Basic = ["SPE_Weaponcrate_MP40_GER", "SPE_BasicWeaponsBox_US"];
@@ -2048,10 +2038,10 @@ private _faks = [
 	,"SPE_GER_FirstAidKit"];
 missionNamespace setvariable ["a3e_arr_faks",_faks,true];
 // _medkits = [
-// 	// "Medikit"
-// 	// ,"SPE_GER_Medkit"
-// 	// ,"SPE_US_Medkit"
-// 	];
+//	// "Medikit"
+//	// ,"SPE_GER_Medkit"
+//	// ,"SPE_US_Medkit"
+//	];
 // missionNamespace setvariable ["a3e_arr_medkits",_medkits,true];
 
 //////////////////////////////////////////////////////////////////
@@ -2128,7 +2118,7 @@ a3e_arr_extraction_boat_escort = a3e_arr_AquaticPatrols;
 // RunExtractionLand.sqf
 // Cars/APCs that come to pick you up
 //////////////////////////////////////////////////////////////////
-a3e_arr_extraction_car = allies_transport_5a712a;	
+a3e_arr_extraction_car = allies_transport_5a712a;
 
 a3e_arr_extraction_car_escort = allies_vehicles_0d7fd7;
 
@@ -2161,7 +2151,7 @@ if(A3E_Param_SearchChopper==2) then {
 
 //////////////////////////////////////////////////////////////////
 // EscapeSurprises.sqf
-// Classnames of leaflet drones, disabled if array is created but empty 
+// Classnames of leaflet drones, disabled if array is created but empty
 //////////////////////////////////////////////////////////////////
 a3e_arr_leafletdrone = [];
 

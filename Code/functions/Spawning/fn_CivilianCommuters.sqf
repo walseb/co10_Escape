@@ -1,4 +1,4 @@
-private _maxGroups = 25;
+private _maxGroups = 10;
 private _MinSpawnCircleDistance = missionNamespace getvariable ["A3E_MinSpawnCircleDistance",800];
 private _MaxSpawnCircleDistance = missionNamespace getvariable ["A3E_MaxSpawnCircleDistance",1500];
 private _removalDistance = missionNamespace getvariable ["A3E_UnitRemovalDistance",2000];
