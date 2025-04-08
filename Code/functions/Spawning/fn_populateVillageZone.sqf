@@ -48,9 +48,34 @@ for "_x" from 1 to _patrolCount do {
 	_grp setvariable ["A3E_PatrolZone_Index",_zoneIndex];
 	[_grp, _marker] call A3E_fnc_Patrol;
 	[_grp] call A3E_fnc_TrackGroup_Add;
+
+
+	private _boxType_6bde84 = selectRandom (missionNamespace getvariable ["a3e_arr_AmmoDepotCrate_CrashSite",["Box_NATO_Wps_F"]]);
+	private _boxpos_bb273b = _pos findEmptyPosition [3,15,_boxType_6bde84];
+	if(count _boxpos_bb273b >0) then {
+		private _box_515545 = createVehicle [_boxType_6bde84, _boxpos_bb273b, [], 0, "NONE"];
+
+	    clearWeaponCargoGlobal _box_515545;
+	    clearMagazineCargoGlobal _box_515545;
+	    clearItemCargoGlobal _box_515545;
+
+	    private _weapon_0fe5ff = a3e_arr_CrashSiteWeapons select floor(random(count(a3e_arr_CrashSiteWeapons)));
+	    _backpack addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
+	    _backpack addMagazineCargoGlobal[(_weapon_0fe5ff select 4),5];
+
+	    private _weapon_0fe5ff = a3e_arr_CrashSiteWeapons select floor(random(count(a3e_arr_CrashSiteWeapons)));
+	    _backpack addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
+	    _backpack addMagazineCargoGlobal[(_weapon_0fe5ff select 4),5];
+	};
+
+	private _vehicleType_9d942d = selectRandom (missionNamespace getvariable ["a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses",["lib_us_willys_mb_m1919"]]);
+
+	private _vehiclepos_bb273b = _pos findEmptyPosition [3,15,_vehicleType_9d942d];
+
+	if(count _vehiclepos_bb273b >0) then {
+	    _5e5b0e = createVehicle [ "lib_us_willys_mb_m1919", _vehiclepos_bb273b, [], 0, "CAN_COLLIDE"];
+	};
 };
-
-
 
 //Spawn some civilians
 if(_patrolCount > 2) then {
