@@ -437,10 +437,9 @@ if(true) then {
     // 		[_pos] call A3E_fnc_crashSite;
     // 	};
 
-
-// };
-
+  };
 };
+
 //Start local and remote statistic tracking
 [] spawn {
 	sleep 1;
