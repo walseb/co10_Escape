@@ -461,165 +461,41 @@ call A3E_fnc_InitTraps;
 [A3E_StartPos, _backPack, _enemyFrequency] spawn {
 	params ["_startPos", "_backPack", "_enemyFrequency"];
     private ["_guardGroup", "_marker", "_guardCount", "_guardGroups", "_unit", "_createNewGroup"];
+        // 2 random weapons
+      private _weapon = selectRandom a3e_arr_AmmoDepotBasicWeapons;
+      _backpack addWeaponCargoGlobal[(_weapon select 0),1];
+      _backpack addMagazineCargoGlobal[(_weapon select 1),3];
 
+      private _weapon = selectRandom a3e_arr_AmmoDepotBasicWeapons;
+      _backpack addWeaponCargoGlobal[(_weapon select 0),1];
+      _backpack addMagazineCargoGlobal[(_weapon select 1),3];
 
-    // Spawn guard
-	_guardCount = [-1,-1,3,8] call a3e_fnc_getDynamicSquadSize;
-	private _i = 0;
-	for [{_i = 0}, {_i < (_guardCount)}, {_i = _i + 1}] do {
-		private _weapon = a3e_arr_PrisonBackpackWeapons select floor(random(count(a3e_arr_PrisonBackpackWeapons)));
-		_backpack addWeaponCargoGlobal[(_weapon select 0),1];
-		_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+      _backpack addWeaponCargoGlobal["SPE_Binocular_US",2];
 
-	};
+      _backpack addWeaponCargoGlobal["ItemMap",2];
 
-	private _weapon = a3e_arr_PrisonBackpackWeapons select 0;
-	_backpack addWeaponCargoGlobal[(_weapon select 0),1];
-	_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+      _backpack addWeaponCargoGlobal["SPE_US_ItemCompass",2];
 
-	_backpack addWeaponCargoGlobal[(_weapon select 0),1];
-	_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+      _backpack addWeaponCargoGlobal["SPE_M1A1_Bazooka",1];
+      _backpack addMagazineCargoGlobal["SPE_1Rnd_60mm_M6",3];
 
-	private _weapon = a3e_arr_PrisonBackpackWeapons select 1;
-	_backpack addWeaponCargoGlobal[(_weapon select 0),1];
-	_backpack addMagazineCargoGlobal[(_weapon select 1),3];
+    A3E_EscapeHasStarted = true;
+    publicVariable "A3E_EscapeHasStarted";
 
-    // Spawn more guards
-    _marker = createMarker ["drn_guardAreaMarker", _startPos];
-    _marker setMarkerShape "ELLIPSE";
-    _marker setMarkerSize [50, 50];
-	_marker setMarkerAlpha 0;
-	if(missionNamespace getvariable["A3E_Debug",false]) then {
-		_marker setMarkerAlpha 0.5;
-	};
-
-    //_guardCount = (2 + (_enemyFrequency)) + floor (random 2);
-
-    _guardGroups = [];
-    _createNewGroup = true;
-
-    _pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
-    while {_pos679d5fc2 distance _startPos < 10} do {
-	_pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
+    //Watch for captive state
+    [] spawn {
+	    while{isNil("A3E_EscapeHasStarted")} do {
+		    {
+			    if(isNil("A3E_EscapeHasStarted") && !(captive _x)) then {
+				    [_x, true] remoteExec ["setCaptive", _x, false];
+			    };
+		    } foreach call A3E_fnc_GetPlayers;
+		    sleep 0.5;
+	    };
+	    {
+		    [_x, false] remoteExec ["setCaptive", _x, false];
+	    } foreach call A3E_fnc_GetPlayers;
     };
-
-    _d7d166 = createVehicle [ "lib_us_willys_mb_m1919", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
-    // _d7d166 = createVehicle [ "SPE_FFI_R200_MG34", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
-
-    for [{_i = 0}, {_i < _guardCount}, {_i = _i + 1}] do {
-        private ["_pos"];
-
-        _pos = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
-        while {_pos distance _startPos < 10} do {
-            _pos = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
-        };
-
-        if (_createNewGroup) then {
-            _guardGroup = createGroup A3E_VAR_Side_Ind;
-            _guardGroups set [count _guardGroups, _guardGroup];
-            _createNewGroup = false;
-        };
-
-        //(a3e_arr_Escape_StartPositionGuardTypes select floor (random count a3e_arr_Escape_StartPositionGuardTypes)) createUnit [_pos, _guardGroup, "", (0.5), "CAPTAIN"];
-        _guardGroup createUnit [(a3e_arr_Escape_StartPositionGuardTypes select floor (random count a3e_arr_Escape_StartPositionGuardTypes)), _pos, [], 0, "FORM"];
-
-        if (count units _guardGroup >= 2) then {
-            _createNewGroup = true;
-        };
-    };
-
-    {
-        _guardGroup = _x;
-
-        _guardGroup setFormDir floor (random 360);
-
-        {
-            _unit = _x; //(units _guardGroup) select 0;
-            _unit setUnitRank "CAPTAIN";
-            _unit unlinkItem "ItemCompass";
-            _unit unlinkItem "ItemGPS";
-
-
-			private _mapItems = missionNamespace getVariable ["A3E_MapItemsUsedInMission",["ItemMap"]];
-			{_unit unlinkItem _x;} foreach _mapItems;
-
-			private _itemsToRemove = missionNamespace getVariable ["A3E_ItemsToBeRemoved",[]];
-			{
-				_unit unlinkItem _x;
-			} foreach _itemsToRemove;
-
-
-
-			if (ACE_MedicalServer) then {_unit addItem "ACE_epinephrine"};//Add Epinephrine for each unit
-			removeBackpackGlobal _unit;
-
-			if(random 100 < 80) then {
-				removeAllPrimaryWeaponItems _unit;
-
-			};
-
-			private _hmd = hmd _unit;
-			if (_hmd isEqualTo "") then {
-				private _cfgWeapons = configFile >> "CfgWeapons";
-				{
-					if (616 == getNumber (_cfgWeapons >> _x >> "ItemInfo" >> "type")) exitWith {
-						_hmd = _x;
-					};
-				} forEach items _unit;
-			};
-			if (!(_hmd isEqualTo "") && {random 100 > 20 || {A3E_Param_NoNightvision == 1}}) then {
-				_unit unlinkItem _hmd;
-				_unit removeItem _hmd;
-			};
-			private _missionHasNVGs = missionnamespace getvariable ["A3E_Var_AllowVanillaNightVision", true];
-			if(!_missionHasNVGs) then {
-				_unit unlinkItem _hmd;
-				_unit removeItem _hmd;
-			};
-
-			//Track kills
-			_unit addEventHandler ["Killed", {
-				params ["_unit", "_killer"];
-				if(isPlayer _killer) then {
-					private _killStats = missionNamespace getvariable ["A3E_Kill_Count",0];
-					missionNamespace setvariable ["A3E_Kill_Count",_killStats+1,false];
-				};
-			}];
-
-            //_unit setSkill a3e_var_Escape_enemyMinSkill;
-			//[_unit, a3e_var_Escape_enemyMinSkill] call EGG_EVO_skill;
-
-			//This should remove all types of handgrenades (for example RHS)
-            _unit removeMagazines "Handgrenade";
-
-            _unit setVehicleAmmo 0.3 + random 0.7;
-
-        } foreach units _guardGroup;
-
-        [_guardGroup, _marker] spawn A3E_fnc_Patrol;
-
-    } foreach _guardGroups;
-
-	A3E_SoundPrisonAlarm = false;
-	publicvariable "A3E_SoundPrisonAlarm";
-
-	A3E_EscapeHasStarted = true;
-	publicVariable "A3E_EscapeHasStarted";
-
-	//Watch for captive state
-	[] spawn {
-		while{isNil("A3E_EscapeHasStarted")} do {
-			{
-				if(isNil("A3E_EscapeHasStarted") && !(captive _x)) then {
-					[_x, true] remoteExec ["setCaptive", _x, false];
-				};
-			} foreach call A3E_fnc_GetPlayers;
-			sleep 0.5;
-		};
-		{
-			[_x, false] remoteExec ["setCaptive", _x, false];
-		} foreach call A3E_fnc_GetPlayers;
-	};
 };
 
 

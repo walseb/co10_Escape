@@ -2011,7 +2011,6 @@ a3e_arr_AmmoDepotItems pushback ["ItemWatch", 50, 1, 10];
 
 
 
-
 // Here is a list of scopes, might get randomly added to enemy patrols:
 a3e_arr_Scopes = [
 	"SPE_M1918A2_BAR_Handle"];
