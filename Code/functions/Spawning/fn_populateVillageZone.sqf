@@ -75,7 +75,7 @@ for "_x" from 1 to _patrolCount do {
 	    _backpack addMagazineCargoGlobal[(selectRandom _intel_dd4afb),2];
 	};
 
-	private _vehicleType_9d942d = selectRandom a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses;
+	private _vehicleType_9d942d = selectRandom (a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses + a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses_IND);
 
 	private _vehiclepos_bb273b = _pos findEmptyPosition [3,15,_vehicleType_9d942d];
 
