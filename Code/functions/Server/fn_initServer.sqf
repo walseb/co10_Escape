@@ -461,14 +461,15 @@ call A3E_fnc_InitTraps;
 [A3E_StartPos, _backPack, _enemyFrequency] spawn {
 	params ["_startPos", "_backPack", "_enemyFrequency"];
     private ["_guardGroup", "_marker", "_guardCount", "_guardGroups", "_unit", "_createNewGroup"];
-        // 2 random weapons
-      private _weapon = selectRandom a3e_arr_AmmoDepotBasicWeapons;
-      _backpack addWeaponCargoGlobal[(_weapon select 0),1];
-      _backpack addMagazineCargoGlobal[(_weapon select 1),3];
 
-      private _weapon = selectRandom a3e_arr_AmmoDepotBasicWeapons;
-      _backpack addWeaponCargoGlobal[(_weapon select 0),1];
-      _backpack addMagazineCargoGlobal[(_weapon select 1),3];
+      // 2 random weapons
+      private _weapon_3f2bb3 = selectRandom a3e_arr_AmmoDepotBasicWeapons;
+      _backpack addWeaponCargoGlobal[(_weapon_3f2bb3 select 0),1];
+      _backpack addMagazineCargoGlobal[(_weapon_3f2bb3 select 5),3];
+
+      private _weapon_8d9bfb = selectRandom a3e_arr_AmmoDepotBasicWeapons;
+      _backpack addWeaponCargoGlobal[(_weapon_8d9bfb select 0),1];
+      _backpack addMagazineCargoGlobal[(_weapon_8d9bfb select 5),3];
 
       _backpack addWeaponCargoGlobal["SPE_Binocular_US",2];
 
