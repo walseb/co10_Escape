@@ -61,15 +61,15 @@ for "_x" from 1 to _patrolCount do {
 
 	    private _weapon_0fe5ff = selectRandom a3e_arr_CrashSiteWeapons;
 	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
-	    _box_515545 addMagazineCargoGlobal[(_weapon_0fe5ff select 4),5];
+	    _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5ff select 4)),5];
 
 	    private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
 	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
-	    _box_515545 addMagazineCargoGlobal[(_weapon_0fe5fe select 4),5];
+	    _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5fe select 4)),5];
 
 	    private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
 	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
-	    _box_515545 addMagazineCargoGlobal[(_weapon_0fe5fe select 4),5];
+	    _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5fe select 4)),5];
 
             private _intel_dd4afb = ["Files","FileTopSecret","FilesSecret","DocumentsSecret","Wallet_ID","FileNetworkStructure"];
 	    _box_515545 addMagazineCargoGlobal[(selectRandom _intel_dd4afb),2];

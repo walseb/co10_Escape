@@ -250,7 +250,7 @@ _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
 //Uncommenting all legacy scripts for now
 // Handles aquatic patrols. Let's enable for now
-if(true) then {
+if(false) then {
 [_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] spawn {
 	params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_enemyFrequency"];
 
@@ -465,11 +465,11 @@ call A3E_fnc_InitTraps;
       // 2 random weapons
       private _weapon_3f2bb3 = selectRandom a3e_arr_AmmoDepotBasicWeapons;
       _backpack addWeaponCargoGlobal[(_weapon_3f2bb3 select 0),1];
-      _backpack addMagazineCargoGlobal[(_weapon_3f2bb3 select 5),3];
+      _backpack addMagazineCargoGlobal[(selectRandom (_weapon_3f2bb3 select 4)),3];
 
       private _weapon_8d9bfb = selectRandom a3e_arr_AmmoDepotBasicWeapons;
       _backpack addWeaponCargoGlobal[(_weapon_8d9bfb select 0),1];
-      _backpack addMagazineCargoGlobal[(_weapon_8d9bfb select 5),3];
+      _backpack addMagazineCargoGlobal[(selectRandom (_weapon_8d9bfb select 4)),3];
 
       _backpack addWeaponCargoGlobal["SPE_Binocular_US",2];
 

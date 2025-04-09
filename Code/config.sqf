@@ -38,9 +38,9 @@ missionNamespace setvariable["MaxSpawnDistance",2000];
 
 //Roadblocks
 missionNamespace setvariable["DebugRoadblocks",false];
-missionNamespace setvariable["MinRoadblockSpawnDistance",1500];
+missionNamespace setvariable["MinRoadblockSpawnDistance",1000];
 missionNamespace setvariable["MaxRoadblockSpawnDistance",2000];
-missionNamespace setvariable["MinRoadblockDistance",1500];
+missionNamespace setvariable["MinRoadblockDistance",1000];
 missionNamespace setvariable["MaxNumberOfRoadblocks",30];
 
 

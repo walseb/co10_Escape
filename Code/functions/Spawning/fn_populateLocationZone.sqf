@@ -3,7 +3,7 @@ params["_zoneIndex"];
 private _zone = A3E_Zones select _zoneIndex;
 private _marker = _zone get "marker";
 private _area = _zone get "zonearea";
-private _side = _zone getorDefault ["side",A3E_VAR_Side_Ind];
+private _side = _zone getorDefault ["side",A3E_VAR_Side_Opfor];
 private _type = _zone get "type";
 
 _patrolCount = 4;

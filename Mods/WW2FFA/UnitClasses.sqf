@@ -1004,6 +1004,13 @@ ger_armored_370313 = [
   ,"lib_pzkpfwvi_e_w"
   ];
 
+// Might want to remove these:
+// fow_v_sdkfz_222_camo_ger_ss
+// fa_sdkfz231_dak
+// fa_sdkfz231
+// fow_v_sdkfz_222_ger_heer
+// fow_v_sdkfz_222_foliage_ger_heer
+
 ger_combat_unarmored_1c04c5 = [
   "spe_st_r200_mg34"
   ,"lib_kfz1_mg42"
