@@ -462,6 +462,13 @@ call A3E_fnc_InitTraps;
 	params ["_startPos", "_backPack", "_enemyFrequency"];
     private ["_guardGroup", "_marker", "_guardCount", "_guardGroups", "_unit", "_createNewGroup"];
 
+      _pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
+      while {_pos679d5fc2 distance _startPos < 10} do {
+	  _pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
+      };
+
+      _d7d166 = createVehicle [ "lib_us_willys_mb_m1919", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
+
       // 2 random weapons
       private _weapon_3f2bb3 = selectRandom a3e_arr_AmmoDepotBasicWeapons;
       _backpack addWeaponCargoGlobal[(_weapon_3f2bb3 select 0),1];
