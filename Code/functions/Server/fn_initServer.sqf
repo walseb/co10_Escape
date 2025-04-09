@@ -462,12 +462,8 @@ call A3E_fnc_InitTraps;
 	params ["_startPos", "_backPack", "_enemyFrequency"];
     private ["_guardGroup", "_marker", "_guardCount", "_guardGroups", "_unit", "_createNewGroup"];
 
-      _pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
-      while {_pos679d5fc2 distance _startPos < 10} do {
-	  _pos679d5fc2 = [_marker] call drn_fnc_CL_GetRandomMarkerPos;
-      };
-
-      _d7d166 = createVehicle [ "lib_us_willys_mb_m1919", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
+      private _pos679d5fc2 = _startPos findEmptyPosition [3,15, "lib_us_willys_mb_m1919"];
+      private _d7d166 = createVehicle [ "lib_us_willys_mb_m1919", _pos679d5fc2, [], 0, "CAN_COLLIDE"];
 
       // 2 random weapons
       private _weapon_3f2bb3 = selectRandom a3e_arr_AmmoDepotBasicWeapons;
@@ -478,11 +474,11 @@ call A3E_fnc_InitTraps;
       _backpack addWeaponCargoGlobal[(_weapon_8d9bfb select 0),1];
       _backpack addMagazineCargoGlobal[(selectRandom (_weapon_8d9bfb select 4)),3];
 
-      _backpack addWeaponCargoGlobal["SPE_Binocular_US",2];
+      _backpack addItemCargoGlobal["SPE_Binocular_US",2];
 
-      _backpack addWeaponCargoGlobal["ItemMap",2];
+      _backpack addItemCargoGlobal["ItemMap",2];
 
-      _backpack addWeaponCargoGlobal["SPE_US_ItemCompass",2];
+      _backpack addItemCargoGlobal["SPE_GER_ItemCompass",2];
 
       _backpack addWeaponCargoGlobal["SPE_M1A1_Bazooka",1];
       _backpack addMagazineCargoGlobal["SPE_1Rnd_60mm_M6",3];
