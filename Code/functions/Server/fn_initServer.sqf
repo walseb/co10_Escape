@@ -483,8 +483,20 @@ call A3E_fnc_InitTraps;
       _backpack addWeaponCargoGlobal["SPE_M1A1_Bazooka",1];
       _backpack addMagazineCargoGlobal["SPE_1Rnd_60mm_M6",3];
 
-    A3E_EscapeHasStarted = true;
-    publicVariable "A3E_EscapeHasStarted";
+    [] spawn {
+        sleep 9;
+        diag_log "Server: Escape has started.";
+  
+        A3E_EscapeHasStarted = true;
+        publicVariable "A3E_EscapeHasStarted";
+  
+        A3E_SoundPrisonAlarm = true;
+        publicvariable "A3E_SoundPrisonAlarm";
+  
+        sleep 30;
+        A3E_SoundPrisonAlarm = false;
+        publicvariable "A3E_SoundPrisonAlarm";
+    };
 
     //Watch for captive state
     [] spawn {

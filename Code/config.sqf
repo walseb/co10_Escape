@@ -34,15 +34,15 @@ a3e_var_artillery_fleeingDistance = 400;
 //Default mission values
 
 missionNamespace setvariable["MinSpawnDistance",1500];
-missionNamespace setvariable["MaxSpawnDistance",2000];
+missionNamespace setvariable["MaxSpawnDistance",1800];
 
 //Roadblocks
 missionNamespace setvariable["DebugRoadblocks",false];
 missionNamespace setvariable["MinRoadblockSpawnDistance",1000];
-missionNamespace setvariable["MaxRoadblockSpawnDistance",2000];
+missionNamespace setvariable["MaxRoadblockSpawnDistance",1800];
 missionNamespace setvariable["MinRoadblockDistance",1000];
-missionNamespace setvariable["MaxNumberOfRoadblocks",30];
+missionNamespace setvariable["MaxNumberOfRoadblocks",15];
 
 
 //Crashsites
-missionNamespace setvariable["CrashSiteCountMax",5];
+missionNamespace setvariable["CrashSiteCountMax",10];

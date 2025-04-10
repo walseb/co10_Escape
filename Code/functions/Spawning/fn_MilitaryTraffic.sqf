@@ -1,8 +1,8 @@
 // private _maxGroups = missionNamespace getvariable ["A3E_MaxMilitaryTrafficGroups",20]; // originally 3
-private _maxGroups = 14; // originally 3
+private _maxGroups = 10; // originally 3
 private _MinSpawnCircleDistance = missionNamespace getvariable ["A3E_MinSpawnCircleDistance",800]; // originally 800
-private _MaxSpawnCircleDistance = missionNamespace getvariable ["A3E_MaxSpawnCircleDistance",1700]; // originally 1500
-private _removalDistance = missionNamespace getvariable ["A3E_UnitRemovalDistance",2200]; // originally 2000
+private _MaxSpawnCircleDistance = missionNamespace getvariable ["A3E_MaxSpawnCircleDistance",1500]; // originally 1500
+private _removalDistance = missionNamespace getvariable ["A3E_UnitRemovalDistance",2000]; // originally 2000
 
 private _groups = missionNamespace getvariable ["A3E_MilitaryTrafficGroups",[]];
 
