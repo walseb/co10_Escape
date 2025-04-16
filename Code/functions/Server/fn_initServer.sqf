@@ -481,7 +481,7 @@ call A3E_fnc_InitTraps;
 
       _backpack addItemCargoGlobal["SPE_GER_ItemCompass_deg",2];
 
-      _backpack addItemCargoGlobal["SPE_US_Medkit",3];
+      _backpack addItemCargoGlobal["FirstAidKit",3];
 
       _backpack addWeaponCargoGlobal["SPE_M1A1_Bazooka",1];
       _backpack addMagazineCargoGlobal["SPE_1Rnd_60mm_M6",3];
