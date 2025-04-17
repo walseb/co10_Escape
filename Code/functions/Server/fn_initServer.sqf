@@ -212,7 +212,7 @@ waituntil{uisleep 1; count([] call A3E_FNC_GetPlayers)>0};
 _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
 
-[_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug] execVM "Scripts\Escape\EscapeSurprises.sqf";
+// [_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug] execVM "Scripts\Escape\EscapeSurprises.sqf";
 
 
 [] spawn {
