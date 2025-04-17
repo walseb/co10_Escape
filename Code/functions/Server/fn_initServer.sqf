@@ -212,6 +212,25 @@ waituntil{uisleep 1; count([] call A3E_FNC_GetPlayers)>0};
 _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
 
+// Disabled due to the following error probably causing massive lag:
+// 21:44:18 Error in expression <its _cargoGroup) select 0);
+// if (!isNull _enemyUnit) then {
+// if (_attackOnSight) t>
+// 21:44:18   Error position: <_enemyUnit) then {
+// if (_attackOnSight) t>
+// 21:44:18   Error Undefined variable in expression: _enemyunit
+// 21:44:18 File mpmissions\__cur_mp.go_map_fjord\functions\DRN\fn_InsertionTruck.sqf..., line 137
+
+// And:
+
+// 21:44:18 Error in expression <n (units _group select 0);
+// _lastPos = + _currentPos;
+// _lastMoveTime = diag_tickTi>
+// 21:44:18   Error position: <_currentPos;
+// _lastMoveTime = diag_tickTi>
+// 21:44:18   Error Undefined variable in expression: _currentpos
+// 21:44:18 File mpmissions\__cur_mp.go_map_fjord\functions\DRN\fn_SearchGroup.sqf..., line 160
+
 // [_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug] execVM "Scripts\Escape\EscapeSurprises.sqf";
 
 
@@ -462,7 +481,7 @@ call A3E_fnc_InitTraps;
 	params ["_startPos", "_backPack", "_enemyFrequency"];
     private ["_guardGroup", "_marker", "_guardCount", "_guardGroups", "_unit", "_createNewGroup"];
 
-      private _vehicle_4b1a9e = (selectRandom ["lib_us_willys_mb_m1919", "lib_us_willys_mb_hood", "lib_willys_mb", "lib_us_willys_mb", "spe_us_g503_mb_m1919_patrol", "spe_us_g503_mb_m2_patrol"]);
+      private _vehicle_4b1a9e = (selectRandom ["lib_us_willys_mb_m1919", "lib_willys_mb", "lib_us_willys_mb", "spe_us_g503_mb_m1919_patrol", "spe_us_g503_mb_m2_patrol"]);
       private _pos679d5fc2 = _startPos findEmptyPosition [3,15, _vehicle_4b1a9e];
       private _d7d166 = createVehicle [ _vehicle_4b1a9e, _pos679d5fc2, [], 0, "CAN_COLLIDE"];
 

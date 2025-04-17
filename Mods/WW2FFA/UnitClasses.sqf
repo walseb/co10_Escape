@@ -1078,6 +1078,35 @@ ger_unarmored_1c04c5 = [
   ,"berlier_cba_fr"
   ] + a3e_arr_Escape_ReinforcementTruck_vehicleClasses;
 
+// These cause errors:
+// wwi_italsoldier3
+// wwi_ensoldier1
+// wwi_ensoldier3
+// lib_pzkpfwi_e_tarn52d
+// lib_fr_m45_quadmount
+// wwi_gesoldier31
+// wwi_gesoldier24
+// wwi_aurtichien2
+// wwi_gesoldier2
+// wwi_gesoldier1
+// wwi_gesoldier3
+// wwi_gesoldier9
+// wwi_gesoldier8
+// wwi_gesoldier6
+// wwi_aurtichien3
+// wwi_gesoldier21
+// wwi_aurtichien1
+// wwi_gesoldier23
+// wwi_gesoldier22
+// wwi_gesoldier5
+// wwi_gesoldier71
+// wwi_gesoldier4
+// wwi_italsoldier1
+// wwi_ensoldier2
+// wwi_tankiste
+// wwi_italsoldier2
+
+
 // Random arrays. Enemy vehicle classes for ambient traffic.
 // Variable _enemyFrequency applies to server parameter, and can be one of the values 1 (Few), 2 (Some) or 3 (A lot).
 a3e_arr_Escape_MilitaryTraffic_EnemyVehicleClasses =
@@ -1377,8 +1406,8 @@ a3e_units_civilian_InfantryTypes = [
 //////////////////////////////////////////////////////////////////
 A3E_RoadblockTemplates = [
 	"rb_spe_rb1"
-	// ,"rb_bis_rb1"
-	,"rb_bis_rb2"
+	,"rb_bis_rb1" // This is not the tower design
+	// ,"rb_bis_rb2"
 	,"rb_bis_rb3"
 	];
 
@@ -1487,13 +1516,31 @@ a3e_arr_ComCenParkedVehicles =
   + allies_armor_3ac0dd
   + allies_armor_3ac0dd
   + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
+  + allies_armor_3ac0dd
   + allies_combat_unarmored_880b39
-  + allies_combat_unarmored_880b39
-  + allies_combat_unarmored_880b39
-  + ger_combat_unarmored_1c04c5
-  + ger_combat_unarmored_1c04c5
   + ger_combat_unarmored_1c04c5
   + allies_unarmored_bfff77
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
+  + ger_armored_370313
   + ger_armored_370313
   + ger_armored_370313
   + ger_armored_370313
