@@ -231,7 +231,8 @@ _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 // 21:44:18   Error Undefined variable in expression: _currentpos
 // 21:44:18 File mpmissions\__cur_mp.go_map_fjord\functions\DRN\fn_SearchGroup.sqf..., line 160
 
-// [_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug] execVM "Scripts\Escape\EscapeSurprises.sqf";
+// Might be fixed now? [2025-04-27 Sun 22:00] 
+[_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug] execVM "Scripts\Escape\EscapeSurprises.sqf";
 
 
 [] spawn {
