@@ -13,7 +13,7 @@ private _sides = [A3E_VAR_Side_Opfor];
 
 private _patrolsPerSqmSqrt = 0.01;
 private _spawnCount = missionNamespace getvariable ["A3E_Param_VillageSpawnCount",1];
-// private _spawnCount = 2;
+private _spawnCount = 2;
 switch (_spawnCount) do
 {
 	case 1: // 1-2 players
@@ -50,29 +50,32 @@ for "_x" from 1 to _patrolCount do {
 	[_grp, _marker] call A3E_fnc_Patrol;
 	[_grp] call A3E_fnc_TrackGroup_Add;
 
-	private _boxType_6bde84 = selectRandom (missionNamespace getvariable ["a3e_arr_AmmoDepotCrate_CrashSite",["Box_NATO_Wps_F"]]);
-	private _boxpos_bb273b = _pos findEmptyPosition [3,15,_boxType_6bde84];
-	if(count _boxpos_bb273b >0) then {
+	if (random 100 < 50) then {
+	  private _boxType_6bde84 = selectRandom (missionNamespace getvariable ["a3e_arr_AmmoDepotCrate_CrashSite",["Box_NATO_Wps_F"]]);
+	  private _boxpos_bb273b = _pos findEmptyPosition [3,15,_boxType_6bde84];
 
-	    private _box_515545 = createVehicle [_boxType_6bde84, _boxpos_bb273b, [], 0, "NONE"];
-	    clearWeaponCargoGlobal _box_515545;
-	    clearMagazineCargoGlobal _box_515545;
-	    clearItemCargoGlobal _box_515545;
+	  if(count _boxpos_bb273b >0) then {
 
-	    private _weapon_0fe5ff = selectRandom a3e_arr_CrashSiteWeapons;
-	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
-	    _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5ff select 4)),8];
+	      private _box_515545 = createVehicle [_boxType_6bde84, _boxpos_bb273b, [], 0, "NONE"];
+	      clearWeaponCargoGlobal _box_515545;
+	      clearMagazineCargoGlobal _box_515545;
+	      clearItemCargoGlobal _box_515545;
 
-	    private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
-	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
-	    _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5fe select 4)),8];
+	      private _weapon_0fe5ff = selectRandom a3e_arr_CrashSiteWeapons;
+	      _box_515545 addWeaponCargoGlobal[(_weapon_0fe5ff select 0),1];
+	      _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5ff select 4)),5];
 
-	    private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
-	    _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
-	    _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5fe select 4)),8];
+	      private _weapon_0fe5fe = selectRandom a3e_arr_CrashSiteWeapons;
+	      _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fe select 0),1];
+	      _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5fe select 4)),5];
 
-            private _intel_dd4afb = ["Files","FileTopSecret","FilesSecret","DocumentsSecret","Wallet_ID","FileNetworkStructure"];
-	    _box_515545 addMagazineCargoGlobal[(selectRandom _intel_dd4afb),2];
+	      private _weapon_0fe5fq = selectRandom a3e_arr_CrashSiteWeapons;
+	      _box_515545 addWeaponCargoGlobal[(_weapon_0fe5fq select 0),1];
+	      _box_515545 addMagazineCargoGlobal[(selectRandom (_weapon_0fe5fq select 4)),5];
+
+	      private _intel_dd4afb = ["Files","FileTopSecret","FilesSecret","DocumentsSecret","Wallet_ID","FileNetworkStructure"];
+	      _box_515545 addMagazineCargoGlobal[(selectRandom _intel_dd4afb),3];
+	  };
 	};
 
 	if (random 100 < 25) then {
