@@ -50,11 +50,32 @@ for "_x" from 1 to _patrolCount do {
 	[_grp, _marker] call A3E_fnc_Patrol;
 	[_grp] call A3E_fnc_TrackGroup_Add;
 
-	if (random 100 < 50) then {
+        // Vehicle
+	if (random 100 < 40) then {
+	  private _vehicleType = selectRandom a3e_arr_ComCenStaticWeapons;
+	  private _pos_f8ab23 = _pos findEmptyPosition [3,15,_vehicleType];
+
+	  private _result = [_pos_f8ab23, 0, _vehicleType, A3E_VAR_Side_Opfor] call BIS_fnc_spawnVehicle;
+
+	  private _vehicle = _result select 0;
+
+	  [_vehicle] call a3e_fnc_onVehicleSpawn;
+
+	  private _vehiclesCrew = _result select 1;
+	  private _group = _result select 2;
+
+	  [_group] call A3E_fnc_onEnemyGroupSpawn;
+
+	  {[_x] call A3E_fnc_onEnemySoldierSpawn;} foreach units _group;
+	};
+
+	if (random 100 < 80) then {
 	  private _boxType_6bde84 = selectRandom (missionNamespace getvariable ["a3e_arr_AmmoDepotCrate_CrashSite",["Box_NATO_Wps_F"]]);
 	  private _boxpos_bb273b = _pos findEmptyPosition [3,15,_boxType_6bde84];
 
 	  if(count _boxpos_bb273b >0) then {
+
+
 
 	      private _box_515545 = createVehicle [_boxType_6bde84, _boxpos_bb273b, [], 0, "NONE"];
 	      clearWeaponCargoGlobal _box_515545;
