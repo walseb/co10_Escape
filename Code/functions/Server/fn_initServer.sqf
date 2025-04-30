@@ -482,8 +482,10 @@ call A3E_fnc_InitTraps;
 	params ["_startPos", "_backPack", "_enemyFrequency"];
     private ["_guardGroup", "_marker", "_guardCount", "_guardGroups", "_unit", "_createNewGroup"];
 
-      private _vehicle_4b1a9e = (selectRandom ["lib_us_willys_mb_m1919", "lib_willys_mb", "lib_us_willys_mb", "spe_us_g503_mb_m1919_patrol", "spe_us_g503_mb_m2_patrol"]);
+      private _vehicle_4b1a9e = (selectRandom ["lib_us_willys_mb_m1919" ,"spe_us_g503_mb_m1919_patrol" ,"spe_us_g503_mb_m2_patrol" ,"spe_us_g503_mb_m1919_armoured" ,"spe_us_g503_mb_m1919" ,"lib_uk_willys_mb_m1919" ,"spe_us_g503_mb_m2" ,"spe_us_g503_mb_m2_armoured"]);
+
       private _pos679d5fc2 = _startPos findEmptyPosition [3,15, _vehicle_4b1a9e];
+
       private _d7d166 = createVehicle [ _vehicle_4b1a9e, _pos679d5fc2, [], 0, "CAN_COLLIDE"];
 
       // 2 random weapons
